@@ -24,11 +24,15 @@ jobs:
       
       - name: Render
         run: |
+          quarto render GitHub-SOP.qmd --to html
           quarto render GitHub-SOP.qmd --to titlepage-pdf
-          cp GitHub-SOP.qmd index.qmd
+          mkdir docs
+          mv GitHub-SOP_files docs
+          mv GitHub-SOP.html docs
+          cp GitHub-SOP.pdf docs
         shell: bash
 
-      - name: Add pdf to main repo
+      - name: Add pdf
         run: |
           git add GitHub-SOP.pdf
           git config --local user.email "action@github.com"
@@ -41,11 +45,21 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
 
-      - name: Publish to GitHub Pages (and render)
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
+      - name: Init new repo in dist folder and commit generated files
+        run: |
+          cd docs
+          git init
+          touch .nojekyll
+          git add -A
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m 'deploy'
 
+      - name: Force push to destination branch
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          force: true
+          directory: ./docs
 
