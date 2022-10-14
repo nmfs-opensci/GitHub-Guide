@@ -25,12 +25,25 @@ jobs:
       - name: Render
         run: |
           quarto render GitHub-SOP.qmd --to html
-          quarto render GitHub-SOP.qmd --to pdf
+          quarto render GitHub-SOP.qmd --to titlepage-pdf
           mkdir docs
           mv GitHub-SOP_files docs
           mv GitHub-SOP.html docs
-          mv GitHub-SOP.pdf docs
+          cp GitHub-SOP.pdf docs
         shell: bash
+
+      - name: Add pdf
+        run: |
+          git add GitHub-SOP.pdf
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m 'update PDF'
+          
+      - name: Push to destination branch
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
 
       - name: Init new repo in dist folder and commit generated files
         run: |
