@@ -8,9 +8,14 @@ Respository for the GitHub SOP developed by NMFS R User Group.
 
 [Link to pdf of latest SOP](https://nmfs-opensci.github.io/GitHub-SOP/GitHub-SOP.pdf) --- [Link to html of latest SOP](https://nmfs-opensci.github.io/GitHub-SOP/GitHub-SOP.html)
 
-## To update
+## To update or contribute
 
-Edit `GitHub-SOP.qmd`. A GitHub Action will automatically update to the html and pdf versions above.
+Fork the repo and then Edit `GitHub-SOP.qmd`. Put in a pull request.
 
-Make sure to change the version number and create a new version.
+Whoever accepts the pull request should make sure to change the version number and create a new version.
+
+## To update the html or pdf version
+
+A GitHub Action will automatically does that. Takes 1-2 minutes.
+
 
