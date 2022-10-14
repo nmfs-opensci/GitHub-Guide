@@ -22,13 +22,16 @@ jobs:
           # uncomment below and fill to pin a version
           # version: 0.9.600
       
-      # add software dependencies here
+      - name: Render and Publish
+        run: |
+          quarto render GitHub-SOP.qmd --to html
+          quarto render GitHub-SOP.qmd --to pdf
+        shell: bash
 
-      - name: Publish to GitHub Pages (and render)
+     - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          to: html
-          path: GitHub-SOP.qmd
+          render: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
