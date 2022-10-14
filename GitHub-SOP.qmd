@@ -17,11 +17,11 @@ format:
         \usepackage[headsepline,automark]{scrlayer-scrpage}
         \ohead{\pagemark}
         \chead{}
-        \ihead{GitHub and Git SOP from NMFS R UG (Oct 2022)}
+        \ihead{GitHub and Git SOP from NMFS Open Science (Oct 2022)}
     documentclass: scrartcl
     number-sections: true
     titlepage: "plain"
-    titlepage-logo: "images/nmfs-r-ug-logo.png"
+    titlepage-logo: "images/nmfs-opensci-logo.png"
     titlepage-geometry: ["top=3in", "bottom=1in", "right=1in", "left=1in"]
     titlepage-theme:
       elements: ["\\titleblock", "\\authorblock", "\\vfill", "\\logoblock"]
@@ -43,7 +43,7 @@ format:
 
 ## Introduction {#sec-introduction}
 
-This SOP was developed by and is maintained by the NMFS Open Science GitHub working group (@sec-governance-group). This document provides practical help and guidelines for the wide variety of ways that Git and GitHub are used within NOAA Fisheries. This SOP was heavily influenced by the work from the [Fisheries Integrated Toolbox](https://noaa-fisheries-integrated-toolbox.github.io/resources/) team who developed standardized GitHub guidelines and "best practices" for NMFS tool developers and by the SEFSC GitHub SOP released in October 2021. 
+This SOP was developed by and is maintained by the NMFS Open Science GitHub working group (@sec-governance-group). This document provides practical help and guidelines for the wide variety of ways that Git and GitHub are used within NOAA Fisheries. This SOP was heavily influenced by the work from the [Fisheries Integrated Toolbox](https://noaa-fisheries-integrated-toolbox.github.io/resources/) team who developed standardized GitHub "best practices" documents for NMFS tool developers and by the SEFSC GitHub SOP released in October 2021. 
 
 NOAA's official GitHub policy from 2017 may be found [here](https://drive.google.com/file/d/1oBBCEHjENjmLgS2fKJX3lOQ15bOZhlWJ/view?usp=sharing). Since 2017, GitHub use has expanded greatly across NMFS and all the federal agencies ([link](https://nmfs-opensci.github.io/ResourceBook/content/github_in_gov.html#github-in-other-agencies)). The 2017 memo guidelines are not designed specifically for science teams and for the wide variety of scientific work that is done on GitHub. In addition, the 2017 memo largely focuses on the @NOAAGov GitHub organization, but NMFS GitHub use is not primarily on this organization. 
 
