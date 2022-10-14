@@ -9,6 +9,8 @@ author:
 format: 
   html: 
     number-sections: true
+    toc: true
+    toc-location: left
   titlepage-pdf:
     include-in-header:
       text: |
