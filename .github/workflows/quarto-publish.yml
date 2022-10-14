@@ -24,17 +24,12 @@ jobs:
       
       - name: Render
         run: |
-          mkdir docs
-          cd docs
           quarto render GitHub-SOP.qmd --to html
           quarto render GitHub-SOP.qmd --to pdf
         shell: bash
 
       - name: Init new repo in docs folder and commit generated files
         run: |
-          cd docs
-          git init
-          touch .nojekyll
           git add -A
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -46,5 +41,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           force: true
-          directory: ./docs
 
