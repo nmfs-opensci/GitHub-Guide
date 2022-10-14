@@ -24,14 +24,27 @@ jobs:
       
       - name: Render
         run: |
+          mkdir docs
+          cd docs
           quarto render GitHub-SOP.qmd --to html
           quarto render GitHub-SOP.qmd --to pdf
         shell: bash
 
-      - name: Publish to GitHub Pages (and render)
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Init new repo in docs folder and commit generated files
+        run: |
+          cd docs
+          git init
+          touch .nojekyll
+          git add -A
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m 'deploy'
+
+      - name: Force push to destination branch
+        uses: ad-m/github-push-action@v0.5.0
         with:
-          target: gh-pages
-          render: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          force: true
+          directory: ./docs
+
