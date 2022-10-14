@@ -22,10 +22,10 @@ jobs:
           # uncomment below and fill to pin a version
           # version: 0.9.600
       
-     - name: Render and Publish
+      - name: Render
         run: |
-         quarto render GitHub-SOP.qmd --to html
-         quarto render GitHub-SOP.qmd --to pdf
+          quarto render GitHub-SOP.qmd --to html
+          quarto render GitHub-SOP.qmd --to pdf
         shell: bash
 
      - name: Publish to GitHub Pages (and render)
