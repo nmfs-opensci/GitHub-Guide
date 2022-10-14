@@ -1,4 +1,8 @@
+[![github](https://img.shields.io/github/v/release/nmfs-opensci/GitHub-SOP?color=brightgreen&label=GitHub)](https://github.com/nmfs-opensci/GitHub-SOP/releases/latest)
+
 # GitHub-SOP
+
+
 
 Respository for the GitHub SOP developed by NMFS R User Group.
 
