@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="NMFS Open Science GitHub working group">
-<meta name="dcterms.date" content="2022-10-13">
+<meta name="dcterms.date" content="2022-10-22">
 
 <title>GitHub SOP - GitHub and Git</title>
 <style>
@@ -103,7 +103,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sec-introduction" id="toc-sec-introduction" class="nav-link active" data-scroll-target="#sec-introduction"><span class="toc-section-number">1</span>  Introduction</a></li>
+  <li><a href="#sec-introduction" id="toc-sec-introduction" class="nav-link active" data-scroll-target="#sec-introduction"><span class="toc-section-number">1</span>  Introduction</a>
+  <ul class="collapse">
+  <li><a href="#sec-background" id="toc-sec-background" class="nav-link" data-scroll-target="#sec-background"><span class="toc-section-number">1.1</span>  Background</a></li>
+  <li><a href="#scientific-products" id="toc-scientific-products" class="nav-link" data-scroll-target="#scientific-products"><span class="toc-section-number">1.2</span>  Scientific products</a></li>
+  </ul></li>
   <li><a href="#sec-guidelines" id="toc-sec-guidelines" class="nav-link" data-scroll-target="#sec-guidelines"><span class="toc-section-number">2</span>  Guidelines for Use of GitHub at NOAA Fisheries</a>
   <ul class="collapse">
   <li><a href="#sec-glossary" id="toc-sec-glossary" class="nav-link" data-scroll-target="#sec-glossary"><span class="toc-section-number">2.1</span>  Glossary</a></li>
@@ -131,6 +135,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sec-license" id="toc-sec-license" class="nav-link" data-scroll-target="#sec-license"><span class="toc-section-number">5.3</span>  LICENSE Files</a></li>
   </ul></li>
   <li><a href="#sec-governance-group" id="toc-sec-governance-group" class="nav-link" data-scroll-target="#sec-governance-group"><span class="toc-section-number">6</span>  GitHub working group</a></li>
+  <li><a href="#sec-references" id="toc-sec-references" class="nav-link" data-scroll-target="#sec-references"><span class="toc-section-number">7</span>  References</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nmfs-opensci/GitHub-SOP/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nmfs-opensci/GitHub-SOP/blob/main/index.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/nmfs-opensci/GitHub-SOP/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
 </nav>
@@ -144,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title">
 <h1 class="title d-none d-lg-block">GitHub and Git</h1>
 <p class="subtitle lead"></p><p>Standard Operating Procedures (SOP)<br>
-version 3.1</p><p></p>
+version 3.2</p><p></p>
 </div>
 
 
@@ -161,7 +166,7 @@ version 3.1</p><p></p>
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 13, 2022</p>
+      <p class="date">October 22, 2022</p>
     </div>
   </div>
     
@@ -172,9 +177,42 @@ version 3.1</p><p></p>
 
 <section id="sec-introduction" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="sec-introduction"><span class="header-section-number">1</span> Introduction</h2>
-<p>This SOP was developed by and is maintained by the NMFS Open Science GitHub working group (<a href="#sec-governance-group">Section&nbsp;6</a>). This document provides practical help and guidelines for the wide variety of ways that Git and GitHub are used within NOAA Fisheries. This SOP was heavily influenced by the work from the <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/">Fisheries Integrated Toolbox</a> team who developed standardized GitHub “best practices” documents for NMFS tool developers and by the SEFSC GitHub SOP released in October 2021.</p>
-<p>NOAA’s official GitHub policy from 2017 may be found <a href="https://drive.google.com/file/d/1oBBCEHjENjmLgS2fKJX3lOQ15bOZhlWJ/view?usp=sharing">here</a>. Since 2017, GitHub use has expanded greatly across NMFS and all the federal agencies (<a href="https://nmfs-opensci.github.io/ResourceBook/content/github_in_gov.html#github-in-other-agencies">link</a>). The 2017 memo guidelines are not designed specifically for science teams and for the wide variety of scientific work that is done on GitHub. In addition, the 2017 memo largely focuses on the <span class="citation" data-cites="NOAAGov">@NOAAGov</span> GitHub organization, but NMFS GitHub use is not primarily on this organization.</p>
+<p>This SOP was developed by and is maintained by the NMFS Open Science GitHub working group (<a href="#sec-governance-group">Section&nbsp;6</a>). This document provides practical help and guidelines for the wide variety of ways that Git and GitHub are used within NOAA Fisheries. This SOP was heavily influenced by the work from the <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/">Fisheries Integrated Toolbox</a> team who developed standardized GitHub “best practices” documents for NMFS tool developers, by the GitHub SOPs developed by SEFSC, NEFSC and NWFSC, and other guidance documents. See <a href="@sec-references">references</a>.</p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>NOAA’s official GitHub policy from 2017 may be found <a href="images/NOAA-GitHub-Usage-Guidelines.pdf">here</a> and the CIO memo authorizing GitHub use at NOAA is <a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF">here</a>. Some individual centers and offices have their own GitHub Guidelines and SOPs. In addition, your division or program may already have a GitHub organization and have a SOP for contributing to that. This document is not intended to replace these guidelines but to supplement them and help NMFS staff follow them by giving pragmatic guidelines.</p>
+</div>
+</div>
+<section id="sec-background" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="sec-background"><span class="header-section-number">1.1</span> Background</h3>
+<p>In 2017, GitHub use was authorized for scientific products: <a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.pdf">CIO memo authorizing GitHub use at NOAA</a>. Subsequently, in 2017, NOAA released official GitHub guidelines <a href="images/NOAA-GitHub-Usage-Guidelines.pdf">here</a>. Some individual centers and offices prepared local GitHub guidelines and SOPs to help their staff interested in using GitHub. See <a href="@sec-references">references</a>.</p>
+<p>Since 2017, a lot has changed. GitHub use has expanded greatly across NMFS and all the federal agencies (<a href="https://nmfs-opensci.github.io/ResourceBook/content/github_in_gov.html#github-in-other-agencies">link</a>), and GitHub has become integrated into modern scientific workflow for a wide variety of reasons. The 2017 memo tells us what can be shared on GitHub (scientific products) but there is a need for guidelines that cover and recognize the wide variety of scientific work (and learning) that is done on GitHub and much has changed in the tools provided by GitHub since 2017. Local GitHub SOPs have been developed by individual centers (see <a href="@sec-references">references</a>) to help their staff. These are very helpful, but not all centers have GitHub SOPs and even with these, staff are often confused by how to follow the guidelines in practice. For example, if I fork a repo in statistics workshop I am in, am I supposed to have a gold standard backup for that? What does it mean to keep NOAA work separate? I was told that private repos are not allowed, but someone at another center said <em>public</em> repos are not allowed? I work with confidential fisheries data; what are my options? I am developing an R or Python package with functions for making common plots but this is completely generic; what are my options? I am collaborating with a regional office on an assessment that will be released as an official report from my center; what are my options?</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When the 2017 memo was written, GitHub was not Fedramp authorized. GitHub Enterprise became Fedramp authorized in 2018 and GitHub use expanded rapidly in other agencies (e.g.&nbsp;GSA and VA) using Enterprise. A number of the NOAA Fisheries science centers have a GitHub Enterprise account. The 2017 memo does not distinguish between GitHub (free) and GitHub Enterprise (paid). You can think of GitHub Enterprise as a secure private GitHub environment that you log into but functions otherwise mostly like the free GitHub once you are inside.</p>
+</div>
+</div>
+</section>
+<section id="scientific-products" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="scientific-products"><span class="header-section-number">1.2</span> Scientific products</h3>
 <p>These guidelines are intended for scientific products that are low FISMA. Scientific products are not generally considered official communication or business, and a disclaimer is added to GitHub repositories to state this. However, those who are handling higher FISMA data, relying on GitHub as the main data repository for official data, or working on products that will be official communications will need to seek further guidance for using GitHub.</p>
+</section>
 </section>
 <section id="sec-guidelines" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="sec-guidelines"><span class="header-section-number">2</span> Guidelines for Use of GitHub at NOAA Fisheries</h2>
@@ -333,11 +371,11 @@ Note
 <p>You can incorporate code and content review but only allow pull requests and no direct push access. This allows time for a manual review of the material being pushed to GitHub.</p>
 <p><strong>Customized pre-commit hooks to prevent committing secrets</strong></p>
 <p>Repositories that are in danger of committing access keys to cloud computing resources or similar credentials with high consequences will need to implement mechanisms to prevent committing secrets to GitHub in the first place. <a href="https://github.com/gitleaks/gitleaks-action">gitleaks</a> should be used. It uses “git hooks”, which are a special file in the <code>.git/hooks</code> folder within a repository. See the {gitleaks} documentation. Another option is the <a href="https://github.com/awslabs/git-secrets">git-secrets</a> add-on which you install locally.</p>
-<p>Note, secrets scanners like gitlinks need to be customized and tested. Also, They are designed for to catch secrets that look like AWS keys or API keys and not confidential fisheries data or a simple text password hard-coded into a script.</p>
+<p>Note, secrets scanners like gitlinks need to be customized and tested. Also, They are designed to catch secrets that look like AWS keys or API keys and not confidential fisheries data or a simple text password hard-coded into a script.</p>
 </section>
 <section id="detect-damage" class="level4" data-number="4.3.2">
 <h4 data-number="4.3.2" class="anchored" data-anchor-id="detect-damage"><span class="header-section-number">4.3.2</span> Detect Damage</h4>
-<p>If a secret has mistakenly made it onto GitHub, you will need to remove it as soon as possible and change keys/passwords that were shared. Enabling repository scanning via a secrets scanner such as <a href="https://github.com/gitleaks/gitleaks-action">gitleaks GitHub Action</a> can provide an alert if someone inadvertently commit secrets to your repository. The scan will be automatically run using a “GitHub Action” every time a “push” or “pull request” is completed. Note, this is not a free service. If you have an Enterprise account, secrets scanning is included in the license and you should reach out to the Enterprise account admin to get that set up. But always test by committing some dummy secrets that should be caught by the scanner.</p>
+<p>If a secret has mistakenly made it onto GitHub, you will need to remove it as soon as possible and change keys/passwords that were shared. Enabling repository scanning via a secrets scanner such as <a href="https://github.com/gitleaks/gitleaks-action">gitleaks GitHub Action</a> can provide an alert if someone inadvertently commit secrets to your repository. The scan will be automatically run using a “GitHub Action” every time a “push” or “pull request” is completed. Note, this is not a free service. If you have an Enterprise account, secrets scanning is included in the license and you should reach out to the Enterprise account administrator to get that set up. Always test your scanner set-up by committing some dummy secrets that should be caught.</p>
 </section>
 </section>
 </section>
@@ -399,13 +437,29 @@ LICENSE.md
 <li>Josh London, Alaska Fisheries Science Center</li>
 <li>Emily Markowitz, Alaska Fisheries Science Center</li>
 </ul>
-<p>The editors assembled the material into a cohesive format, but significant sections were developed by other individuals in other contexts.</p>
+<p>The editors assembled the material into a cohesive format, but significant sections were developed by other individuals in other contexts. See also the <a href="@sec-references">references</a>.</p>
 <ul>
-<li>Much of the section on setting up your GitHub individual account was adapted from the <a href="https://docs.google.com/document/d/1cH7Bb3loSGAotkhz4BM6DUzi-vY-kSy2_3CLkI0X5ao/edit?usp=sharing">SEFSC October 2021 GitHub SOP</a>. This SOP effort was led by James Primrose, SEFSC.</li>
+<li>Much of the section on setting up your GitHub individual account was adapted from the <a href="https://docs.google.com/document/d/1cH7Bb3loSGAotkhz4BM6DUzi-vY-kSy2_3CLkI0X5ao/edit?usp=sharing">SEFSC October 2021 GitHub SOP</a>. This SOP effort was led by James Primrose, SEFSC. Note the SEFSC SOP was developed from the NEFSC SOP led by David Chevrier, NEFSC.</li>
 <li>Most of the information on standard elements of a NMFS repository (disclaimers, readme, logos, etc) was adapted or taken directly from the Fisheries Integrated Toolbox <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/">Resource pages</a>. Corinne Bassin, Christine Stawitz, Kathryn Doering, and Bai Li were the developers of the FIT material.</li>
 <li>The section on security used information from a presentation on “Keeping secrets secret” in the context of accessing fisheries databases via APIs by Adyan Rios, Southwest Fisheries Science Center.</li>
 <li>Some of the material was first assembled in a less formal format in the <a href="https://nmfs-opensci.github.io/ResourceBook/">NMFS Open Science Resource Book</a>, a project of the 2021 Openscapes cohorts at NWFSC and AKFSC.</li>
 <li>Thanks to the many NMFS R User Group members who commented on the initial drafts over 2022.</li>
+</ul>
+</section>
+<section id="sec-references" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="sec-references"><span class="header-section-number">7</span> References</h2>
+<ul>
+<li><a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF">2017 CIO Memo authorizing GitHub use at NOAA</a></li>
+<li><a href="images/NOAA-GitHub-Usage-Guidelines.pdf">2017 NOAA GitHub Guidelines</a></li>
+<li><a href="images/NOAA-GitHub-Checklist.pdf">NOAA GitHub Checklist</a></li>
+<li><a href="https://www.noaa.gov/organization/administration/nao-202-735d-2-scientific-integrity">NOAA Scientific Integrity Policy (NAO 202-735D.2) website</a>. <a href="https://sciencecouncil.noaa.gov/Portals/0/New%20SIC%20Images/Scientific%20Integrity%20NAO%20202-735D.2%20Final_signed.pdf?ver=2021-02-17-143523-723">final signed</a></li>
+<li>SEFSC GitHub Standard Operating Procedure (SOP), October 2021. James Primrose, SEFSC.</li>
+<li>NEFSC GitHub Standard Operating Procedure (SOP), October 2020. David Chevier, NEFSC.</li>
+<li>NWFSC GitHub Guidelines, 2018. David Berklund, NWFSC.</li>
+<li><a href="https://drive.google.com/file/d/1zdSesY5QrkXHD2RVW_e8Wewed1gQf-Ki/view">Using GitHub at NOAA Practice and Policy</a> PMEL presentation by Eugene Burger, PMEL.</li>
+<li><a href="https://www.commerce.gov/about/policies/source-code">DOC Open Source Policy</a></li>
+<li><a href="https://www.whitehouse.gov/wp-content/uploads/2022/08/08-2022-OSTP-Public-Access-Memo.pdf">Federal Open Access Memo 2022</a></li>
+<li><a href="https://government.github.com/fedramp-faq">GitHub Enterprise Fedramp authorized</a></li>
 </ul>
 
 
