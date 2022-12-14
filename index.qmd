@@ -268,7 +268,7 @@ The editors assembled the material into a cohesive format, but significant secti
 
 * Much of the section on setting up your GitHub individual account was adapted from the [SEFSC October 2021 GitHub SOP](https://docs.google.com/document/d/1cH7Bb3loSGAotkhz4BM6DUzi-vY-kSy2_3CLkI0X5ao/edit?usp=sharing). This SOP effort was led by James Primrose, SEFSC. Note the SEFSC SOP was developed from the NEFSC SOP led by David Chevrier, NEFSC.
 * Most of the information on standard elements of a NMFS repository (disclaimers, readme, logos, etc) was adapted or taken directly from the Fisheries Integrated Toolbox  [Resource pages](https://noaa-fisheries-integrated-toolbox.github.io/resources/). Corinne Bassin, Christine Stawitz, Kathryn Doering, and Bai Li were the developers of the FIT material.
-* The section on security used information from a presentation on "Keeping secrets secret" in the context of accessing fisheries databases via APIs by Adyan Rios, Southwest Fisheries Science Center.
+* The section on security used information from a presentation on "Keeping secrets secret" in the context of accessing fisheries databases via APIs by Adyan Rios, Southeast Fisheries Science Center.
 * Some of the material was first assembled in a less formal format in the [NMFS Open Science Resource Book](https://nmfs-opensci.github.io/ResourceBook/), a project of the 2021 Openscapes cohorts at NWFSC and AKFSC.
 * Thanks to the many NMFS R User Group members who commented on the initial drafts over 2022.
 
