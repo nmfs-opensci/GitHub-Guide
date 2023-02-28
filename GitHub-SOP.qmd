@@ -1,7 +1,7 @@
 ---
 title: GitHub and Git
 subtitle: |
-  Standard Operating Procedures (SOP) \
+  Guidance and Best Practices for NMFS Users \
   version 3.3
 date: "February 28, 2023"
 author:
@@ -43,10 +43,10 @@ format:
 
 ## Introduction {#sec-introduction}
 
-This SOP was developed by and is maintained by the NMFS Open Science GitHub working group (@sec-governance-group). This document provides practical help and guidelines for the wide variety of ways that Git and GitHub are used within NOAA Fisheries. This SOP was heavily influenced by the work from the [Fisheries Integrated Toolbox](https://noaa-fisheries-integrated-toolbox.github.io/resources/) team who developed standardized GitHub "best practices" documents for NMFS tool developers, by the GitHub SOPs developed by SEFSC, NEFSC and NWFSC, and other guidance documents. See references (@sec-references).
+This "best practices" guide was developed by and is maintained by the NMFS Open Science GitHub working group (@sec-working-group). This document provides practical help and guidelines for the wide variety of ways that Git and GitHub are used within NOAA Fisheries. This guide was heavily influenced by the work from the [Fisheries Integrated Toolbox](https://noaa-fisheries-integrated-toolbox.github.io/resources/) team who developed standardized GitHub "best practices" documents for NMFS tool developers, by the GitHub SOPs developed by SEFSC, NEFSC and NWFSC, and other guidance documents. See references (@sec-references).
 
 :::{.callout-important}
-NOAA's official 2017 CIO memo authorizing GitHub use at NOAA is [here](images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF). Note, this was written before GitHub Enterprise existed so refers only to GitHub Public. A NOAA GitHub policy document from 2017/8 may be found [here](images/NOAA-GitHub-Usage-Guidelines.pdf), however this document appears to be for content on [NOAAGov](https://github.com/NOAAGov) (top of page 2) and it is unclear which parts are general and which are specific to contributing to NOAAGov. Some individual centers and offices have their own GitHub Guidelines and SOPs. In addition, your division or program may already have a GitHub organization and have a SOP for contributing to that. This document is not intended to replace these guidelines but to supplement them and help NMFS staff follow them by giving pragmatic guidelines.
+NOAA's official 2017 CIO memo authorizing GitHub use at NOAA is [here](images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF). Note, this was written before GitHub Enterprise existed so refers only to GitHub Public. A NOAA GitHub policy document from 2017/8 may be found [here](images/NOAA-GitHub-Usage-Guidelines.pdf), however this document appears to be for content on [NOAAGov](https://github.com/NOAAGov) (top of page 2) and it is unclear which parts are general and which are specific to contributing to NOAAGov. Some individual centers and offices have their own GitHub Guidelines and SOPs. In addition, your division or program may already have a GitHub organization and have a SOP for contributing to that. This document is not intended to replace these SOPs but to supplement them and help NMFS staff follow them by giving pragmatic guidelines.
 :::
 
 ### Background {#sec-background}
@@ -69,7 +69,7 @@ The information here is intended to provide employees and affiliates of NOAA Fis
 
 **NOAA Branded Product** - NOAA Branded Organizations are created by a science center, regional office, division, or program for its official products. These GitHub organizations are distinguished by clear branding that indicates that the repositories are official agency products.
 
-**GitHub Organization** - [Organizations](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations) are shared accounts where members of the organization can collaborate across many repositories at once. Owners and administrators can manage member access to the organization's data and projects with sophisticated security and administrative features.
+**GitHub Organization (org)** - [Organizations](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations) are shared accounts where members of the org can collaborate across many repositories at once. Owners and administrators can manage member access to the organization's data and projects with sophisticated security and administrative features. Org in this context is not related to organizations on an org chart. It is more like a managed folder of folders.
 
 **Repository** - A [repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories) is hosted online and contains all of a project's files and each file's revision history.
 
@@ -255,7 +255,7 @@ Software code created by U.S. Government employees is not subject to copyright i
 
 :::
 
-## GitHub working group {#sec-governance-group}
+## GitHub working group {#sec-working-group}
 
 The [NMFS Open Science](https://nmfs-opensci.github.io/) GitHub working group is a group of NMFS scientists who are active developers on GitHub and with wide experience is the many ways that GitHub is used within NOAA Fisheries. The group is involved in helping NMFS scientists with GitHub use by developing this best-practice document, helping with trainings and content, and coordinating with NMFS IT.
 
@@ -264,6 +264,7 @@ Lead editors:
 * Eli Holmes, Northwest Fisheries Science Center
 * Josh London, Alaska Fisheries Science Center
 * Emily Markowitz, Alaska Fisheries Science Center
+* Kathryn Doering, Office of Science and Technology
 
 The editors assembled the material into a cohesive format, but significant sections were developed by other individuals in other contexts. See also the references (@sec-references).
 
