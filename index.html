@@ -134,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sec-disclaimer" id="toc-sec-disclaimer" class="nav-link" data-scroll-target="#sec-disclaimer"><span class="toc-section-number">5.2</span>  DISCLAIMER.md</a></li>
   <li><a href="#sec-license" id="toc-sec-license" class="nav-link" data-scroll-target="#sec-license"><span class="toc-section-number">5.3</span>  LICENSE Files</a></li>
   </ul></li>
-  <li><a href="#sec-governance-group" id="toc-sec-governance-group" class="nav-link" data-scroll-target="#sec-governance-group"><span class="toc-section-number">6</span>  GitHub working group</a></li>
+  <li><a href="#sec-working-group" id="toc-sec-working-group" class="nav-link" data-scroll-target="#sec-working-group"><span class="toc-section-number">6</span>  GitHub working group</a></li>
   <li><a href="#sec-references" id="toc-sec-references" class="nav-link" data-scroll-target="#sec-references"><span class="toc-section-number">7</span>  References</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nmfs-opensci/GitHub-SOP/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nmfs-opensci/GitHub-SOP/blob/main/index.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/nmfs-opensci/GitHub-SOP/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title d-none d-lg-block">GitHub and Git</h1>
-<p class="subtitle lead"></p><p>Standard Operating Procedures (SOP)<br>
+<p class="subtitle lead"></p><p>Guidance and Best Practices for NMFS Users<br>
 version 3.3</p><p></p>
 </div>
 
@@ -178,7 +178,7 @@ version 3.3</p><p></p>
 
 <section id="sec-introduction" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="sec-introduction"><span class="header-section-number">1</span> Introduction</h2>
-<p>This SOP was developed by and is maintained by the NMFS Open Science GitHub working group (<a href="#sec-governance-group">Section&nbsp;6</a>). This document provides practical help and guidelines for the wide variety of ways that Git and GitHub are used within NOAA Fisheries. This SOP was heavily influenced by the work from the <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/">Fisheries Integrated Toolbox</a> team who developed standardized GitHub “best practices” documents for NMFS tool developers, by the GitHub SOPs developed by SEFSC, NEFSC and NWFSC, and other guidance documents. See references (<a href="#sec-references">Section&nbsp;7</a>).</p>
+<p>This “best practices” guide was developed by and is maintained by the NMFS Open Science GitHub working group (<a href="#sec-working-group">Section&nbsp;6</a>). This document provides practical help and guidelines for the wide variety of ways that Git and GitHub are used within NOAA Fisheries. This guide was heavily influenced by the work from the <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/">Fisheries Integrated Toolbox</a> team who developed standardized GitHub “best practices” documents for NMFS tool developers, by the GitHub SOPs developed by SEFSC, NEFSC and NWFSC, and other guidance documents. See references (<a href="#sec-references">Section&nbsp;7</a>).</p>
 <div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -189,7 +189,7 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>NOAA’s official 2017 CIO memo authorizing GitHub use at NOAA is <a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF">here</a>. Note, this was written before GitHub Enterprise existed so refers only to GitHub Public. A NOAA GitHub policy document from 2017/8 may be found <a href="images/NOAA-GitHub-Usage-Guidelines.pdf">here</a>, however this document appears to be for content on <a href="https://github.com/NOAAGov">NOAAGov</a> (top of page 2) and it is unclear which parts are general and which are specific to contributing to NOAAGov. Some individual centers and offices have their own GitHub Guidelines and SOPs. In addition, your division or program may already have a GitHub organization and have a SOP for contributing to that. This document is not intended to replace these guidelines but to supplement them and help NMFS staff follow them by giving pragmatic guidelines.</p>
+<p>NOAA’s official 2017 CIO memo authorizing GitHub use at NOAA is <a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF">here</a>. Note, this was written before GitHub Enterprise existed so refers only to GitHub Public. A NOAA GitHub policy document from 2017/8 may be found <a href="images/NOAA-GitHub-Usage-Guidelines.pdf">here</a>, however this document appears to be for content on <a href="https://github.com/NOAAGov">NOAAGov</a> (top of page 2) and it is unclear which parts are general and which are specific to contributing to NOAAGov. Some individual centers and offices have their own GitHub Guidelines and SOPs. In addition, your division or program may already have a GitHub organization and have a SOP for contributing to that. This document is not intended to replace these SOPs but to supplement them and help NMFS staff follow them by giving pragmatic guidelines.</p>
 </div>
 </div>
 <section id="sec-background" class="level3" data-number="1.1">
@@ -220,7 +220,7 @@ Note
 <section id="sec-glossary" class="level3" data-number="2.1">
 <h3 data-number="2.1" class="anchored" data-anchor-id="sec-glossary"><span class="header-section-number">2.1</span> Glossary</h3>
 <p><strong>NOAA Branded Product</strong> - NOAA Branded Organizations are created by a science center, regional office, division, or program for its official products. These GitHub organizations are distinguished by clear branding that indicates that the repositories are official agency products.</p>
-<p><strong>GitHub Organization</strong> - <a href="https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations">Organizations</a> are shared accounts where members of the organization can collaborate across many repositories at once. Owners and administrators can manage member access to the organization’s data and projects with sophisticated security and administrative features.</p>
+<p><strong>GitHub Organization (org)</strong> - <a href="https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations">Organizations</a> are shared accounts where members of the org can collaborate across many repositories at once. Owners and administrators can manage member access to the organization’s data and projects with sophisticated security and administrative features. Org in this context is not related to organizations on an org chart. It is more like a managed folder of folders.</p>
 <p><strong>Repository</strong> - A <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">repository</a> is hosted online and contains all of a project’s files and each file’s revision history.</p>
 </section>
 <section id="sec-what-can-be-shared" class="level3" data-number="2.2">
@@ -428,14 +428,15 @@ LICENSE.md
 </div>
 </section>
 </section>
-<section id="sec-governance-group" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="sec-governance-group"><span class="header-section-number">6</span> GitHub working group</h2>
+<section id="sec-working-group" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="sec-working-group"><span class="header-section-number">6</span> GitHub working group</h2>
 <p>The <a href="https://nmfs-opensci.github.io/">NMFS Open Science</a> GitHub working group is a group of NMFS scientists who are active developers on GitHub and with wide experience is the many ways that GitHub is used within NOAA Fisheries. The group is involved in helping NMFS scientists with GitHub use by developing this best-practice document, helping with trainings and content, and coordinating with NMFS IT.</p>
 <p>Lead editors:</p>
 <ul>
 <li>Eli Holmes, Northwest Fisheries Science Center</li>
 <li>Josh London, Alaska Fisheries Science Center</li>
 <li>Emily Markowitz, Alaska Fisheries Science Center</li>
+<li>Kathryn Doering, Office of Science and Technology</li>
 </ul>
 <p>The editors assembled the material into a cohesive format, but significant sections were developed by other individuals in other contexts. See also the references (<a href="#sec-references">Section&nbsp;7</a>).</p>
 <ul>
