@@ -274,9 +274,9 @@ The editors assembled the material into a cohesive format, but significant secti
 
 ## References {#sec-references}
 
-* [2017 CIO Memo authorizing GitHub use at NOAA](images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF) -- Note this appears to be intended for GitHub Free. This was written before Microsoft bought GitHub and before GitHub Enterprise.
-* [2017 NOAA GitHub Guidelines for NOAAGov GitHub Org](images/NOAA-GitHub-Usage-Guidelines.pdf) -- Note this document appears to be intended to apply only to content on https://github.com/NOAAGov. See top of page 2.
-* [NOAA GitHub Checklist](images/NOAA-GitHub-Checklist.pdf) -- Note this document appears to be intended to apply only to content on https://github.com/NOAAGov. References the GitHub Guideline document above which is written for the NOAAGov GitHub organization.
+* [2017 CIO Memo authorizing GitHub use at NOAA](images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF) Note this document was written before Microsoft bought GitHub and before GitHub Enterprise existed.
+* [2017 NOAA GitHub Guidelines for NOAAGov GitHub Org](images/NOAA-GitHub-Usage-Guidelines.pdf) This document appears to be intended to apply only to content on https://github.com/NOAAGov. See top of page 2.
+* [NOAA GitHub Checklist](images/NOAA-GitHub-Checklist.pdf) Note this checklist appears to be intended to apply to contributions to https://github.com/NOAAGov. References the GitHub Guidelines document above which is written for the NOAAGov GitHub organization.
 * [NOAA Scientific Integrity Policy (NAO 202-735D.2) website](https://www.noaa.gov/organization/administration/nao-202-735d-2-scientific-integrity). [final signed](https://sciencecouncil.noaa.gov/Portals/0/New%20SIC%20Images/Scientific%20Integrity%20NAO%20202-735D.2%20Final_signed.pdf?ver=2021-02-17-143523-723)
 * SEFSC GitHub Standard Operating Procedure (SOP), October 2021. James Primrose, SEFSC.
 * NEFSC GitHub Standard Operating Procedure (SOP), October 2020. David Chevier, NEFSC.
