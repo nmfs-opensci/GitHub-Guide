@@ -2,8 +2,8 @@
 title: GitHub and Git
 subtitle: |
   Standard Operating Procedures (SOP) \
-  version 3.2
-date: "October 22, 2022"
+  version 3.3
+date: "February 28, 2023"
 author:
   - name: NMFS Open Science GitHub working group
 format: 
@@ -46,7 +46,7 @@ format:
 This SOP was developed by and is maintained by the NMFS Open Science GitHub working group (@sec-governance-group). This document provides practical help and guidelines for the wide variety of ways that Git and GitHub are used within NOAA Fisheries. This SOP was heavily influenced by the work from the [Fisheries Integrated Toolbox](https://noaa-fisheries-integrated-toolbox.github.io/resources/) team who developed standardized GitHub "best practices" documents for NMFS tool developers, by the GitHub SOPs developed by SEFSC, NEFSC and NWFSC, and other guidance documents. See references (@sec-references).
 
 :::{.callout-important}
-NOAA's official GitHub policy from 2017 may be found [here](images/NOAA-GitHub-Usage-Guidelines.pdf) and the CIO memo authorizing GitHub use at NOAA is [here](images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF). Some individual centers and offices have their own GitHub Guidelines and SOPs. In addition, your division or program may already have a GitHub organization and have a SOP for contributing to that. This document is not intended to replace these guidelines but to supplement them and help NMFS staff follow them by giving pragmatic guidelines.
+NOAA's official 2017 CIO memo authorizing GitHub use at NOAA is [here](images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF). Note, this was written before GitHub Enterprise existed so refers only to GitHub Public. A NOAA GitHub policy document from 2017/8 may be found [here](images/NOAA-GitHub-Usage-Guidelines.pdf), however this document appears to be for content on [NOAAGov](https://github.com/NOAAGov) (top of page 2) and it is unclear which parts are general and which are specific to contributing to NOAAGov. Some individual centers and offices have their own GitHub Guidelines and SOPs. In addition, your division or program may already have a GitHub organization and have a SOP for contributing to that. This document is not intended to replace these guidelines but to supplement them and help NMFS staff follow them by giving pragmatic guidelines.
 :::
 
 ### Background {#sec-background}
@@ -137,6 +137,7 @@ You can also create your work repositories in a GitHub organization rather than 
 [^2]: Work when not employed by NOAA or work that is not part of your job and you are not paid for this work by NOAA.
 
 [^3]: DOIs are easy to generate with the Zenodo plugin for your GitHub repositories. Read how [here](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content).
+
 
 ### GitHub Organization Settings
 
