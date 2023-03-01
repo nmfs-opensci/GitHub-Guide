@@ -24,13 +24,13 @@ jobs:
       
       - name: Render
         run: |
-          quarto render GitHub-SOP.qmd --to titlepage-pdf
-          cp GitHub-SOP.qmd index.qmd
+          quarto render GitHub-Guide.qmd --to titlepage-pdf
+          cp GitHub-Guide.qmd index.qmd
         shell: bash
 
       - name: Add pdf to main repo
         run: |
-          git add GitHub-SOP.pdf
+          git add GitHub-Guide.pdf
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m 'update PDF'

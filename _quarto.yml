@@ -2,15 +2,14 @@ project:
   type: website
   render:
     - "index.qmd"
-    - "!GitHub-SOP.qmd"
+    - "!GitHub-Guide.qmd"
     - "!README.md"
-
 
 website: 
   page-navigation: true
-  title: "GitHub SOP" 
-  site-url: "https://nmfs-opensci.github.io/GitHub-SOP" 
-  repo-url: "https://github.com/nmfs-opensci/GitHub-SOP"
+  title: "GitHub Guide" 
+  site-url: "https://nmfs-opensci.github.io/GitHub-Guide" 
+  repo-url: "https://github.com/nmfs-opensci/GitHub-Guide"
   repo-actions: [edit, source, issue]
   favicon: images/favicon.ico
   
@@ -32,8 +31,8 @@ website:
         href: https://github.com/nmfs-opensci
         text: "NMFS OpenSci GH org"
       - icon: filetype-pdf
-        href: https://nmfs-opensci.github.io/GitHub-SOP/index.pdf
-        text: "PDF of the SOP"
+        href: https://nmfs-opensci.github.io/GitHub-Guide/index.pdf
+        text: "PDF of the Guide"
 
     style: "docked"
     collapse-level: 1

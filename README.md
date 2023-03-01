@@ -1,4 +1,4 @@
-[![github](https://img.shields.io/github/v/release/nmfs-opensci/GitHub-SOP?color=brightgreen&label=GitHub)](https://github.com/nmfs-opensci/GitHub-SOP/releases/latest)
+[![github](https://img.shields.io/github/v/release/nmfs-opensci/GitHub-Guide?color=brightgreen&label=GitHub)](https://github.com/nmfs-opensci/GitHub-Guide/releases/latest)
 
 # NMFS Open Science GitHub Guide
 
