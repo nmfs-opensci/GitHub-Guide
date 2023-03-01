@@ -283,6 +283,7 @@ The editors assembled the material into a cohesive format, but significant secti
 * SEFSC GitHub Standard Operating Procedure (SOP), October 2021. James Primrose, SEFSC.
 * NEFSC GitHub Standard Operating Procedure (SOP), October 2020. David Chevier, NEFSC.
 * NWFSC GitHub Guidelines, 2018. David Berklund, NWFSC.
+* [Fisheries Integrated Toolbox GitHub Guide](https://noaa-fisheries-integrated-toolbox.github.io/resources/noaa%20resources/github-account/)
 * [Using GitHub at NOAA Practice and Policy](https://drive.google.com/file/d/1zdSesY5QrkXHD2RVW_e8Wewed1gQf-Ki/view) PMEL presentation by Eugene Burger, PMEL.
 * [DOC Open Source Policy](https://www.commerce.gov/about/policies/source-code)
 * [Federal Open Access Memo 2022](https://www.whitehouse.gov/wp-content/uploads/2022/08/08-2022-OSTP-Public-Access-Memo.pdf)
