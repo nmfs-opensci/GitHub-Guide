@@ -1,16 +1,14 @@
 [![github](https://img.shields.io/github/v/release/nmfs-opensci/GitHub-SOP?color=brightgreen&label=GitHub)](https://github.com/nmfs-opensci/GitHub-SOP/releases/latest)
 
-# GitHub-SOP
+# NMFS Open Science GitHub Guide
 
+Respository for the GitHub Guide developed by NMFS Open Science.
 
-
-Respository for the GitHub SOP developed by NMFS R User Group.
-
-[Link to pdf of latest SOP](https://nmfs-opensci.github.io/GitHub-SOP/GitHub-SOP.pdf) --- [Link to html of latest SOP](https://nmfs-opensci.github.io/GitHub-SOP/GitHub-SOP.html)
+[Link to pdf of latest guide](https://nmfs-opensci.github.io/GitHub-Guide/GitHub-Guide.pdf) --- [Link to html of latest guide](https://nmfs-opensci.github.io/GitHub-Guide/GitHub-Guide.html)
 
 ## To update or contribute
 
-Fork the repo and then Edit `GitHub-SOP.qmd`. Put in a pull request.
+Fork the repo and then Edit `GitHub-Guide.qmd`. Put in a pull request.
 
 Whoever accepts the pull request should make sure to change the version number and create a new version.
 
