@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="NMFS Open Science GitHub working group">
-<meta name="dcterms.date" content="2023-02-28">
+<meta name="dcterms.date" content="2023-03-15">
 
 <title>GitHub Guide - GitHub and Git</title>
 <style>
@@ -128,14 +128,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sec-security-sensitive" id="toc-sec-security-sensitive" class="nav-link" data-scroll-target="#sec-security-sensitive"><span class="toc-section-number">4.2</span>  Sensitive information cannot be shared on GitHub</a></li>
   <li><a href="#preventing-inadvertent-committing-of-secrets-or-credentials-to-github" id="toc-preventing-inadvertent-committing-of-secrets-or-credentials-to-github" class="nav-link" data-scroll-target="#preventing-inadvertent-committing-of-secrets-or-credentials-to-github"><span class="toc-section-number">4.3</span>  Preventing inadvertent committing of secrets or credentials to GitHub</a></li>
   </ul></li>
-  <li><a href="#github-repository-components" id="toc-github-repository-components" class="nav-link" data-scroll-target="#github-repository-components"><span class="toc-section-number">5</span>  GitHub Repository Components</a>
+  <li><a href="#sec-backups" id="toc-sec-backups" class="nav-link" data-scroll-target="#sec-backups"><span class="toc-section-number">5</span>  Backups</a></li>
+  <li><a href="#github-repository-components" id="toc-github-repository-components" class="nav-link" data-scroll-target="#github-repository-components"><span class="toc-section-number">6</span>  GitHub Repository Components</a>
   <ul class="collapse">
-  <li><a href="#sec-readme" id="toc-sec-readme" class="nav-link" data-scroll-target="#sec-readme"><span class="toc-section-number">5.1</span>  README.md</a></li>
-  <li><a href="#sec-disclaimer" id="toc-sec-disclaimer" class="nav-link" data-scroll-target="#sec-disclaimer"><span class="toc-section-number">5.2</span>  DISCLAIMER.md</a></li>
-  <li><a href="#sec-license" id="toc-sec-license" class="nav-link" data-scroll-target="#sec-license"><span class="toc-section-number">5.3</span>  LICENSE Files</a></li>
+  <li><a href="#sec-readme" id="toc-sec-readme" class="nav-link" data-scroll-target="#sec-readme"><span class="toc-section-number">6.1</span>  README.md</a></li>
+  <li><a href="#sec-disclaimer" id="toc-sec-disclaimer" class="nav-link" data-scroll-target="#sec-disclaimer"><span class="toc-section-number">6.2</span>  DISCLAIMER.md</a></li>
+  <li><a href="#sec-license" id="toc-sec-license" class="nav-link" data-scroll-target="#sec-license"><span class="toc-section-number">6.3</span>  LICENSE Files</a></li>
   </ul></li>
-  <li><a href="#sec-working-group" id="toc-sec-working-group" class="nav-link" data-scroll-target="#sec-working-group"><span class="toc-section-number">6</span>  GitHub working group</a></li>
-  <li><a href="#sec-references" id="toc-sec-references" class="nav-link" data-scroll-target="#sec-references"><span class="toc-section-number">7</span>  References</a></li>
+  <li><a href="#sec-working-group" id="toc-sec-working-group" class="nav-link" data-scroll-target="#sec-working-group"><span class="toc-section-number">7</span>  GitHub working group</a></li>
+  <li><a href="#sec-references" id="toc-sec-references" class="nav-link" data-scroll-target="#sec-references"><span class="toc-section-number">8</span>  References</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nmfs-opensci/GitHub-Guide/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nmfs-opensci/GitHub-Guide/blob/main/index.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/nmfs-opensci/GitHub-Guide/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
 </nav>
@@ -149,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title">
 <h1 class="title d-none d-lg-block">GitHub and Git</h1>
 <p class="subtitle lead"></p><p>Guidance and Best Practices for NMFS Users<br>
-version 3.3</p><p></p>
+version 3.4</p><p></p>
 </div>
 
 
@@ -166,7 +167,7 @@ version 3.3</p><p></p>
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 28, 2023</p>
+      <p class="date">March 15, 2023</p>
     </div>
   </div>
   
@@ -178,7 +179,7 @@ version 3.3</p><p></p>
 
 <section id="sec-introduction" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="sec-introduction"><span class="header-section-number">1</span> Introduction</h2>
-<p>This “best practices” guide was developed by and is maintained by the NMFS Open Science GitHub working group (<a href="#sec-working-group">Section&nbsp;6</a>). This document provides practical help and guidelines for the wide variety of ways that Git and GitHub are used within NOAA Fisheries. This guide was heavily influenced by the work from the <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/">Fisheries Integrated Toolbox</a> team who developed standardized GitHub “best practices” documents for NMFS tool developers, by the GitHub SOPs developed by SEFSC, NEFSC and NWFSC, and other guidance documents. See references (<a href="#sec-references">Section&nbsp;7</a>).</p>
+<p>This “best practices” guide was developed by and is maintained by the NMFS Open Science GitHub working group (<a href="#sec-working-group">Section&nbsp;7</a>). This document provides practical help and guidelines for the wide variety of ways that Git and GitHub are used within NOAA Fisheries. This guide was heavily influenced by the work from the <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/">Fisheries Integrated Toolbox</a> team who developed standardized GitHub “best practices” documents for NMFS tool developers, by the GitHub SOPs developed by SEFSC, NEFSC and NWFSC, and other guidance documents. See references (<a href="#sec-references">Section&nbsp;8</a>).</p>
 <div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -194,7 +195,7 @@ Important
 </div>
 <section id="sec-background" class="level3" data-number="1.1">
 <h3 data-number="1.1" class="anchored" data-anchor-id="sec-background"><span class="header-section-number">1.1</span> Background</h3>
-<p>In 2017, GitHub use was authorized for scientific products: <a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.pdf">CIO memo authorizing GitHub use at NOAA</a>. Subsequently, in 2017, NOAA released official GitHub guidelines <a href="images/NOAA-GitHub-Usage-Guidelines.pdf">here</a>. Some individual centers and offices prepared local GitHub guidelines and SOPs to help their staff interested in using GitHub. See references (<a href="#sec-references">Section&nbsp;7</a>). Since 2017, a lot has changed. GitHub use has expanded greatly across NMFS and all the federal agencies (<a href="https://nmfs-opensci.github.io/ResourceBook/content/github_in_gov.html#github-in-other-agencies">link</a>), and GitHub has become integrated into modern scientific workflow for a wide variety of reasons. The 2017 memo tells us what can be shared on GitHub (scientific products) but there is a need for guidelines that cover and recognize the wide variety of scientific work (and learning) that is done on GitHub and much has changed in the tools provided by GitHub since 2017. Local GitHub SOPs have been developed by individual centers (see references <a href="#sec-references">Section&nbsp;7</a>) to help their staff. These are very helpful, but not all centers have GitHub SOPs and even with these, staff are often confused by how to follow the guidelines in practice. For example, if I fork a repo in statistics workshop I am in, am I supposed to have a gold standard backup for that? What does it mean to keep NOAA work separate? I was told that private repos are not allowed, but someone at another center said <em>public</em> repos are not allowed? I work with confidential fisheries data; what are my options? I am developing an R or Python package with functions for making common plots but this is completely generic; what are my options? I am collaborating with a regional office on an assessment that will be released as an official report from my center; what are my options?</p>
+<p>In 2017, GitHub use was authorized for scientific products: <a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.pdf">CIO memo authorizing GitHub use at NOAA</a>. Subsequently, in 2017, NOAA released official GitHub guidelines <a href="images/NOAA-GitHub-Usage-Guidelines.pdf">here</a>. Some individual centers and offices prepared local GitHub guidelines and SOPs to help their staff interested in using GitHub. See references (<a href="#sec-references">Section&nbsp;8</a>). Since 2017, a lot has changed. GitHub use has expanded greatly across NMFS and all the federal agencies (<a href="https://nmfs-opensci.github.io/ResourceBook/content/github_in_gov.html#github-in-other-agencies">link</a>), and GitHub has become integrated into modern scientific workflow for a wide variety of reasons. The 2017 memo tells us what can be shared on GitHub (scientific products) but there is a need for guidelines that cover and recognize the wide variety of scientific work (and learning) that is done on GitHub and much has changed in the tools provided by GitHub since 2017. Local GitHub SOPs have been developed by individual centers (see references <a href="#sec-references">Section&nbsp;8</a>) to help their staff. These are very helpful, but not all centers have GitHub SOPs and even with these, staff are often confused by how to follow the guidelines in practice. For example, if I fork a repo in statistics workshop I am in, am I supposed to have a gold standard backup for that? What does it mean to keep NOAA work separate? I was told that private repos are not allowed, but someone at another center said <em>public</em> repos are not allowed? I work with confidential fisheries data; what are my options? I am developing an R or Python package with functions for making common plots but this is completely generic; what are my options? I am collaborating with a regional office on an assessment that will be released as an official report from my center; what are my options?</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -262,14 +263,14 @@ Note
 <ul>
 <li>PII and BII should not be shared (on purpose or inadvertently) on GitHub regardless of whether the repository is in a private or public repository. Best practices and safeguards must be followed to prevent this.</li>
 <li>No sensitive information should be shared in repositories. Sensitive information includes, but is not limited to, usernames, passwords, login information, port numbers, IP addresses, server names, Application Programming Interface (API) keys, Personally Identifiable Information (PII), Business Identifiable Information (BII), or confidential data.</li>
-<li>GitHub is not a back-up service nor is it a data repository. Other tools are designed for this purpose. At the minimum, this means maintaining a clone on at least one government furnished laptop or server. <em>Managers of NOAA branded GitHub organizations should work with their IT department to ensure automated regular backups of the organization repositories.</em> In other guidelines, this is often referred to as a “gold standard copy”.</li>
+<li>GitHub is not a back-up service nor is it a data repository with archiving. Other tools are designed for this purpose. See Backups (<a href="#sec-backups">Section&nbsp;5</a>).</li>
 <li>Only scientific content (<a href="#sec-what-can-be-shared">Section&nbsp;2.2</a>) that can be reasonably classified as FISMA Low (<a href="#sec-security-fisma-low">Section&nbsp;4.1</a>) should be shared on GitHub.</li>
 <li>Repositories that have code that interacts with APIs using IP addresses, usernames, passwords, secrets, or credentials must take steps to prevent committing of “secrets” to GitHub. (See <a href="#sec-security-sensitive">Section&nbsp;4.2</a>).</li>
 </ul>
 </section>
 <section id="disclaimers-and-licenses" class="level3" data-number="3.3">
 <h3 data-number="3.3" class="anchored" data-anchor-id="disclaimers-and-licenses"><span class="header-section-number">3.3</span> Disclaimers and Licenses</h3>
-<p>If your repository represents something you produced in the course of your work at NOAA and could be considered a “work product”, then your repository should include a README (<a href="#sec-readme">Section&nbsp;5.1</a>), the government product DISCLAIMER (<a href="#sec-disclaimer">Section&nbsp;5.2</a>), and LICENSE file (<a href="#sec-license">Section&nbsp;5.3</a>). If the work is something that can be cited, then also include citation information and a DOI<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p>If your repository represents something you produced in the course of your work at NOAA and could be considered a “work product”, then your repository should include a README (<a href="#sec-readme">Section&nbsp;6.1</a>), the government product DISCLAIMER (<a href="#sec-disclaimer">Section&nbsp;6.2</a>), and LICENSE file (<a href="#sec-license">Section&nbsp;6.3</a>). If the work is something that can be cited, then also include citation information and a DOI<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
 </section>
 <section id="repositories-under-individual-accounts" class="level3" data-number="3.4">
 <h3 data-number="3.4" class="anchored" data-anchor-id="repositories-under-individual-accounts"><span class="header-section-number">3.4</span> Repositories Under Individual Accounts</h3>
@@ -379,10 +380,19 @@ Note
 </section>
 </section>
 </section>
-<section id="github-repository-components" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="github-repository-components"><span class="header-section-number">5</span> GitHub Repository Components</h2>
-<section id="sec-readme" class="level3" data-number="5.1">
-<h3 data-number="5.1" class="anchored" data-anchor-id="sec-readme"><span class="header-section-number">5.1</span> README.md</h3>
+<section id="sec-backups" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="sec-backups"><span class="header-section-number">5</span> Backups</h2>
+<p>GitHub is not a backup service and if a repository were deleted on GitHub, it is gone. Note if it is not deleted, one can generally recover the state of the repository at a past time (unless something really bad were done to the Git record). At the minimum, this means you should maintain a clone on at least one government furnished laptop or server. Alternatively you can back-up to Google Drive with a script (below). <em>Managers of NOAA branded GitHub organizations should work with their IT department to ensure automated regular backups of the organization repositories.</em> In other guidelines, this is often referred to as a “gold standard copy”.</p>
+<p>Example of back-up scripts to Google Drive:</p>
+<ul>
+<li><a href="https://github.com/nmfs-fish-tools/ghbackup">ghbackup</a> by NOAA Fisheries Integrated Toolbox</li>
+<li><a href="https://github.com/k-doering-NOAA/backup-gdrive#backup-gdrive">backup-gdrive</a></li>
+</ul>
+</section>
+<section id="github-repository-components" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="github-repository-components"><span class="header-section-number">6</span> GitHub Repository Components</h2>
+<section id="sec-readme" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="sec-readme"><span class="header-section-number">6.1</span> README.md</h3>
 <p>This file should provide a description of the repository. The contents of the README file will vary greatly depending on the application. Here are some tips:</p>
 <ul>
 <li><strong>An official work product released on a NOAA-branded GitHub organization</strong>. This is the most formal instance and the organization leaders should develop template READMEs to provide a consistent format across the products.</li>
@@ -391,8 +401,8 @@ Note
 <li>Add the DISCLAIMER (below) for any repository that is a ‘work product’.</li>
 </ul>
 </section>
-<section id="sec-disclaimer" class="level3" data-number="5.2">
-<h3 data-number="5.2" class="anchored" data-anchor-id="sec-disclaimer"><span class="header-section-number">5.2</span> DISCLAIMER.md</h3>
+<section id="sec-disclaimer" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="sec-disclaimer"><span class="header-section-number">6.2</span> DISCLAIMER.md</h3>
 <p>Repositories and web content shared on GitHub should make it clear to the audience that no information should be considered or interpreted as official communication of NOAA. The simplest method for doing this is to include the following disclaimer within a <code>DISCLAIMER.md</code> file at the root of each repository. Additionally, it’s also good practice to include the disclaimer text as a footnote within the repository’s <code>README.md</code> and any web content available from that repository. Be careful not to use NOAA logos and and NOAA Fisheries branding in a way that could imply an official communication. NOAA logos should be used to indicate your affiliation and acknowledge support and funding. The repositories within the NOAA <a href="https://github.com/nmfs-fish-tools">Fisheries Integrated Toolbox</a> GitHub organization are good examples of how to prepare README files with the Disclaimer and NOAA Fisheries logos.</p>
 <p>The following <code>DISCLAIMER.md</code> file is put in the root of the repository.</p>
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
@@ -409,8 +419,8 @@ DISCLAIMER.md
 </div>
 </div>
 </section>
-<section id="sec-license" class="level3" data-number="5.3">
-<h3 data-number="5.3" class="anchored" data-anchor-id="sec-license"><span class="header-section-number">5.3</span> LICENSE Files</h3>
+<section id="sec-license" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="sec-license"><span class="header-section-number">6.3</span> LICENSE Files</h3>
 <p>The work of U.S. Government employees is not subject to copyright in the U.S. Thus, you should include an appropriate LICENSE file with your repositories. There are two types of licenses that are commonly used: Creative Commons Zero v1.0 Universal (CC0 1.0 Universal) and (GNU General Public License v3.0) GPL-3. The CC0 license is commonly used for US Government products but the NOAA Fisheries Integrated Toolbox prefers the GPL-3 license since it is more tailored for code products. Other open source licenses (e.g., MIT) may also be appropriate.</p>
 <p>To add a LICENSE file to your repository, navigate to the repository on GitHub.com, select “add file,”, select “create new file”, and type LICENSE. You will then see the button in the upper right hand of the page to choose a license file. Additionally, the following statement applies with regards to licensing for any code published in any NOAA repository. This should be included within a <code>LICENSE.md</code> file at the root of each repository. Repositories that are code packages should also add this to the repository <code>README.md</code>.</p>
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
@@ -428,8 +438,8 @@ LICENSE.md
 </div>
 </section>
 </section>
-<section id="sec-working-group" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="sec-working-group"><span class="header-section-number">6</span> GitHub working group</h2>
+<section id="sec-working-group" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="sec-working-group"><span class="header-section-number">7</span> GitHub working group</h2>
 <p>The <a href="https://nmfs-opensci.github.io/">NMFS Open Science</a> GitHub working group is a group of NMFS scientists who are active developers on GitHub and with wide experience is the many ways that GitHub is used within NOAA Fisheries. The group is involved in helping NMFS scientists with GitHub use by developing this best-practice document, helping with trainings and content, and coordinating with NMFS IT.</p>
 <p>Lead editors:</p>
 <ul>
@@ -438,7 +448,7 @@ LICENSE.md
 <li>Emily Markowitz, Alaska Fisheries Science Center</li>
 <li>Kathryn Doering, Office of Science and Technology</li>
 </ul>
-<p>The editors assembled the material into a cohesive format, but significant sections were developed by other individuals in other contexts. See also the references (<a href="#sec-references">Section&nbsp;7</a>).</p>
+<p>The editors assembled the material into a cohesive format, but significant sections were developed by other individuals in other contexts. See also the references (<a href="#sec-references">Section&nbsp;8</a>).</p>
 <ul>
 <li>Much of the section on setting up your GitHub individual account was adapted from the <a href="https://docs.google.com/document/d/1cH7Bb3loSGAotkhz4BM6DUzi-vY-kSy2_3CLkI0X5ao/edit?usp=sharing">SEFSC October 2021 GitHub SOP</a>. This SOP effort was led by James Primrose, SEFSC. Note the SEFSC SOP was developed from the NEFSC SOP led by David Chevrier, NEFSC.</li>
 <li>Most of the information on standard elements of a NMFS repository (disclaimers, readme, logos, etc) was adapted or taken directly from the Fisheries Integrated Toolbox <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/">Resource pages</a>. Corinne Bassin, Christine Stawitz, Kathryn Doering, and Bai Li were the developers of the FIT material.</li>
@@ -447,8 +457,8 @@ LICENSE.md
 <li>Thanks to the many NMFS R User Group members who commented on the initial drafts over 2022.</li>
 </ul>
 </section>
-<section id="sec-references" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="sec-references"><span class="header-section-number">7</span> References</h2>
+<section id="sec-references" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="sec-references"><span class="header-section-number">8</span> References</h2>
 <ul>
 <li><a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF">2017 CIO Memo authorizing GitHub use at NOAA</a> Note this document was written before Microsoft bought GitHub and before GitHub Enterprise existed.</li>
 <li><a href="images/NOAA-GitHub-Usage-Guidelines.pdf">2017 NOAA GitHub Guidelines for NOAAGov GitHub Org</a> This document appears to be intended to apply only to content on https://github.com/NOAAGov. See top of page 2.</li>
