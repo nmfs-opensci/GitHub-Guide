@@ -105,7 +105,7 @@ All repositories, regardless of purpose, must follow these general guidelines:
 
 * PII and BII should not be shared (on purpose or inadvertently) on GitHub regardless of whether the repository is in a private or public repository. Best practices and safeguards must be followed to prevent this.
 * No sensitive information should be shared in repositories. Sensitive information includes, but is not limited to, usernames, passwords, login information, port numbers, IP addresses, server names, Application Programming Interface (API) keys, Personally Identifiable Information (PII), Business Identifiable Information (BII), or confidential data.
-* GitHub is not a back-up service nor is it a data repository. Other tools are designed for this purpose. At the minimum, this means maintaining a clone on at least one government furnished laptop or server. *Managers of NOAA branded GitHub organizations should work with their IT department to ensure automated regular backups of the organization repositories.* In other guidelines, this is often referred to as a “gold standard copy”.
+* GitHub is not a back-up service nor is it a data repository with archiving. Other tools are designed for this purpose. See Backups (@sec-backups).
 * Only scientific content (@sec-what-can-be-shared) that can be reasonably classified as FISMA Low (@sec-security-fisma-low) should be shared on GitHub.
 * Repositories that have code that interacts with APIs using IP addresses, usernames, passwords, secrets, or credentials must take steps to prevent committing of “secrets” to GitHub. (See @sec-security-sensitive).
 
@@ -215,6 +215,15 @@ Note, secrets scanners like gitlinks need to be customized and tested. Also, The
 #### Detect Damage
 
 If a secret has mistakenly made it onto GitHub, you will need to remove it as soon as possible and change keys/passwords that were shared. Enabling repository scanning via a secrets scanner such as [gitleaks GitHub Action](https://github.com/gitleaks/gitleaks-action) can provide an alert if someone inadvertently commit secrets to your repository. The scan will be automatically run using a “GitHub Action” every time a “push” or “pull request” is completed. Note, this is not a free service. If you have an Enterprise account, secrets scanning is included in the license and you should reach out to the Enterprise account administrator to get that set up. Always test your scanner set-up by committing some dummy secrets that should be caught.
+
+## Backups  {#sec-backups}
+
+GitHub is not a backup service and if a repository were deleted on GitHub, it is gone. Note if it is not deleted, one can generally recover the state of the repository at a past time (unless something really bad were done to the Git record). At the minimum, this means you should maintain a clone on at least one government furnished laptop or server. Alternatively you can back-up to Google Drive with a script (below). *Managers of NOAA branded GitHub organizations should work with their IT department to ensure automated regular backups of the organization repositories.* In other guidelines, this is often referred to as a “gold standard copy”.
+
+Example of back-up scripts to Google Drive: 
+
+* [ghbackup](https://github.com/nmfs-fish-tools/ghbackup) by NOAA Fisheries Integrated Toolbox
+* [backup-gdrive](https://github.com/k-doering-NOAA/backup-gdrive#backup-gdrive)
 
 ## GitHub Repository Components
 
