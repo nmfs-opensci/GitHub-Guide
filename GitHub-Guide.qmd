@@ -2,8 +2,8 @@
 title: GitHub and Git
 subtitle: |
   Guidance and Best Practices for NMFS Users \
-  version 3.3
-date: "February 28, 2023"
+  version 3.4
+date: "March 15, 2023"
 author:
   - name: NMFS Open Science GitHub working group
 format: 
