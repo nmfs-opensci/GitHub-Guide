@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,7 +19,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -59,7 +59,8 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -70,11 +71,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">GitHub and Git</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">GitHub and Git</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -82,64 +88,67 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="https://raw.githubusercontent.com/nmfs-opensci/assets/main/logo/nmfs-opensci-logo3.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="https://nmfs-opensci.github.io" title="NMFS Open Science" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
-    <a href="https://github.com/nmfs-opensci" title="NMFS OpenSci GH org" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
-    <a href="https://nmfs-opensci.github.io/GitHub-Guide/index.pdf" title="PDF of the Guide" class="sidebar-tool px-1"><i class="bi bi-filetype-pdf"></i></a>
-  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+    <a href="https://nmfs-opensci.github.io" rel="" title="NMFS Open Science" class="quarto-navigation-tool px-1" aria-label="NMFS Open Science"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/nmfs-opensci" rel="" title="NMFS OpenSci GH org" class="quarto-navigation-tool px-1" aria-label="NMFS OpenSci GH org"><i class="bi bi-github"></i></a>
+    <a href="https://nmfs-opensci.github.io/GitHub-Guide/index.pdf" rel="" title="PDF of the Guide" class="quarto-navigation-tool px-1" aria-label="PDF of the Guide"><i class="bi bi-filetype-pdf"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sec-introduction" id="toc-sec-introduction" class="nav-link active" data-scroll-target="#sec-introduction"><span class="toc-section-number">1</span>  Introduction</a>
+  <li><a href="#sec-introduction" id="toc-sec-introduction" class="nav-link active" data-scroll-target="#sec-introduction"><span class="header-section-number">1</span> Introduction</a>
   <ul class="collapse">
-  <li><a href="#sec-background" id="toc-sec-background" class="nav-link" data-scroll-target="#sec-background"><span class="toc-section-number">1.1</span>  Background</a></li>
-  <li><a href="#scientific-products" id="toc-scientific-products" class="nav-link" data-scroll-target="#scientific-products"><span class="toc-section-number">1.2</span>  Scientific products</a></li>
+  <li><a href="#sec-background" id="toc-sec-background" class="nav-link" data-scroll-target="#sec-background"><span class="header-section-number">1.1</span> Background</a></li>
+  <li><a href="#scientific-products" id="toc-scientific-products" class="nav-link" data-scroll-target="#scientific-products"><span class="header-section-number">1.2</span> Scientific products</a></li>
   </ul></li>
-  <li><a href="#sec-guidelines" id="toc-sec-guidelines" class="nav-link" data-scroll-target="#sec-guidelines"><span class="toc-section-number">2</span>  Guidelines for Use of GitHub at NOAA Fisheries</a>
+  <li><a href="#sec-guidelines" id="toc-sec-guidelines" class="nav-link" data-scroll-target="#sec-guidelines"><span class="header-section-number">2</span> Guidelines for Use of GitHub at NOAA Fisheries</a>
   <ul class="collapse">
-  <li><a href="#sec-glossary" id="toc-sec-glossary" class="nav-link" data-scroll-target="#sec-glossary"><span class="toc-section-number">2.1</span>  Glossary</a></li>
-  <li><a href="#sec-what-can-be-shared" id="toc-sec-what-can-be-shared" class="nav-link" data-scroll-target="#sec-what-can-be-shared"><span class="toc-section-number">2.2</span>  What Content Can Be Shared on GitHub?</a></li>
+  <li><a href="#sec-glossary" id="toc-sec-glossary" class="nav-link" data-scroll-target="#sec-glossary"><span class="header-section-number">2.1</span> Glossary</a></li>
+  <li><a href="#sec-what-can-be-shared" id="toc-sec-what-can-be-shared" class="nav-link" data-scroll-target="#sec-what-can-be-shared"><span class="header-section-number">2.2</span> What Content Can Be Shared on GitHub?</a></li>
   </ul></li>
-  <li><a href="#sec-account-guidelines" id="toc-sec-account-guidelines" class="nav-link" data-scroll-target="#sec-account-guidelines"><span class="toc-section-number">3</span>  Account Guidelines</a>
+  <li><a href="#sec-account-guidelines" id="toc-sec-account-guidelines" class="nav-link" data-scroll-target="#sec-account-guidelines"><span class="header-section-number">3</span> Account Guidelines</a>
   <ul class="collapse">
-  <li><a href="#github-personal-account-settings" id="toc-github-personal-account-settings" class="nav-link" data-scroll-target="#github-personal-account-settings"><span class="toc-section-number">3.1</span>  GitHub Personal Account Settings</a></li>
-  <li><a href="#github-repository-guidelines" id="toc-github-repository-guidelines" class="nav-link" data-scroll-target="#github-repository-guidelines"><span class="toc-section-number">3.2</span>  GitHub Repository Guidelines</a></li>
-  <li><a href="#disclaimers-and-licenses" id="toc-disclaimers-and-licenses" class="nav-link" data-scroll-target="#disclaimers-and-licenses"><span class="toc-section-number">3.3</span>  Disclaimers and Licenses</a></li>
-  <li><a href="#repositories-under-individual-accounts" id="toc-repositories-under-individual-accounts" class="nav-link" data-scroll-target="#repositories-under-individual-accounts"><span class="toc-section-number">3.4</span>  Repositories Under Individual Accounts</a></li>
-  <li><a href="#github-organization-settings" id="toc-github-organization-settings" class="nav-link" data-scroll-target="#github-organization-settings"><span class="toc-section-number">3.5</span>  GitHub Organization Settings</a></li>
-  <li><a href="#collaboration-with-non-noaa-github-users" id="toc-collaboration-with-non-noaa-github-users" class="nav-link" data-scroll-target="#collaboration-with-non-noaa-github-users"><span class="toc-section-number">3.6</span>  Collaboration with non-NOAA GitHub users</a></li>
+  <li><a href="#github-personal-account-settings" id="toc-github-personal-account-settings" class="nav-link" data-scroll-target="#github-personal-account-settings"><span class="header-section-number">3.1</span> GitHub Personal Account Settings</a></li>
+  <li><a href="#github-repository-guidelines" id="toc-github-repository-guidelines" class="nav-link" data-scroll-target="#github-repository-guidelines"><span class="header-section-number">3.2</span> GitHub Repository Guidelines</a></li>
+  <li><a href="#disclaimers-and-licenses" id="toc-disclaimers-and-licenses" class="nav-link" data-scroll-target="#disclaimers-and-licenses"><span class="header-section-number">3.3</span> Disclaimers and Licenses</a></li>
+  <li><a href="#repositories-under-individual-accounts" id="toc-repositories-under-individual-accounts" class="nav-link" data-scroll-target="#repositories-under-individual-accounts"><span class="header-section-number">3.4</span> Repositories Under Individual Accounts</a></li>
+  <li><a href="#github-organization-settings" id="toc-github-organization-settings" class="nav-link" data-scroll-target="#github-organization-settings"><span class="header-section-number">3.5</span> GitHub Organization Settings</a></li>
+  <li><a href="#collaboration-with-non-noaa-github-users" id="toc-collaboration-with-non-noaa-github-users" class="nav-link" data-scroll-target="#collaboration-with-non-noaa-github-users"><span class="header-section-number">3.6</span> Collaboration with non-NOAA GitHub users</a></li>
   </ul></li>
-  <li><a href="#sec-security" id="toc-sec-security" class="nav-link" data-scroll-target="#sec-security"><span class="toc-section-number">4</span>  Security</a>
+  <li><a href="#sec-security" id="toc-sec-security" class="nav-link" data-scroll-target="#sec-security"><span class="header-section-number">4</span> Security</a>
   <ul class="collapse">
-  <li><a href="#sec-security-fisma-low" id="toc-sec-security-fisma-low" class="nav-link" data-scroll-target="#sec-security-fisma-low"><span class="toc-section-number">4.1</span>  FISMA Low</a></li>
-  <li><a href="#sec-security-sensitive" id="toc-sec-security-sensitive" class="nav-link" data-scroll-target="#sec-security-sensitive"><span class="toc-section-number">4.2</span>  Sensitive information cannot be shared on GitHub</a></li>
-  <li><a href="#preventing-inadvertent-committing-of-secrets-or-credentials-to-github" id="toc-preventing-inadvertent-committing-of-secrets-or-credentials-to-github" class="nav-link" data-scroll-target="#preventing-inadvertent-committing-of-secrets-or-credentials-to-github"><span class="toc-section-number">4.3</span>  Preventing inadvertent committing of secrets or credentials to GitHub</a></li>
+  <li><a href="#sec-security-fisma-low" id="toc-sec-security-fisma-low" class="nav-link" data-scroll-target="#sec-security-fisma-low"><span class="header-section-number">4.1</span> FISMA Low</a></li>
+  <li><a href="#sec-security-sensitive" id="toc-sec-security-sensitive" class="nav-link" data-scroll-target="#sec-security-sensitive"><span class="header-section-number">4.2</span> Sensitive information cannot be shared on GitHub</a></li>
+  <li><a href="#preventing-inadvertent-committing-of-secrets-or-credentials-to-github" id="toc-preventing-inadvertent-committing-of-secrets-or-credentials-to-github" class="nav-link" data-scroll-target="#preventing-inadvertent-committing-of-secrets-or-credentials-to-github"><span class="header-section-number">4.3</span> Preventing inadvertent committing of secrets or credentials to GitHub</a></li>
   </ul></li>
-  <li><a href="#sec-backups" id="toc-sec-backups" class="nav-link" data-scroll-target="#sec-backups"><span class="toc-section-number">5</span>  Backups</a></li>
-  <li><a href="#github-repository-components" id="toc-github-repository-components" class="nav-link" data-scroll-target="#github-repository-components"><span class="toc-section-number">6</span>  GitHub Repository Components</a>
+  <li><a href="#recover-from-damage" id="toc-recover-from-damage" class="nav-link" data-scroll-target="#recover-from-damage"><span class="header-section-number">5</span> Recover from Damage</a></li>
+  <li><a href="#sec-backups" id="toc-sec-backups" class="nav-link" data-scroll-target="#sec-backups"><span class="header-section-number">6</span> Backups</a></li>
+  <li><a href="#github-repository-components" id="toc-github-repository-components" class="nav-link" data-scroll-target="#github-repository-components"><span class="header-section-number">7</span> GitHub Repository Components</a>
   <ul class="collapse">
-  <li><a href="#sec-readme" id="toc-sec-readme" class="nav-link" data-scroll-target="#sec-readme"><span class="toc-section-number">6.1</span>  README.md</a></li>
-  <li><a href="#sec-disclaimer" id="toc-sec-disclaimer" class="nav-link" data-scroll-target="#sec-disclaimer"><span class="toc-section-number">6.2</span>  DISCLAIMER.md</a></li>
-  <li><a href="#sec-license" id="toc-sec-license" class="nav-link" data-scroll-target="#sec-license"><span class="toc-section-number">6.3</span>  LICENSE Files</a></li>
+  <li><a href="#sec-readme" id="toc-sec-readme" class="nav-link" data-scroll-target="#sec-readme"><span class="header-section-number">7.1</span> README.md</a></li>
+  <li><a href="#sec-disclaimer" id="toc-sec-disclaimer" class="nav-link" data-scroll-target="#sec-disclaimer"><span class="header-section-number">7.2</span> DISCLAIMER.md</a></li>
+  <li><a href="#sec-license" id="toc-sec-license" class="nav-link" data-scroll-target="#sec-license"><span class="header-section-number">7.3</span> LICENSE Files</a></li>
   </ul></li>
-  <li><a href="#sec-working-group" id="toc-sec-working-group" class="nav-link" data-scroll-target="#sec-working-group"><span class="toc-section-number">7</span>  GitHub working group</a></li>
-  <li><a href="#sec-references" id="toc-sec-references" class="nav-link" data-scroll-target="#sec-references"><span class="toc-section-number">8</span>  References</a></li>
+  <li><a href="#github-governance-team-and-access-to-github-enterprise-cloud" id="toc-github-governance-team-and-access-to-github-enterprise-cloud" class="nav-link" data-scroll-target="#github-governance-team-and-access-to-github-enterprise-cloud"><span class="header-section-number">8</span> GitHub Governance Team and access to GitHub Enterprise Cloud</a></li>
+  <li><a href="#sec-working-group" id="toc-sec-working-group" class="nav-link" data-scroll-target="#sec-working-group"><span class="header-section-number">9</span> GitHub working group</a></li>
+  <li><a href="#sec-references" id="toc-sec-references" class="nav-link" data-scroll-target="#sec-references"><span class="header-section-number">10</span> References</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nmfs-opensci/GitHub-Guide/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nmfs-opensci/GitHub-Guide/blob/main/index.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/nmfs-opensci/GitHub-Guide/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/nmfs-opensci/GitHub-Guide/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/nmfs-opensci/GitHub-Guide/blob/main/index.qmd" class="toc-action">View source</a></p><p><a href="https://github.com/nmfs-opensci/GitHub-Guide/issues/new" class="toc-action">Report an issue</a></p></div></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF (titlepage)</a></li></ul></div></nav>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
@@ -148,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">GitHub and Git</h1>
+<h1 class="title">GitHub and Git</h1>
 <p class="subtitle lead"></p><p>Guidance and Best Practices for NMFS Users<br>
 version 3.4</p><p></p>
 </div>
@@ -179,29 +188,29 @@ version 3.4</p><p></p>
 
 <section id="sec-introduction" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="sec-introduction"><span class="header-section-number">1</span> Introduction</h2>
-<p>This “best practices” guide was developed by and is maintained by the NMFS Open Science GitHub working group (<a href="#sec-working-group">Section&nbsp;7</a>). This document provides practical help and guidelines for the wide variety of ways that Git and GitHub are used within NOAA Fisheries. This guide was heavily influenced by the work from the <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/">Fisheries Integrated Toolbox</a> team who developed standardized GitHub “best practices” documents for NMFS tool developers, by the GitHub SOPs developed by SEFSC, NEFSC and NWFSC, and other guidance documents. See references (<a href="#sec-references">Section&nbsp;8</a>).</p>
-<div class="callout-important callout callout-style-default callout-captioned">
+<p>This “best practices” guide was developed by and is maintained by the NMFS Open Science GitHub working group (<a href="#sec-working-group">Section&nbsp;9</a>). This document provides practical help and guidelines for using Git and GitHub within NOAA Fisheries. This guide was heavily influenced by the work from the <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/">Fisheries Integrated Toolbox</a> team who developed standardized GitHub “best practices” documents for NOAA Fisheries tool developers, by the GitHub SOPs developed by SEFSC, NEFSC and NWFSC, and other guidance documents. See references (<a href="#sec-references">Section&nbsp;10</a>).</p>
+<div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>NOAA’s official 2017 CIO memo authorizing GitHub use at NOAA is <a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF">here</a>. Note, this was written before GitHub Enterprise existed so refers only to GitHub Public. A NOAA GitHub policy document from 2017/8 may be found <a href="images/NOAA-GitHub-Usage-Guidelines.pdf">here</a>, however this document appears to be for content on <a href="https://github.com/NOAAGov">NOAAGov</a> (top of page 2) and it is unclear which parts are general and which are specific to contributing to NOAAGov. Some individual centers and offices have their own GitHub Guidelines and SOPs. In addition, your division or program may already have a GitHub organization and have a SOP for contributing to that. This document is not intended to replace these SOPs but to supplement them and help NMFS staff follow them by giving pragmatic guidelines.</p>
+<p>NOAA’s official 2017 CIO memo authorizing GitHub use at NOAA is <a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF">here</a>. Note, this was written before GitHub Enterprise existed so refers only to GitHub Public. A NOAA GitHub policy document from 2017/8 may be found <a href="images/NOAA-GitHub-Usage-Guidelines.pdf">here</a>, however this document appears to be for content on <a href="https://github.com/NOAAGov">the NOAAGov GitHub organization</a> (top of page 2) and it is unclear which parts are general and which are specific to contributing to the NOAAGov organization. Some individual centers and offices have their own GitHub Guidelines and SOPs. In addition, your division or program may already have a GitHub organization and have a SOP for contributing to that. This document is not intended to replace these SOPs but to supplement them and help NMFS staff follow them by giving pragmatic guidelines.</p>
 </div>
 </div>
 <section id="sec-background" class="level3" data-number="1.1">
 <h3 data-number="1.1" class="anchored" data-anchor-id="sec-background"><span class="header-section-number">1.1</span> Background</h3>
-<p>In 2017, GitHub use was authorized for scientific products: <a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.pdf">CIO memo authorizing GitHub use at NOAA</a>. Subsequently, in 2017, NOAA released official GitHub guidelines <a href="images/NOAA-GitHub-Usage-Guidelines.pdf">here</a>. Some individual centers and offices prepared local GitHub guidelines and SOPs to help their staff interested in using GitHub. See references (<a href="#sec-references">Section&nbsp;8</a>). Since 2017, a lot has changed. GitHub use has expanded greatly across NMFS and all the federal agencies (<a href="https://nmfs-opensci.github.io/ResourceBook/content/github_in_gov.html#github-in-other-agencies">link</a>), and GitHub has become integrated into modern scientific workflow for a wide variety of reasons. The 2017 memo tells us what can be shared on GitHub (scientific products) but there is a need for guidelines that cover and recognize the wide variety of scientific work (and learning) that is done on GitHub and much has changed in the tools provided by GitHub since 2017. Local GitHub SOPs have been developed by individual centers (see references <a href="#sec-references">Section&nbsp;8</a>) to help their staff. These are very helpful, but not all centers have GitHub SOPs and even with these, staff are often confused by how to follow the guidelines in practice. For example, if I fork a repo in statistics workshop I am in, am I supposed to have a gold standard backup for that? What does it mean to keep NOAA work separate? I was told that private repos are not allowed, but someone at another center said <em>public</em> repos are not allowed? I work with confidential fisheries data; what are my options? I am developing an R or Python package with functions for making common plots but this is completely generic; what are my options? I am collaborating with a regional office on an assessment that will be released as an official report from my center; what are my options?</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<p>In 2017, GitHub use was authorized for scientific products: <a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.pdf">CIO memo authorizing GitHub use at NOAA</a>. Subsequently, in 2017, NOAA released official GitHub guidelines <a href="images/NOAA-GitHub-Usage-Guidelines.pdf">here</a>. Some individual centers and offices prepared local GitHub guidelines and SOPs to help their staff interested in using GitHub. See references (<a href="#sec-references">Section&nbsp;10</a>). Since 2017, a lot has changed. GitHub use has expanded greatly across NMFS and all the federal agencies (<a href="https://nmfs-opensci.github.io/ResourceBook/content/github_in_gov.html#github-in-other-agencies">link</a>), and GitHub has become integrated into modern scientific workflow for a wide variety of reasons. The 2017 memo tells us what can be shared on GitHub (scientific products) but there is a need for guidelines that cover and recognize the wide variety of scientific work (and learning) that is done on GitHub and much has changed in the tools provided by GitHub since 2017. Local GitHub SOPs have been developed by individual centers (see references <a href="#sec-references">Section&nbsp;10</a>) to help their staff. These are very helpful, but not all centers have GitHub SOPs and even with these, staff are often confused by how to follow the guidelines in practice. For example, if I fork a repo in statistics workshop I am in, am I supposed to have a gold standard backup for that? What does it mean to keep NOAA work separate? I was told that private repos are not allowed, but someone at another center said <em>public</em> repos are not allowed? I work with confidential fisheries data; what are my options? I am developing an R or Python package with functions for making common plots but this is completely generic; what are my options? I am collaborating with a regional office on an assessment that will be released as an official report from my center; what are my options?</p>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -242,12 +251,12 @@ Note
 <li>Provide a real photograph of yourself as your GitHub profile.</li>
 <li>Enable Two-Factor Authentication.</li>
 </ul>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -263,14 +272,14 @@ Note
 <ul>
 <li>PII and BII should not be shared (on purpose or inadvertently) on GitHub regardless of whether the repository is in a private or public repository. Best practices and safeguards must be followed to prevent this.</li>
 <li>No sensitive information should be shared in repositories. Sensitive information includes, but is not limited to, usernames, passwords, login information, port numbers, IP addresses, server names, Application Programming Interface (API) keys, Personally Identifiable Information (PII), Business Identifiable Information (BII), or confidential data.</li>
-<li>GitHub is not a back-up service nor is it a data repository with archiving. Other tools are designed for this purpose. See Backups (<a href="#sec-backups">Section&nbsp;5</a>).</li>
+<li>GitHub is not a back-up service nor is it a data repository with archiving. Other tools are designed for this purpose. See Backups (<a href="#sec-backups">Section&nbsp;6</a>).</li>
 <li>Only scientific content (<a href="#sec-what-can-be-shared">Section&nbsp;2.2</a>) that can be reasonably classified as FISMA Low (<a href="#sec-security-fisma-low">Section&nbsp;4.1</a>) should be shared on GitHub.</li>
 <li>Repositories that have code that interacts with APIs using IP addresses, usernames, passwords, secrets, or credentials must take steps to prevent committing of “secrets” to GitHub. (See <a href="#sec-security-sensitive">Section&nbsp;4.2</a>).</li>
 </ul>
 </section>
 <section id="disclaimers-and-licenses" class="level3" data-number="3.3">
 <h3 data-number="3.3" class="anchored" data-anchor-id="disclaimers-and-licenses"><span class="header-section-number">3.3</span> Disclaimers and Licenses</h3>
-<p>If your repository represents something you produced in the course of your work at NOAA and could be considered a “work product”, then your repository should include a README (<a href="#sec-readme">Section&nbsp;6.1</a>), the government product DISCLAIMER (<a href="#sec-disclaimer">Section&nbsp;6.2</a>), and LICENSE file (<a href="#sec-license">Section&nbsp;6.3</a>). If the work is something that can be cited, then also include citation information and a DOI<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p>If your repository represents something you produced in the course of your work at NOAA and could be considered a “work product”, then your repository should include a README (<a href="#sec-readme">Section&nbsp;7.1</a>), the government product DISCLAIMER (<a href="#sec-disclaimer">Section&nbsp;7.2</a>), and LICENSE file (<a href="#sec-license">Section&nbsp;7.3</a>). If the work is something that can be cited, then also include citation information and a DOI<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
 </section>
 <section id="repositories-under-individual-accounts" class="level3" data-number="3.4">
 <h3 data-number="3.4" class="anchored" data-anchor-id="repositories-under-individual-accounts"><span class="header-section-number">3.4</span> Repositories Under Individual Accounts</h3>
@@ -280,35 +289,36 @@ Note
 <li>Under Settings, specify a successor who can take over your account if you are unable to transfer your repositories.</li>
 </ul>
 <p>What about a repository associated with a journal article if writing this was part of your NOAA job? Transferring that kind of repository would probably not make sense. The transferring policy is for things that someone who is on-boarding for your job will need. Think about the kinds of work you would transfer off your computer during off-boarding.</p>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 GitHub Organizations
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>You can also create your work repositories in a GitHub organization rather than your individual GitHub account. GitHub organizations can be set-up so that its members can create and manage their repositories freely as they would in their individual account. Creating work repositories in a GitHub organization greatly streamlines on-boarding and off-boarding. It also makes it easier for all team members to use similar templates for their repositories.</p>
+<p>NOAA Fisheries has an Enterprise Cloud version of GitHub and there are existing organizations within the Enterprise that you may be able to use. See the <a href="https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/contact">NOAA Fisheries GitHub Governance Team contact page (NOAA internal only)</a> for more information on NOAA Fisheries Enterprise Cloud.</p>
 </div>
 </div>
 </section>
 <section id="github-organization-settings" class="level3" data-number="3.5">
 <h3 data-number="3.5" class="anchored" data-anchor-id="github-organization-settings"><span class="header-section-number">3.5</span> GitHub Organization Settings</h3>
-<p>GitHub organizations is simply an account where multiple GitHub users can be named as members who are then given permission to create repositories. The organization can have as many admins as you need, but 2-3 is common. Anyone can create a GitHub organization and it is a convenient way for teams or groups to organize and collaborate on a thematic set of repositories. In addition, a GitHub organization allows members to manage project boards, tasks, and discussions, and allows the admins to customize permission settings for the organization members.</p>
+<p>A GitHub organization is simply an account where multiple GitHub users can be named as members who are then given permission to create repositories. The organization can have as many admins as you need, but 2-3 is common. Anyone can create a GitHub organization and it is a convenient way for teams or groups to organize and collaborate on a thematic set of repositories. In addition, a GitHub organization allows members to manage project boards, tasks, and discussions, and allows the admins to customize permission settings for the organization members.</p>
 <p>The following are basic best practices for GitHub organizations.</p>
 <ul>
 <li>Fill out the organization profile with the NOAA affiliation.</li>
 <li>Provide contact information for the organization owner(s) or maintainer(s). Ensure that the organization has multiple owners who are able to manage the site. Ensure that when an organization owner leaves NOAA, another owner is able to manage the organization and all repositories.</li>
 <li>Create a <code>README.md</code> file for the organization in the <code>.github/Profile</code> folder. This README will then appear on the front page of the organization and can be used to describe the organization’s purpose, affiliations, and repositories.</li>
 </ul>
-<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Naming Conventions
 </div>
 </div>
@@ -340,12 +350,12 @@ Naming Conventions
 <section id="preventing-inadvertent-committing-of-secrets-or-credentials-to-github" class="level3" data-number="4.3">
 <h3 data-number="4.3" class="anchored" data-anchor-id="preventing-inadvertent-committing-of-secrets-or-credentials-to-github"><span class="header-section-number">4.3</span> Preventing inadvertent committing of secrets or credentials to GitHub</h3>
 <p>If your repository code uses confidential data or connects to APIs using IP addresses, usernames, passwords, secrets, or credentials, then you must take steps to ensure that you do not inadvertently commit these to GitHub. Ensuring that confidential data or secrets do not get pushed to GitHub requires diligence and deliberate choices in your workflow.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Note
 </div>
 </div>
@@ -376,12 +386,18 @@ Note
 </section>
 <section id="detect-damage" class="level4" data-number="4.3.2">
 <h4 data-number="4.3.2" class="anchored" data-anchor-id="detect-damage"><span class="header-section-number">4.3.2</span> Detect Damage</h4>
-<p>If a secret has mistakenly made it onto GitHub, you will need to remove it as soon as possible and change keys/passwords that were shared. Enabling repository scanning via a secrets scanner such as <a href="https://github.com/gitleaks/gitleaks-action">gitleaks GitHub Action</a> can provide an alert if someone inadvertently commit secrets to your repository. The scan will be automatically run using a “GitHub Action” every time a “push” or “pull request” is completed. Note, this is not a free service. If you have an Enterprise account, secrets scanning is included in the license and you should reach out to the Enterprise account administrator to get that set up. Always test your scanner set-up by committing some dummy secrets that should be caught.</p>
+<p>For all public repositories, GitHub offers a feature called secret scanning. Learn more in the <a href="https://docs.github.com/en/code-security/secret-scanning/about-secret-scanning#about-secret-scanning-alerts-for-users">GitHub doumentation for secret scanning alerts</a>.</p>
+<p>For private repositories, enabling repository scanning via a secrets scanner such as <a href="https://github.com/gitleaks/gitleaks-action">gitleaks GitHub Action</a> can provide an alert if someone inadvertently commit secrets to your repository. The scan will be automatically run using a “GitHub Action” every time a “push” or “pull request” is completed. GitLeaks is free, but requires <a href="https://gitleaks.io/products.html">a license for organizations</a>.</p>
 </section>
 </section>
 </section>
-<section id="sec-backups" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="sec-backups"><span class="header-section-number">5</span> Backups</h2>
+<section id="recover-from-damage" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="recover-from-damage"><span class="header-section-number">5</span> Recover from Damage</h2>
+<p>If a secret has mistakenly made it onto GitHub, you will need to remove it as soon as possible and change keys/passwords that were shared.</p>
+<p>Follow <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository">GitHub’s guidance to remove sensitive data from a repository</a>. Note that you must re-write git history rather than just making a new commit with the confidential data removed, otherwise the confidential data will continue to exist in the commit history.</p>
+</section>
+<section id="sec-backups" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="sec-backups"><span class="header-section-number">6</span> Backups</h2>
 <p>GitHub is not a backup service and if a repository were deleted on GitHub, it is gone. Note if it is not deleted, one can generally recover the state of the repository at a past time (unless something really bad were done to the Git record). At the minimum, this means you should maintain a clone on at least one government furnished laptop or server. Alternatively you can back-up to Google Drive with a script (below). <em>Managers of NOAA branded GitHub organizations should work with their IT department to ensure automated regular backups of the organization repositories.</em> In other guidelines, this is often referred to as a “gold standard copy”.</p>
 <p>Example of back-up scripts to Google Drive:</p>
 <ul>
@@ -389,10 +405,10 @@ Note
 <li><a href="https://github.com/k-doering-NOAA/backup-gdrive#backup-gdrive">backup-gdrive</a></li>
 </ul>
 </section>
-<section id="github-repository-components" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="github-repository-components"><span class="header-section-number">6</span> GitHub Repository Components</h2>
-<section id="sec-readme" class="level3" data-number="6.1">
-<h3 data-number="6.1" class="anchored" data-anchor-id="sec-readme"><span class="header-section-number">6.1</span> README.md</h3>
+<section id="github-repository-components" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="github-repository-components"><span class="header-section-number">7</span> GitHub Repository Components</h2>
+<section id="sec-readme" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="sec-readme"><span class="header-section-number">7.1</span> README.md</h3>
 <p>This file should provide a description of the repository. The contents of the README file will vary greatly depending on the application. Here are some tips:</p>
 <ul>
 <li><strong>An official work product released on a NOAA-branded GitHub organization</strong>. This is the most formal instance and the organization leaders should develop template READMEs to provide a consistent format across the products.</li>
@@ -401,16 +417,16 @@ Note
 <li>Add the DISCLAIMER (below) for any repository that is a ‘work product’.</li>
 </ul>
 </section>
-<section id="sec-disclaimer" class="level3" data-number="6.2">
-<h3 data-number="6.2" class="anchored" data-anchor-id="sec-disclaimer"><span class="header-section-number">6.2</span> DISCLAIMER.md</h3>
+<section id="sec-disclaimer" class="level3" data-number="7.2">
+<h3 data-number="7.2" class="anchored" data-anchor-id="sec-disclaimer"><span class="header-section-number">7.2</span> DISCLAIMER.md</h3>
 <p>Repositories and web content shared on GitHub should make it clear to the audience that no information should be considered or interpreted as official communication of NOAA. The simplest method for doing this is to include the following disclaimer within a <code>DISCLAIMER.md</code> file at the root of each repository. Additionally, it’s also good practice to include the disclaimer text as a footnote within the repository’s <code>README.md</code> and any web content available from that repository. Be careful not to use NOAA logos and and NOAA Fisheries branding in a way that could imply an official communication. NOAA logos should be used to indicate your affiliation and acknowledge support and funding. The repositories within the NOAA <a href="https://github.com/nmfs-fish-tools">Fisheries Integrated Toolbox</a> GitHub organization are good examples of how to prepare README files with the Disclaimer and NOAA Fisheries logos.</p>
 <p>The following <code>DISCLAIMER.md</code> file is put in the root of the repository.</p>
-<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 DISCLAIMER.md
 </div>
 </div>
@@ -419,16 +435,16 @@ DISCLAIMER.md
 </div>
 </div>
 </section>
-<section id="sec-license" class="level3" data-number="6.3">
-<h3 data-number="6.3" class="anchored" data-anchor-id="sec-license"><span class="header-section-number">6.3</span> LICENSE Files</h3>
+<section id="sec-license" class="level3" data-number="7.3">
+<h3 data-number="7.3" class="anchored" data-anchor-id="sec-license"><span class="header-section-number">7.3</span> LICENSE Files</h3>
 <p>The work of U.S. Government employees is not subject to copyright in the U.S. Thus, you should include an appropriate LICENSE file with your repositories. There are two types of licenses that are commonly used: Creative Commons Zero v1.0 Universal (CC0 1.0 Universal) and (GNU General Public License v3.0) GPL-3. The CC0 license is commonly used for US Government products but the NOAA Fisheries Integrated Toolbox prefers the GPL-3 license since it is more tailored for code products. Other open source licenses (e.g., MIT) may also be appropriate.</p>
 <p>To add a LICENSE file to your repository, navigate to the repository on GitHub.com, select “add file,”, select “create new file”, and type LICENSE. You will then see the button in the upper right hand of the page to choose a license file. Additionally, the following statement applies with regards to licensing for any code published in any NOAA repository. This should be included within a <code>LICENSE.md</code> file at the root of each repository. Repositories that are code packages should also add this to the repository <code>README.md</code>.</p>
-<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 LICENSE.md
 </div>
 </div>
@@ -438,8 +454,12 @@ LICENSE.md
 </div>
 </section>
 </section>
-<section id="sec-working-group" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="sec-working-group"><span class="header-section-number">7</span> GitHub working group</h2>
+<section id="github-governance-team-and-access-to-github-enterprise-cloud" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="github-governance-team-and-access-to-github-enterprise-cloud"><span class="header-section-number">8</span> GitHub Governance Team and access to GitHub Enterprise Cloud</h2>
+<p>The <a href="https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/home">NOAA Fisheries GitHub Governance Team</a> provides access to and governs the use of GitHub Enterprise Cloud at NOAA Fisheries. <a href="https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/contact">Contact the GitHub Governance Team</a> for information on access to GitHub Enterprise Cloud.</p>
+</section>
+<section id="sec-working-group" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="sec-working-group"><span class="header-section-number">9</span> GitHub working group</h2>
 <p>The <a href="https://nmfs-opensci.github.io/">NMFS Open Science</a> GitHub working group is a group of NMFS scientists who are active developers on GitHub and with wide experience is the many ways that GitHub is used within NOAA Fisheries. The group is involved in helping NMFS scientists with GitHub use by developing this best-practice document, helping with trainings and content, and coordinating with NMFS IT.</p>
 <p>Lead editors:</p>
 <ul>
@@ -448,7 +468,7 @@ LICENSE.md
 <li>Emily Markowitz, Alaska Fisheries Science Center</li>
 <li>Kathryn Doering, Office of Science and Technology</li>
 </ul>
-<p>The editors assembled the material into a cohesive format, but significant sections were developed by other individuals in other contexts. See also the references (<a href="#sec-references">Section&nbsp;8</a>).</p>
+<p>The editors assembled the material into a cohesive format, but significant sections were developed by other individuals in other contexts. See also the references (<a href="#sec-references">Section&nbsp;10</a>).</p>
 <ul>
 <li>Much of the section on setting up your GitHub individual account was adapted from the <a href="https://docs.google.com/document/d/1cH7Bb3loSGAotkhz4BM6DUzi-vY-kSy2_3CLkI0X5ao/edit?usp=sharing">SEFSC October 2021 GitHub SOP</a>. This SOP effort was led by James Primrose, SEFSC. Note the SEFSC SOP was developed from the NEFSC SOP led by David Chevrier, NEFSC.</li>
 <li>Most of the information on standard elements of a NMFS repository (disclaimers, readme, logos, etc) was adapted or taken directly from the Fisheries Integrated Toolbox <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/">Resource pages</a>. Corinne Bassin, Christine Stawitz, Kathryn Doering, and Bai Li were the developers of the FIT material.</li>
@@ -457,8 +477,8 @@ LICENSE.md
 <li>Thanks to the many NMFS R User Group members who commented on the initial drafts over 2022.</li>
 </ul>
 </section>
-<section id="sec-references" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="sec-references"><span class="header-section-number">8</span> References</h2>
+<section id="sec-references" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="sec-references"><span class="header-section-number">10</span> References</h2>
 <ul>
 <li><a href="images/CIO-Memo-Use-of-GitHub-at-NOAA.PDF">2017 CIO Memo authorizing GitHub use at NOAA</a> Note this document was written before Microsoft bought GitHub and before GitHub Enterprise existed.</li>
 <li><a href="images/NOAA-GitHub-Usage-Guidelines.pdf">2017 NOAA GitHub Guidelines for NOAAGov GitHub Org</a> This document appears to be intended to apply only to content on https://github.com/NOAAGov. See top of page 2.</li>
@@ -628,9 +648,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -695,6 +729,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -738,6 +858,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">© CC-1.0</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
     <div class="nav-footer-right">This page is built with <a href="https://quarto.org/">Quarto</a>.</div>
   </div>
 </footer>
