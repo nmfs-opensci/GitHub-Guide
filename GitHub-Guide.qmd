@@ -275,6 +275,10 @@ Software code created by U.S. Government employees is not subject to copyright i
 
 :::
 
+## GitHub Governance Team and access to GitHub Enterprise Cloud
+
+The [NOAA Fisheries GitHub Governance Team](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/home) provides access to and governs the use of GitHub Enterprise Cloud at NOAA Fisheries. [Contact the GitHub Governance Team](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/contact) for information on access to GitHub Enterprise Cloud.
+
 ## GitHub working group {#sec-working-group}
 
 The [NMFS Open Science](https://nmfs-opensci.github.io/) GitHub working group is a group of NMFS scientists who are active developers on GitHub and with wide experience is the many ways that GitHub is used within NOAA Fisheries. The group is involved in helping NMFS scientists with GitHub use by developing this best-practice document, helping with trainings and content, and coordinating with NMFS IT.
