@@ -75,7 +75,7 @@ Download the GitHub Enterprise Cloud [user agreement](https://drive.google.com/f
 
 ### Request access to NMFS GitHub Enterprise Cloud
 
-Look at the  [NMFS GHEC organizations](https://github.com/enterprises/noaa-nmfs) and request access to the GitHub organization for your the office where you work and any other GitHub organization that you need access to. Use [this Google form](https://docs.google.com/forms/d/e/1FAIpQLScvWB-gTtQKlFPdyt3Y_H_oya9EW6Nj-56jsWJsxVdT8RJwHw/viewform) to request access. You will need to upload your user agreement.
+Request access to the GitHub organization for your the office where you work and any other GitHub organization that you need access to. Use [this Google form](https://docs.google.com/forms/d/e/1FAIpQLScvWB-gTtQKlFPdyt3Y_H_oya9EW6Nj-56jsWJsxVdT8RJwHw/viewform) to request access. You will need to upload your user agreement.
 
 Wait for an email inviting your to become a member of the GitHub organization. Once you accept the invitation, you see that you are listed as a member of the [organization](https://github.com/enterprises/noaa-nmfs).
 
