@@ -127,7 +127,6 @@ To collaborate with colleagues and contribute to open science and open governmen
 -   There should be clear separation between any use of GitHub associated with your NOAA activities and non-NOAA activities. You are not required to append "-NOAA" to your NOAA GitHub username, but it may be helpful for distinguishing between accounts if you use GitHub for NOAA work and non-NOAA work[^2].
 -   When creating an account on GitHub.com use your @noaa.gov email as primary (under Settings/account) and as the notification email (under Settings/notifications). The latter ensures that notifications on work related repositories are sent to your NOAA email, not to a personal or university email address.
 -   Fill out your profile with your name and NOAA affiliation.
--   Provide a real photograph of yourself as your GitHub profile.
 -   Enable Two-Factor Authentication.
 
 ::: {.callout-note}
