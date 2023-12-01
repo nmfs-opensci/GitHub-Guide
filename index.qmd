@@ -73,6 +73,8 @@ You will not be asked to authenticate with your 2nd factor every time you log in
 
 Download the GitHub Enterprise Cloud [user agreement](https://drive.google.com/file/d/1yP0mLpD5d5rsgNv5-_Z6OWpwhLROjxMg/view?usp=sharing) (NOAA internal) and have your supervisor sign it. You will upload this when you request access to GitHub organizations.
 
+The user agreement confirms that you understand and agree to abide by the NOAA policies regarding use of the NOAA Fisheries GitHub Enterprise Cloud site. 
+
 ### Request access to NMFS GitHub Enterprise Cloud
 
 Request access to the GitHub organization for your the office where you work and any other GitHub organization that you need access to. Use [this Google form](https://docs.google.com/forms/d/e/1FAIpQLScvWB-gTtQKlFPdyt3Y_H_oya9EW6Nj-56jsWJsxVdT8RJwHw/viewform) to request access. You will need to upload your user agreement.
