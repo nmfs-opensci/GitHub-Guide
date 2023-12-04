@@ -53,7 +53,7 @@ Here are the steps for getting started with GitHub at NOAA Fisheries with detail
 2. Turn on 2-Factor Authentication on your account.
 3. Download the NMFS GitHub Enterprise Cloud user agreement and have your supervisor sign it
 4. Request access to your offices' GitHub Enterprise Cloud organization.
-5. Reach out to the GitHub organization admin to request on-boarding instructions.
+5. Watch for an invite to the GitHub organization in your email and on-boarding instructions.
 
 ### Create a GitHub user account
 
@@ -77,11 +77,13 @@ Download the GitHub Enterprise Cloud [user agreement](https://drive.google.com/f
 
 Request access to the GitHub organization for your the office where you work and any other GitHub organization that you need access to. Use [this Google form](https://docs.google.com/forms/d/e/1FAIpQLScvWB-gTtQKlFPdyt3Y_H_oya9EW6Nj-56jsWJsxVdT8RJwHw/viewform) to request access. You will need to upload your user agreement.
 
-Wait for an email inviting your to become a member of the GitHub organization. Once you accept the invitation, you see that you are listed as a member of the [organization](https://github.com/enterprises/noaa-nmfs).
+Wait for an email inviting your to become a member of the GitHub organization. Once you accept the invitation, you see that you are listed as a member of the [NMFS GHEC site](https://github.com/enterprises/noaa-nmfs). Note, you will get a 404 error unless you are a NMFS GHEC member.
 
-### Request on-boarding instructions
+### Wait for the organization invite and on-boarding instructions
 
-Each NMFS GitHub [organization](https://github.com/enterprises/noaa-nmfs) has different on-boarding processes and different processes for creating repositories in the organization. This [Google spreadsheet](https://docs.google.com/spreadsheets/d/1WG4aEFzW2Evjp39Fq12wA4SUW-yDUZs3vYZZ0sTqiAQ/edit?usp=sharing) (NOAA internal) shows you the Standard Operating Procedures (SOP) and the admins.  Note in most cases, you will need to be added as a member of the GitHub organization to see its SOP.
+Each NMFS GitHub Enterprise organization has different on-boarding processes. This [Google spreadsheet](https://docs.google.com/spreadsheets/d/1WG4aEFzW2Evjp39Fq12wA4SUW-yDUZs3vYZZ0sTqiAQ/edit?usp=sharing) (NOAA internal) shows you the Standard Operating Procedures (SOP) and the admins for the GitHub Enterprise organizations.
+
+Be on the look out for an invite to the GitHub Enterprise organization. Accept the invitation and then you will be able to see the [NMFS GHEC organizations](https://github.com/enterprises/noaa-nmfs). Once you are a member of the organization, review its SOP (in this [Google spreadsheet](https://docs.google.com/spreadsheets/d/1WG4aEFzW2Evjp39Fq12wA4SUW-yDUZs3vYZZ0sTqiAQ/edit?usp=sharing) (NOAA internal)) for how to proceed. Reach out to your local NMFS GHEC organization admins (in the spreadsheet) if you need help.
 
 
 ## Background {#sec-background}
@@ -299,17 +301,26 @@ This repository is a scientific product and is not official communication of the
 
 ### LICENSE Files {#sec-license}
 
-The work of U.S. Government employees is not subject to copyright in the U.S. Thus, you should include an appropriate LICENSE file with your repositories. These are the licenses that are commonly used for government work: Creative Commons Zero v1.0 Universal (CC0 1.0 Universal), GNU General Public License v3.0 (GPL-3), MIT, and Apache 2.0. The CC0 license is used data and content products but it is not an open source license for software. For software, the three most common license are GPL-3, MIT, and Apache 2.0. The NOAA Fisheries Integrated Toolbox prefers the GPL-3 license as it is a strong copy-left license.
+The work of U.S. Government employees is not subject to copyright in the U.S. Thus, you should include an appropriate LICENSE and License.md file with your repositories. These are the licenses that are commonly used for government work: Creative Commons Zero v1.0 Universal (CC0 1.0 Universal), GNU General Public License v3.0 (GPL-3), MIT, and Apache 2.0. The CC0 license is used data and content products but not software. For software, the three most common license are GPL-3, MIT, and Apache 2.0. The NOAA Fisheries Integrated Toolbox prefers the GPL-3 license as it is a strong copy-left license.
 
-To add a LICENSE file to your repository, navigate to the repository on GitHub.com, select "add file,", select "create new file", and type LICENSE. You will then see the button in the upper right hand of the page to choose a license file. Additionally, the following statement applies with regards to licensing for any code published in any NOAA repository. This should be included within a `LICENSE.md` file at the root of each repository. Repositories that are code packages should also add this license addendum to the repository `README.md`.
+To add a license to your repository, navigate to the repository on GitHub.com, select "add file,", select "create new file", and type `License.md`. You will then see the button in the upper right hand of the page or a link somewhere to choose a license file. Use the template to choose your license and make the file was not renamed to `LICENSE`. You want `License.md` at this step. This file will just have the open source license text.
+
+If the repository is code or a code package, include the software addendum within a `LICENSE` file at the root of the repository. The addendum should also be added to the repository `README.md`.
 
 ::: {.callout-note icon=false}
 
-## LICENSE.md
+# License
+
+The YourPackageName package as a whole is distributed under [GNU GENERAL PUBLIC
+LICENSE version 3](https://www.tldrlegal.com/license/gnu-general-public-license-v3-gpl-3) (GPL-3).
+
+In addition this software has the following license addendum:
 
 Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserves all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.
 
 :::
+
+Including the license and addendum in this way will ensure that GitHub displays the license in the repository information and that the open source license is retained with the addendum in case the `License.md` file is removed.
 
 ## GitHub Governance Team and access to GitHub Enterprise Cloud
 
