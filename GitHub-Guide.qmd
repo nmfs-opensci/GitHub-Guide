@@ -301,12 +301,17 @@ This repository is a scientific product and is not official communication of the
 
 ### LICENSE Files {#sec-license}
 
-The work of U.S. Government employees is not subject to copyright in the U.S. Thus, you should include an appropriate LICENSE and License.md file with your repositories. These are the licenses that are commonly used for government work: Creative Commons Zero v1.0 Universal (CC0 1.0 Universal), GNU General Public License v3.0 (GPL-3), MIT, and Apache 2.0. The CC0 license is used data and content products but not software. For software, the three most common license are GPL-3, MIT, and Apache 2.0. The NOAA Fisheries Integrated Toolbox prefers the GPL-3 license as it is a strong copy-left license.
+The work of U.S. Government employees is not subject to copyright in the U.S. You include an open source LICENSE and License.md file with your repositories to indicate this. These are the licenses that are commonly used for government work: Creative Commons Zero v1.0 Universal (CC0 1.0 Universal), GNU General Public License v3.0 (GPL-3), MIT, and Apache 2.0. The CC0 license is used data and content products but not software. For software, the three most common license are GPL-3, MIT, and Apache 2.0. The NOAA Fisheries Integrated Toolbox prefers the GPL-3 license as it is a strong copy-left license.
+
+*The open source license*
 
 To add a license to your repository, navigate to the repository on GitHub.com, select "add file,", select "create new file", and type `License.md`. You will then see the button in the upper right hand of the page or a link somewhere to choose a license file. Use the template to choose your license and make the file was not renamed to `LICENSE`. You want `License.md` at this step. This file will just have the open source license text.
 
-If the repository is code or a code package, include the software addendum within a `LICENSE` file at the root of the repository. The addendum should also be added to the repository `README.md`.
+*The Department of Commerce addendum for works created in their entiredly by U.S. Government employees*
 
+The license addendum makes explicit that the Department of Commerce is waiving its right to seek copyright outside of the U.S. because 17 U.S.C. §105 only applies to copyright within the U.S. If the repository is code or a code package, include the software addendum within a `LICENSE` file at the root of the repository. For data or content, include the content addendum. The addendum should also be added to the repository `README.md`. What if the content has non-federal co-authors? You can add another more text to the addendum if they need to waive copyright explicitly also. 
+
+For software:
 ::: {.callout-note icon=false}
 
 # License
@@ -317,6 +322,19 @@ LICENSE version 3](https://www.tldrlegal.com/license/gnu-general-public-license-
 In addition this software has the following license addendum:
 
 Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserves all rights to seek and obtain copyright protection in countries other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the Software outside of the United States.
+
+:::
+
+For content:
+::: {.callout-note icon=false}
+
+# License
+
+The content in this repository as a whole is distributed under [Creative Commons Zero 1.0](https://www.tldrlegal.com/license/creative-commons-cc0-1-0-universal) (CC0).
+
+In addition this content has the following license addendum:
+
+Works created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105). The United States/Department of Commerce reserves all rights to seek and obtain copyright protection in countries other than the United States for works authored in its entirety by the Department of Commerce. To this end, the Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create derivative works of the content in this repository outside of the United States.
 
 :::
 
