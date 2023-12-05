@@ -312,6 +312,7 @@ To add a license to your repository, navigate to the repository on GitHub.com, s
 The license addendum makes explicit that the Department of Commerce is waiving its right to seek copyright outside of the U.S. because 17 U.S.C. §105 only applies to copyright within the U.S. If the repository is code or a code package, include the software addendum within a `LICENSE` file at the root of the repository. For data or content, include the content addendum. The addendum should also be added to the repository `README.md`. What if the content has non-federal co-authors? You can add another more text to the addendum if they need to waive copyright explicitly also. 
 
 For software:
+
 ::: {.callout-note icon=false}
 
 # License
@@ -326,6 +327,7 @@ Software code created by U.S. Government employees is not subject to copyright i
 :::
 
 For content:
+
 ::: {.callout-note icon=false}
 
 # License
