@@ -57,7 +57,7 @@ Here are the steps for getting started with GitHub at NOAA Fisheries with detail
 
 ### Create a GitHub user account
 
-You will need a GitHub user account that is specific to your NOAA work and that uses your NOAA email for notifications. If you have an existing GitHub account that you use for non-NOAA work, e.g. another job, university work, or personal work, then you will need to create a new GitHub account for your NOAA work.
+You will need a GitHub user account that is specific to your NOAA work and that uses your NOAA email for notifications. If you have an existing GitHub account that you only use for NOAA work, you can simply add your NOAA email as the primary contact for notifications. If you have an existing GitHub account that you use for non-NOAA work, e.g. another job, university work, or personal work, then you will need to create a new GitHub account for your NOAA work. 
 
 1. Go to [www.github.com](www.github.com).
 2. Create an account with your NOAA email. Your username should include your name, e.g. FirstLast or initialslastname. Some users add "-NOAA" to the end of their username. This is not required but helpful if you have another non-NOAA account.
@@ -71,7 +71,7 @@ You will not be asked to authenticate with your 2nd factor every time you log in
 
 ### NMFS GitHub Enterprise Cloud user agreement
 
-Download the GitHub Enterprise Cloud [user agreement](https://drive.google.com/file/d/1yP0mLpD5d5rsgNv5-_Z6OWpwhLROjxMg/view?usp=sharing) (NOAA internal) and have your supervisor sign it. You will upload this when you request access to GitHub organizations.
+Download the GitHub Enterprise Cloud [user agreement](https://drive.google.com/file/d/1yP0mLpD5d5rsgNv5-_Z6OWpwhLROjxMg/view?usp=sharing) (NOAA internal) and have your supervisor sign it. You will upload this when you request access to any GitHub Enterprise organizations.
 
 ### Request access to NMFS GitHub Enterprise Cloud
 
@@ -93,7 +93,9 @@ In 2017, GitHub use was authorized for scientific products: [CIO memo](images/CI
 The 2017 memo tells us what can be shared on GitHub (scientific products) but there is a need for guidelines that cover and recognize the wide variety of scientific work (and learning) that is done on GitHub and much has changed in the tools provided by GitHub since 2017. Local GitHub SOPs have been developed by individual centers (see references @sec-references) to help their staff. These are very helpful, but even with these, staff are often confused by how to follow the guidelines in practice. For example, if I fork a repo in statistics workshop I am in, am I supposed to have a gold standard backup for that? What does it mean to keep NOAA work separate? I work with confidential fisheries data; what are my options? I am collaborating with someone at a university on a Python package; what are my options? I am collaborating with a regional office on an assessment that will be released as an official report from my center; what are my options?
 
 :::{.callout-note}
-GitHub Enterprise Cloud (GHEC) versus GitHub Cloud free. You can think of GitHub Enterprise as a secure private GitHub environment that you log into but functions otherwise mostly like the free GitHub once you are inside. The NOAA Fisheries GitHub Enterprise account has more security controls. For example, you need to be logged into your NOAA Google account to be able to log into the NOAA Fisheries GHEC site. Also you need to have 2-factor authentication turned on on your GitHub account.
+GitHub Enterprise Cloud (GHEC) versus GitHub Cloud free. GHEC does not require a different username or account. You simply need to be invited into one (or more) of the NMFS GHEC organizations. Any repositories, projects, or other resources you contribute to within the GHEC organization will be under your GHEC license. For resources under your individual account or non-GHEC organizations, you'll be collaborating under your GitHub Cloud free license. 
+
+The NNMFS GHEC organizations have more security controls in place and will require additional authenticaion with your CAC card OR NOAA Google account (just like other single sign-on (SS)) websites for NOAA resources). You do not need to be on VPN to access a NMFS GHEC organization. You will not need to authenticate with SSO every time you visit resources on GitHub.com and, if you access GitHub resources via your development environment software (e.g. VS Code, RStudio) you will need to set up or re-generate a Personal Access Token.
 :::
 
 ### Scientific products
@@ -108,7 +110,7 @@ The information here is intended to provide employees and affiliates of NOAA Fis
 
 **NOAA Branded Product** - NOAA Branded Organizations are created by a science center, regional office, division, or program for its official products. These GitHub organizations are distinguished by clear branding that indicates that the repositories are official agency products.
 
-**GitHub Organization (org)** - [Organizations](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations) are shared accounts where members of the org can collaborate across many repositories at once. Owners and administrators can manage member access to the organization's data and projects with sophisticated security and administrative features. Org in this context is not related to organizations on an org chart. It is more like a managed folder of folders.
+**Non-Enterprise GitHub Organization (org)** - [Organizations](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations) are shared accounts where members of the org can collaborate across many repositories at once. Owners and administrators can manage member access to the organization's data and projects with sophisticated security and administrative features. Org in this context is not related to organizations on an org chart. It is more like a managed folder of folders.
 
 **Repository** - A [repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories) is hosted online and contains all of a project's files and each file's revision history.
 
@@ -163,7 +165,7 @@ What about a repository associated with a journal article if writing this was pa
 
 :::{.callout-tip}
 
-## GitHub Organizations
+## Non-Enterprise GitHub Organizations
 
 You can also create your work repositories in a GitHub organization rather than your individual GitHub account. GitHub organizations can be set-up so that its members can create and manage their repositories freely as they would in their individual account. Creating work repositories in a GitHub organization greatly streamlines on-boarding and off-boarding. It also makes it easier for all team members to use similar templates for their repositories.
 
@@ -179,7 +181,7 @@ NOAA Fisheries has an Enterprise Cloud version of GitHub and there are existing 
 [^3]: DOIs are easy to generate with the Zenodo plugin for your GitHub repositories. Read how [here](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content).
 
 
-### GitHub Organization Settings
+### Non-Enterprise GitHub Organization Settings
 
 A GitHub organization is simply an account where multiple GitHub users can be named as members who are then given permission to create repositories. The organization can have as many admins as you need, but 2-3 is common. Anyone can create a GitHub organization and it is a convenient way for teams or groups to organize and collaborate on a thematic set of repositories. In addition, a GitHub organization allows members to manage project boards, tasks, and discussions, and allows the admins to customize permission settings for the organization members. 
 
