@@ -289,7 +289,7 @@ This file should provide a description of the repository. The contents of the RE
 
 ### DISCLAIMER.md {#sec-disclaimer}
 
-Repositories and web content shared on GitHub should make it clear to the audience that no information should be considered or interpreted as official communication of NOAA. The simplest method for doing this is to include the following disclaimer within a `DISCLAIMER.md` file at the root of each repository. Additionally, it's also good practice to include the disclaimer text as a footnote within the repository's `README.md` and any web content available from that repository. Be careful not to use NOAA logos and and NOAA Fisheries branding in a way that could imply an official communication. NOAA logos should be used to indicate your affiliation and acknowledge support and funding. The repositories within the NOAA [Fisheries Integrated Toolbox](https://github.com/nmfs-fish-tools) GitHub organization are good examples of how to prepare README files with the Disclaimer and NOAA Fisheries logos. 
+Repositories and web content shared on GitHub should make it clear to the audience that no information should be considered or interpreted as official communication of NOAA. The simplest method for doing this is to include the disclaimer text as a footnote within the repository's `README.md` and any web content available from that repository. Be careful not to use NOAA logos and and NOAA Fisheries branding in a way that could imply official communication. NOAA logos should be used to indicate your affiliation and acknowledge support and funding. The repositories within the [NOAA Fisheries Integrated Toolbox](https://github.com/nmfs-fish-tools) GitHub organization are examples of how to prepare README files with the Disclaimer and NOAA Fisheries logos. 
 
 The following `DISCLAIMER.md` file is put in the root of the repository.
 
@@ -303,55 +303,13 @@ This repository is a scientific product and is not official communication of the
 
 ### LICENSE Files {#sec-license}
 
-The work of U.S. Government employees is not subject to copyright in the U.S. You include an open source LICENSE and License.md file with your repositories to indicate this. These are the licenses that are commonly used for government work: Creative Commons Zero v1.0 Universal (CC0 1.0 Universal), GNU General Public License v3.0 (GPL-3), MIT, and Apache 2.0. The CC0 license is used for data and content products but not software. For software, the three most common license are GPL-3, MIT, and Apache 2.0.
+The work of U.S. Government employees is not subject to copyright in the U.S. A permissive [open source license](https://opensource.org/license) can be used in repositories to indicate this. 
 
-*The open source license*
+Note that these license guidelines are suggestions and not legal advice.
 
-To add a license to your repository, navigate to the repository on GitHub.com, select "add file,", select "create new file", and type `License.md`. You will then see the button in the upper right hand of the page or a link somewhere to choose a license file. Use the template to choose your license and make the file was not renamed to `LICENSE`. You want `License.md` at this step. This file will just have the open source license text.
+The [Creative Commons Zero v1.0 Universal (CC0 1.0 Universal)](https://creativecommons.org/publicdomain/zero/1.0/deed.en) license is used for data and content products, but not software. For software, [Apache 2.0](https://opensource.org/license/apache-2-0) is recommended. Permissive alternatives are the [MIT license](https://opensource.org/license/mit) and the [LGPL licenses](https://opensource.org/license/lgpl-license-html). A less permissive alternative, [The GNU General Public License v3.0 (GPL-3)](https://opensource.org/license/gpl-3-0) is sometimes used when a copyleft licenses is needed (e.g., copying in code that has a GPL-3 license requires the project using the code to also have a GPL-3 license).
 
-*The Department of Commerce addendum for works created in their entiredly by U.S. Government employees*
-
-The license addendum makes explicit that the Department of Commerce is waiving its right to seek copyright outside
-of the U.S. because 17 U.S.C. §105 only applies to copyright within the U.S. If the repository is code or a code
-package, include the software addendum within a `LICENSE` file at the root of the repository. For data or content,
-include the content addendum. The addendum should also be added to the repository `README.md`. What if the content
-has non-federal co-authors? You can add another more text to the addendum if they need to waive copyright explicitly
-also. 
-
-For software, here is the content of `LICENSE`:
-
-```
-# License
-
-The YourPackageName package as a whole is distributed under [GNU GENERAL PUBLIC
-LICENSE version 3](https://www.tldrlegal.com/license/gnu-general-public-license-v3-gpl-3) (GPL-3).
-
-In addition this software has the following license addendum:
-
-Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105).
-The United States/Department of Commerce reserves all rights to seek and obtain copyright protection in countries
-other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the
-Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create
-derivative works of the Software outside of the United States.
-```
-
-For content, here is the content of `LICENSE`:
-
-```
-# License
-
-The content in this repository as a whole is distributed under [Creative Commons Zero 1.0](https://www.tldrlegal.com/license/creative-commons-cc0-1-0-universal) (CC0).
-
-In addition this content has the following license addendum:
-
-Works created by U.S. Government employees are not subject to copyright in the United States (17 U.S.C. §105).
-The United States/Department of Commerce reserves all rights to seek and obtain copyright protection in countries
-other than the United States for works authored in their entirety by the Department of Commerce. To this end, the
-Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create
-derivative works of the content in this repository outside of the United States.
-```
-
-Including the license and addendum in this way will ensure that GitHub displays the license in the repository information and that the open source license is retained with the addendum in case the `License.md` file is removed.
+To add a license to your repository, follow the GitHub documentation for [adding a licenses to a repository](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
 
 ## GitHub Governance Team and access to GitHub Enterprise Cloud
 
