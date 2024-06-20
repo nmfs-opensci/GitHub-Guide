@@ -95,7 +95,7 @@ The 2017 memo tells us what can be shared on GitHub (scientific products) but th
 :::{.callout-note}
 GitHub Enterprise Cloud (GHEC) versus GitHub Cloud free. GHEC does not require a different username or account. You simply need to be invited into one (or more) of the NMFS GHEC organizations. Any repositories, projects, or other resources you contribute to within the GHEC organization will be under your GHEC license. For resources under your individual account or non-GHEC organizations, you'll be collaborating under your GitHub Cloud free license. 
 
-The NNMFS GHEC organizations have more security controls in place and will require additional authenticaion with your CAC card OR NOAA Google account (just like other single sign-on (SS)) websites for NOAA resources). You do not need to be on VPN to access a NMFS GHEC organization. You will not need to authenticate with SSO every time you visit resources on GitHub.com and, if you access GitHub resources via your development environment software (e.g. VS Code, RStudio) you will need to set up or re-generate a Personal Access Token.
+The NNMFS GHEC organizations have more security controls in place and will require additional authenticaion with your CAC card OR NOAA Google account (just like other single sign-on (SSO) websites for NOAA resources). You do not need to be on VPN to access a NMFS GHEC organization. You will not need to authenticate with SSO every time you visit resources on GitHub.com and, if you access GitHub resources via your development environment software (e.g. VS Code, RStudio) you will need to set up or re-generate a Personal Access Token.
 :::
 
 ### Scientific products
@@ -303,7 +303,7 @@ This repository is a scientific product and is not official communication of the
 
 ### LICENSE Files {#sec-license}
 
-The work of U.S. Government employees is not subject to copyright in the U.S. You include an open source LICENSE and License.md file with your repositories to indicate this. These are the licenses that are commonly used for government work: Creative Commons Zero v1.0 Universal (CC0 1.0 Universal), GNU General Public License v3.0 (GPL-3), MIT, and Apache 2.0. The CC0 license is used data and content products but not software. For software, the three most common license are GPL-3, MIT, and Apache 2.0. The NOAA Fisheries Integrated Toolbox prefers the GPL-3 license as it is a strong copy-left license.
+The work of U.S. Government employees is not subject to copyright in the U.S. You include an open source LICENSE and License.md file with your repositories to indicate this. These are the licenses that are commonly used for government work: Creative Commons Zero v1.0 Universal (CC0 1.0 Universal), GNU General Public License v3.0 (GPL-3), MIT, and Apache 2.0. The CC0 license is used for data and content products but not software. For software, the three most common license are GPL-3, MIT, and Apache 2.0.
 
 *The open source license*
 
