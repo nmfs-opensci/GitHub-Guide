@@ -463,7 +463,7 @@ Note
 </section>
 <section id="sec-disclaimer" class="level3" data-number="9.2">
 <h3 data-number="9.2" class="anchored" data-anchor-id="sec-disclaimer"><span class="header-section-number">9.2</span> DISCLAIMER.md</h3>
-<p>Repositories and web content shared on GitHub should make it clear to the audience that no information should be considered or interpreted as official communication of NOAA. The simplest method for doing this is to include the following disclaimer within a <code>DISCLAIMER.md</code> file at the root of each repository. Additionally, it’s also good practice to include the disclaimer text as a footnote within the repository’s <code>README.md</code> and any web content available from that repository. Be careful not to use NOAA logos and and NOAA Fisheries branding in a way that could imply an official communication. NOAA logos should be used to indicate your affiliation and acknowledge support and funding. The repositories within the NOAA <a href="https://github.com/nmfs-fish-tools">Fisheries Integrated Toolbox</a> GitHub organization are good examples of how to prepare README files with the Disclaimer and NOAA Fisheries logos.</p>
+<p>Repositories and web content shared on GitHub should make it clear to the audience that no information should be considered or interpreted as official communication of NOAA. The simplest method for doing this is to include the disclaimer text as a footnote within the repository’s <code>README.md</code> and any web content available from that repository. Be careful not to use NOAA logos and and NOAA Fisheries branding in a way that could imply official communication. NOAA logos should be used to indicate your affiliation and acknowledge support and funding. The repositories within the <a href="https://github.com/nmfs-fish-tools">NOAA Fisheries Integrated Toolbox</a> GitHub organization are examples of how to prepare README files with the Disclaimer and NOAA Fisheries logos.</p>
 <p>The following <code>DISCLAIMER.md</code> file is put in the root of the repository.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -481,37 +481,10 @@ DISCLAIMER.md
 </section>
 <section id="sec-license" class="level3" data-number="9.3">
 <h3 data-number="9.3" class="anchored" data-anchor-id="sec-license"><span class="header-section-number">9.3</span> LICENSE Files</h3>
-<p>The work of U.S. Government employees is not subject to copyright in the U.S. You include an open source LICENSE and License.md file with your repositories to indicate this. These are the licenses that are commonly used for government work: Creative Commons Zero v1.0 Universal (CC0 1.0 Universal), GNU General Public License v3.0 (GPL-3), MIT, and Apache 2.0. The CC0 license is used for data and content products but not software. For software, the three most common license are GPL-3, MIT, and Apache 2.0.</p>
-<p><em>The open source license</em></p>
-<p>To add a license to your repository, navigate to the repository on GitHub.com, select “add file,”, select “create new file”, and type <code>License.md</code>. You will then see the button in the upper right hand of the page or a link somewhere to choose a license file. Use the template to choose your license and make the file was not renamed to <code>LICENSE</code>. You want <code>License.md</code> at this step. This file will just have the open source license text.</p>
-<p><em>The Department of Commerce addendum for works created in their entiredly by U.S. Government employees</em></p>
-<p>The license addendum makes explicit that the Department of Commerce is waiving its right to seek copyright outside of the U.S. because 17 U.S.C. §105 only applies to copyright within the U.S. If the repository is code or a code package, include the software addendum within a <code>LICENSE</code> file at the root of the repository. For data or content, include the content addendum. The addendum should also be added to the repository <code>README.md</code>. What if the content has non-federal co-authors? You can add another more text to the addendum if they need to waive copyright explicitly also.</p>
-<p>For software, here is the content of <code>LICENSE</code>:</p>
-<pre><code># License
-
-The YourPackageName package as a whole is distributed under [GNU GENERAL PUBLIC
-LICENSE version 3](https://www.tldrlegal.com/license/gnu-general-public-license-v3-gpl-3) (GPL-3).
-
-In addition this software has the following license addendum:
-
-Software code created by U.S. Government employees is not subject to copyright in the United States (17 U.S.C. §105).
-The United States/Department of Commerce reserves all rights to seek and obtain copyright protection in countries
-other than the United States for Software authored in its entirety by the Department of Commerce. To this end, the
-Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create
-derivative works of the Software outside of the United States.</code></pre>
-<p>For content, here is the content of <code>LICENSE</code>:</p>
-<pre><code># License
-
-The content in this repository as a whole is distributed under [Creative Commons Zero 1.0](https://www.tldrlegal.com/license/creative-commons-cc0-1-0-universal) (CC0).
-
-In addition this content has the following license addendum:
-
-Works created by U.S. Government employees are not subject to copyright in the United States (17 U.S.C. §105).
-The United States/Department of Commerce reserves all rights to seek and obtain copyright protection in countries
-other than the United States for works authored in their entirety by the Department of Commerce. To this end, the
-Department of Commerce hereby grants to Recipient a royalty-free, nonexclusive license to use, copy, and create
-derivative works of the content in this repository outside of the United States.</code></pre>
-<p>Including the license and addendum in this way will ensure that GitHub displays the license in the repository information and that the open source license is retained with the addendum in case the <code>License.md</code> file is removed.</p>
+<p>The work of U.S. Government employees is not subject to copyright in the U.S. A permissive <a href="https://opensource.org/license">open source license</a> can be used in repositories to indicate this.</p>
+<p>Note that these license guidelines are suggestions and not legal advice.</p>
+<p>The <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">Creative Commons Zero v1.0 Universal (CC0 1.0 Universal)</a> license is used for data and content products, but not software. For software, <a href="https://opensource.org/license/apache-2-0">Apache 2.0</a> is recommended. Permissive alternatives are the <a href="https://opensource.org/license/mit">MIT license</a> and the <a href="https://opensource.org/license/lgpl-license-html">LGPL licenses</a>. A less permissive alternative, <a href="https://opensource.org/license/gpl-3-0">The GNU General Public License v3.0 (GPL-3)</a> is sometimes used when a copyleft licenses is needed (e.g., copying in code that has a GPL-3 license requires the project using the code to also have a GPL-3 license).</p>
+<p>To add a license to your repository, follow the GitHub documentation for <a href="https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository">adding a licenses to a repository</a>.</p>
 </section>
 </section>
 <section id="github-governance-team-and-access-to-github-enterprise-cloud" class="level2" data-number="10">
