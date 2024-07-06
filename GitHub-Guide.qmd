@@ -59,7 +59,7 @@ Here are the steps for getting started with GitHub at NOAA Fisheries with detail
 
 You will need a GitHub user account that is specific to your NOAA work and that uses your NOAA email for notifications. If you have an existing GitHub account that you only use for NOAA work, you can simply add your NOAA email as the primary contact for notifications. If you have an existing GitHub account that you use for non-NOAA work, e.g. another job, university work, or personal work, then you will need to create a new GitHub account for your NOAA work. 
 
-1. Go to [www.github.com](www.github.com).
+1. Go to [www.github.com](https://github.com/).
 2. Create an account with your NOAA email. Your username should include your name, e.g. FirstLast or initialslastname. Some users add "-NOAA" to the end of their username. This is not required but helpful if you have another non-NOAA account.
 3. Edit your profile and add your NOAA affiliation and your real name.
 
