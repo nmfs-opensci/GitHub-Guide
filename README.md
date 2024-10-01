@@ -4,7 +4,7 @@
 
 Respository for the GitHub Guide developed by NMFS Open Science.
 
-[Link to pdf of latest guide](https://nmfs-opensci.github.io/GitHub-Guide/GitHub-Guide.pdf) --- [Link to html of latest guide](https://nmfs-opensci.github.io/GitHub-Guide/GitHub-Guide.html)
+[Link to pdf of latest guide](https://nmfs-opensci.github.io/GitHub-Guide/index.pdf) --- [Link to html of latest guide](https://nmfs-opensci.github.io/GitHub-Guide/index.html)
 
 ## To update or contribute
 
