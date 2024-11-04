@@ -2,8 +2,8 @@
 title: GitHub and Git
 subtitle: |
   Guidance and Best Practices for NMFS Users \
-  version 3.5
-date: "November 27, 2023"
+  version 3.6
+date: "November 4, 2024"
 author:
   - name: NMFS Open Science GitHub working group
 format: 
@@ -85,6 +85,9 @@ Each NMFS GitHub Enterprise organization has different on-boarding processes. Th
 
 Be on the look out for an invite to the GitHub Enterprise organization. Accept the invitation and then you will be able to see the [NMFS GHEC organizations](https://github.com/enterprises/noaa-nmfs). Once you are a member of the organization, review its SOP (in this [Google spreadsheet](https://docs.google.com/spreadsheets/d/1WG4aEFzW2Evjp39Fq12wA4SUW-yDUZs3vYZZ0sTqiAQ/edit?usp=sharing) (NOAA internal)) for how to proceed. Reach out to your local NMFS GHEC organization admins (in the spreadsheet) if you need help.
 
+### Authenticating to GitHub
+
+Please see the NMFS Open Science Resource Book on [installing Git and Authenticating to GitHub](https://nmfs-opensci.github.io/ResourceBook/content/github/authenticating.html).
 
 ## Background {#sec-background}
 
