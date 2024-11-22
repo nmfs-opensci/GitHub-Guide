@@ -109,6 +109,7 @@ These guidelines are intended for scientific products that are low FISMA. Scient
 ### NOAA and Open Source Software
 
 [NAO 201-118: Software Governance and Public Release Policy](https://www.noaa.gov/administration/nao-201-118-software-governance-and-public-release-policy) describes our obligations regarding the code we write for NOAA mission work, in particular code that underlies analyses, models or packages that are core to our products and advice.  Key points of this policy:
+
 * To the extent possible, i.e. no confidentiality contraints, code should be released openly and with an open source licence. NOAA Fisheries supports GitHub Enterprise organizations at each science center and office to support code sharing and collaboration.
 * You should follow basic good practices regarding code development to improve code robustness and useability. A core good practice is version-control (Git) within a user interface that encourages bug tracking and testing (GitHub).
 * You should follow good practices for ensuring the security of your code. Use of GitHub Enterprise will take care of this by ensuring back-ups and providing access control (SAML sign-on for your NOAA collaborators) and logging of activity.
