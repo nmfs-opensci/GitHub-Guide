@@ -51,7 +51,8 @@ Here are the steps for getting started with GitHub at NOAA Fisheries with detail
 
 1. Create a GitHub user account with your NOAA email.
 2. Turn on 2-Factor Authentication on your account.
-3. Download the NMFS GitHub Enterprise Cloud user agreement and have your supervisor sign it
+3. Download the NMFS GitHub Enterprise Cloud [user agreement](https://drive.google.com/file/d/1yP0mLpD5d5rsgNv5-_Z6OWpwhLROjxMg/view) and have your supervisor (or NOAA sponsor if a contractor) sign it
+3. Sign up with the [Google form](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/github-users) and upload the form there.
 4. Request access to your offices' GitHub Enterprise Cloud organization.
 5. Watch for an invite to the GitHub organization in your email and on-boarding instructions.
 
@@ -105,9 +106,18 @@ The NNMFS GHEC organizations have more security controls in place and will requi
 
 These guidelines are intended for scientific products that are low FISMA. Scientific products are not generally considered official communication or business, and a disclaimer is added to GitHub repositories to state this. However, those who are handling higher FISMA data, relying on GitHub as the main data repository for official data, or working on products that will be official communications will need to seek further guidance for using GitHub.
 
+### NOAA and Open Source Software
+
+[NAO 201-118: Software Governance and Public Release Policy](https://www.noaa.gov/administration/nao-201-118-software-governance-and-public-release-policy) describes our obligations regarding the code we write for NOAA mission work, in particular code that underlies analyses, models or packages that are core to our products and advice.  Key points of this policy:
+* To the extent possible, i.e. no confidentiality contraints, code should be released openly and with an open source licence. NOAA Fisheries supports GitHub Enterprise organizations at each science center and office to support code sharing and collaboration.
+* You should follow basic good practices regarding code development to improve code robustness and useability. A core good practice is version-control (Git) within a user interface that encourages bug tracking and testing (GitHub).
+* You should follow good practices for ensuring the security of your code. Use of GitHub Enterprise will take care of this by ensuring back-ups and providing access control (SAML sign-on for your NOAA collaborators) and logging of activity.
+* You should apply an open license to your repositories and ensure that code developed under contracts or grants is under an open license and we have the source code (at least a copy). See @sec-license for recommended licenses.
+* Software that is used for products or advice needs a formal review and testing process. Note, in scientific contexts such reviews are typically conducted by statistical review teams. For R software, submission to CRAN (or bioconductor) ensures that the packages follows standards agreed upon by the R community. A higher level of review is the [rOpenSci peer review](https://ropensci.org/software-review/) but even if you do not submit a package to rOpenSci, their [development guide](https://devguide.ropensci.org/) provides best practices for R scientific packages in addition to the [Wickham and Bryan guide](https://r-pkgs.org/).
+
 ## Guidelines for Use of GitHub at NOAA Fisheries {#sec-guidelines}
 
-The information here is intended to provide employees and affiliates of NOAA Fisheries (NMFS) with practical guidance and "best practices" for how to use GitHub. "NOAA allows use of GitHub to share code and content in the spirit of collaboration and open government." (memo). NOAA has a strong history of scientific collaboration, coordination, and close engagement with other government partners, non-government organizations, academic institutions, international colleagues, and other members of the scientific research community.
+The information here is intended to provide employees and affiliates of NOAA Fisheries (NMFS) with practical guidance and "best practices" for how to use GitHub. NOAA allows use of GitHub to share code and content in the spirit of collaboration and open government (2017 GitHub memo) and to support NOAA's obligation to share code developed with federal funds (NAO 201-118). NOAA has a strong history of scientific collaboration, coordination, and close engagement with other government partners, non-government organizations, academic institutions, international colleagues, and other members of the scientific research community.
 
 ### Glossary {#sec-glossary}
 
@@ -136,7 +146,7 @@ To collaborate with colleagues and contribute to open science and open governmen
 
 ::: {.callout-note}
 
-Your NOAA supervisor should be aware of your use of GitHub and have a clear understanding of what content is being shared on GitHub.
+Your NOAA supervisor should be aware of your use of GitHub and have a clear understanding of what content is being shared on GitHub. Your supervisor can 'follow' repositories on GitHub if they need to be aware as changes are pushed to GitHub repos. 
 
 :::
 
@@ -166,18 +176,20 @@ GitHub repositories can be created under your individual GitHub account or under
 
 What about a repository associated with a journal article if writing this was part of your NOAA job? Transferring that kind of repository would probably not make sense. The transferring policy is for things that someone who is on-boarding for your job will need. Think about the kinds of work you would transfer off your computer during off-boarding.
 
+Note, you should not have mission critical repositories (software products or the main code and scripts for official NOAA reports) in your personal (work) GitHub account. That is how we lose access to code -- when something happens to you or you lose access to your account. This type of work should be in a GitHub organization.
+
 :::{.callout-tip}
 
 ## Non-Enterprise GitHub Organizations
 
 You can also create your work repositories in a GitHub organization rather than your individual GitHub account. GitHub organizations can be set-up so that its members can create and manage their repositories freely as they would in their individual account. Creating work repositories in a GitHub organization greatly streamlines on-boarding and off-boarding. It also makes it easier for all team members to use similar templates for their repositories.
 
-NOAA Fisheries has an Enterprise Cloud version of GitHub and there are existing organizations within the Enterprise that you may be able to use. See the [NOAA Fisheries GitHub Governance Team contact page (NOAA internal only)](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/contact) for more information on NOAA Fisheries Enterprise Cloud.
+NOAA Fisheries has an Enterprise Cloud version of GitHub and there are existing organizations within the Enterprise that you can use. See the [NOAA Fisheries GitHub Governance Team contact page (NOAA internal only)](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/contact) for more information on NOAA Fisheries Enterprise Cloud.
 
 :::
 
 
-[^1]: What is a NOAA work product? First, this is part of your job and you are being paid by NOAA to do this work. Second, it is a product. A repo that you throw onto GitHub as part of something you are testing out or during a workshop you are taking is not a 'product'. Would you put a DOI on this thing? Yes? That's probably a product.
+[^1]: What is a NOAA work product? First, this is part of your job and you are being paid by NOAA to do this work. Second, it is a product. A repo that you throw onto GitHub as part of something you are testing out or during a workshop you are taking is not a 'product'. Would you put a DOI on this thing? Yes? That's probably a product. Note, NOAA Fisheries provides GitHub Enterprise for this kind of work and having the work under your center's GitHub organization is best practice. 
 
 [^2]: Work when not employed by NOAA or work that is not part of your job and you are not paid for this work by NOAA.
 
