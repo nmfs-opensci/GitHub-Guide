@@ -2,8 +2,8 @@
 title: GitHub and Git
 subtitle: |
   Guidance and Best Practices for NMFS Users \
-  version 3.6
-date: "November 4, 2024"
+  version 3.7
+date: "November 29, 2024"
 author:
   - name: NMFS Open Science GitHub working group
 format: 
@@ -17,7 +17,7 @@ format:
         \usepackage[headsepline,automark]{scrlayer-scrpage}
         \ohead{\pagemark}
         \chead{}
-        \ihead{GitHub and Git SOP from NMFS Open Science (Nov 2023)}
+        \ihead{GitHub and Git SOP from NMFS Open Science (Nov 2024)}
     documentclass: scrartcl
     number-sections: true
     titlepage: "plain"
@@ -319,13 +319,66 @@ This repository is a scientific product and is not official communication of the
 
 ### LICENSE Files {#sec-license}
 
-The work of U.S. Government employees is not subject to copyright in the U.S. A permissive [open source license](https://opensource.org/license) can be used in repositories to indicate this. 
+Federally funded work, whether by federal employees or by contractors or grantees, must be publically released as open source (unless there are specific legal prohibitions). However not all code must be publically released. [NAO 201-118](https://www.noaa.gov/administration/nao-201-118-software-governance-and-public-release-policy) on Software Governance and Public Release Policy describes code in tiers: Tier 0: Trivial software for individual use. Tier 1: Simple software for one-time publicly visible use (e.g., plotting scripts for a publication). Tier 2: Software for daily or one-off use (e.g., supporting academic papers), Tier 3: Software tools intended for repeated use or public release (e.g., development of simulation models). Tier 4: Similar to tier 3, but mature enough for applied research or broad public distribution. Tier 5: Tier 4 software with active full support. Tier 0, 1, and 2 software do not require public release.
 
-Note that these license guidelines are suggestions and not legal advice.
+If there is any chance you might make a GitHub repository public or make the code, data or documentation public, then you should add an open license file to the GitHub repository before work begins. This establishes from the moment work starts that all work is open source (as required for publically released federally funded work). Difficulties arise when work is done with a non-federal contributor (contractor or grantee) with federal funds, but it was not established from the beginning that the work is under an open source license.
 
-The [Creative Commons Zero v1.0 Universal (CC0 1.0 Universal)](https://creativecommons.org/publicdomain/zero/1.0/deed.en) license is used for data and content products, but not software. For software, [Apache 2.0](https://opensource.org/license/apache-2-0) is recommended. Permissive alternatives are the [MIT license](https://opensource.org/license/mit) and the [LGPL licenses](https://opensource.org/license/lgpl-license-html). A less permissive alternative, [The GNU General Public License v3.0 (GPL-3)](https://opensource.org/license/gpl-3-0) is sometimes used when a copyleft licenses is needed (e.g., copying in code that has a GPL-3 license requires the project using the code to also have a GPL-3 license).
+To add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called `LICENSE`. GitHub will ask if you want to use one of the template licenses, but the guidance from the draft handbook to the NAO 201-118 is to use a custom license format. See below. Note if the instructions below seem complicated, keep in mind that the key is to add an open license from the start. The exact details of which one is less important than actually having one on the repository before contributions are added.
 
-To add a license to your repository, follow the GitHub documentation for [adding a licenses to a repository](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
+**Software and code** 
+
+Section 7D of [NAO 201-118](https://www.noaa.gov/administration/nao-201-118-software-governance-and-public-release-policy) specifies that software developed by NOAA or with NOAA funding specifically for its mission will be developed and publicly released as Open Source unless legally prohibited or superseded by formal, written agreements.  For software jointly developed jointly with contractors, grantees, cooperative institutes, private entities, interagency partners, international partners, or Cooperative Research and Development Agreement partners, text should be included in the contract or agreement to ensure that the software and code will be publicly released as open source. 
+
+Per the draft handbook on NAO 201-118, Apache 2.0 is the recommended license for software and code developed with NOAA funding. The recommended way (per NAO 201-118 handbook) is to include this in a GitHub repository in a file called `LICENSE` with the following text and then add a INTENT file. Note, some software package repositories (like CRAN) will not allow custom license files; see below for recommendations if that is the case.
+
+Text for `LICENSE` file:
+```
+Copyright [year developed] U.S. Federal Government (in countries where recognized)
+Copyright [year developed] name of non-federal employee contributor. Add any needed info on what the contribution was for.
+
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+```
+
+Text for `INTENT` file:
+```
+The intent is that this software and documentation ("Project") should be treated as if it is licensed under the license associated with the Project ("License") in the LICENSE file. However, the portions of this Project written by U.S. Federal government employees within the scope of their federal employment are ineligible for copyright protection in the United States. In countries where copyright protection is available, contributions made by U.S. Federal government employees are released under the License. Contributions from non-US federal government employee contributors are released under the License.
+
+Unless required by applicable law or agreed to in writing, software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+```
+
+What to do if you cannot use a custom license? In that case, the normal approach for Apache 2.0 is to have the `LICENSE` file be the unchanged Apache 2.0 text and include a file called `NOTICE` with the copyright and intent information. For example, your `NOTICE` file would look like
+```
+Copyright [year developed] U.S. Federal Government (in countries where recognized)
+Copyright [year developed] name of non-federal employee contributor. Add any needed info on what the contribution was for.
+
+The intent is that this software and documentation ("Project") should be treated as if it is licensed under the license associated with the Project ("License") in the LICENSE file. However, the portions of this Project written by U.S. Federal government employees within the scope of their federal employment are ineligible for copyright protection in the United States. In countries where copyright protection is available, contributions made by U.S. Federal government employees are released under the License. Contributions from non-US federal government employee contributors are released under the License.
+
+Unless required by applicable law or agreed to in writing, software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+```
+
+Permissive (as in open) alternatives to Apache 2.0 are the [MIT license](https://opensource.org/license/mit) and the [LGPL licenses](https://opensource.org/license/lgpl-license-html). A less permissive alternative, [The GNU General Public License v3.0 (GPL-3)](https://opensource.org/license/gpl-3-0) is sometimes used when a copyleft licenses is needed (e.g., copying in code that has a GPL-3 license requires the project using the code to also have a GPL-3 license), however whenever possible the more permissive licenses should be used.
+
+
+**Data and documentation** 
+
+Per the [NAO 212-15B](https://nosc.noaa.gov/EDMC/documents/NAO_212-15B-Data_Mgt_Handbook-2024-Oct-1_remediated.pdf) on Management of NOAA Data and Information, the [Creative Commons Zero v1.0 Universal (CC0 1.0 Universal)](https://creativecommons.org/publicdomain/zero/1.0/deed.en) license is used for data and content products. Your `LICENSE` file would be similar to the Apache 2.0 example:
+
+```
+Copyright [year developed] U.S. Federal Government (in countries where recognized)
+Copyright [year developed] name of non-federal employee contributor. Add any needed info on what the contribution was for.
+
+Licensed under the Creative Commons Zero v1.0 Universal (CC0 1.0 Universal) (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+https://creativecommons.org/publicdomain/zero/1.0/deed.en
+
+Unless required by applicable law or agreed to in writing, data and content is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+```
+
 
 ## GitHub Governance Team and access to GitHub Enterprise Cloud
 

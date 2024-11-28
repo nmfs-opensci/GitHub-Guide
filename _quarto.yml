@@ -28,8 +28,8 @@ website:
         href: https://nmfs-opensci.github.io
         text: "NMFS Open Science"
       - icon: github
-        href: https://github.com/nmfs-opensci
-        text: "NMFS OpenSci GH org"
+        href: https://github.com/nmfs-opensci/GitHub-Guide
+        text: "GitHub repo for GitHub Guide"
       - icon: filetype-pdf
         href: https://nmfs-opensci.github.io/GitHub-Guide/index.pdf
         text: "PDF of the Guide"
