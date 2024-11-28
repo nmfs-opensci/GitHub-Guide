@@ -2,8 +2,8 @@
 title: GitHub and Git
 subtitle: |
   Guidance and Best Practices for NMFS Users \
-  version 3.6
-date: "November 4, 2024"
+  version 3.7
+date: "November 29, 2024"
 author:
   - name: NMFS Open Science GitHub working group
 format: 
@@ -17,7 +17,7 @@ format:
         \usepackage[headsepline,automark]{scrlayer-scrpage}
         \ohead{\pagemark}
         \chead{}
-        \ihead{GitHub and Git SOP from NMFS Open Science (Nov 2023)}
+        \ihead{GitHub and Git SOP from NMFS Open Science (Nov 2024)}
     documentclass: scrartcl
     number-sections: true
     titlepage: "plain"
