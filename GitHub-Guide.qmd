@@ -82,7 +82,7 @@ Wait for an email inviting your to become a member of the GitHub organization. O
 
 ### Wait for the organization invite and on-boarding instructions
 
-Each NMFS GitHub Enterprise organization has different on-boarding processes. This [Google spreadsheet](https://docs.google.com/spreadsheets/d/1WG4aEFzW2Evjp39Fq12wA4SUW-yDUZs3vYZZ0sTqiAQ/edit?usp=sharing) (NOAA internal) shows you the Standard Operating Procedures (SOP) and the admins for the GitHub Enterprise organizations.
+Each NMFS GitHub Enterprise organization has different on-boarding processes. This [Google spreadsheet](https://docs.google.com/spreadsheets/d/1_I68kfnLhpDdFbL69u69im0e0o4J8eWEQyjqpaec_zU/edit?usp=sharing) (NOAA internal) shows you the admins for the GitHub Enterprise organizations and this [Google drive folder](https://drive.google.com/drive/folders/1u9eNoytmdHq7nCq_btbpSQIYj3gVfZbz?usp=sharing) has the Standard Operating Procedures (SOP) for each organization.
 
 Be on the look out for an invite to the GitHub Enterprise organization. Accept the invitation and then you will be able to see the [NMFS GHEC organizations](https://github.com/enterprises/noaa-nmfs). Once you are a member of the organization, review its SOP (in this [Google spreadsheet](https://docs.google.com/spreadsheets/d/1WG4aEFzW2Evjp39Fq12wA4SUW-yDUZs3vYZZ0sTqiAQ/edit?usp=sharing) (NOAA internal)) for how to proceed. Reach out to your local NMFS GHEC organization admins (in the spreadsheet) if you need help.
 
