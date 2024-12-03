@@ -47,14 +47,17 @@ This "best practices" guide was developed by and is maintained by the NMFS Open 
 
 ## Quick Start {#sec-quickstart}
 
-Here are the steps for getting started with GitHub at NOAA Fisheries with detailed instructions in the subsections. 
+Here are the steps for getting started with GitHub and GitHub Enterprise at NOAA Fisheries with detailed instructions in the subsections. See the GitHub Governance [Users Page](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/github-users) for more information on on-boarding. 
 
 1. Create a GitHub user account with your NOAA email.
 2. Turn on 2-Factor Authentication on your account.
-3. Download the NMFS GitHub Enterprise Cloud [user agreement](https://drive.google.com/file/d/1yP0mLpD5d5rsgNv5-_Z6OWpwhLROjxMg/view) and have your supervisor (or NOAA sponsor if a contractor) sign it
-3. Sign up with the [Google form](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/github-users) and upload the form there.
-4. Request access to your offices' GitHub Enterprise Cloud organization.
-5. Watch for an invite to the GitHub organization in your email and on-boarding instructions.
+
+*The next instructions are for access to NOAA Fisheries GitHub Enterprise organizations.*
+
+3. Download the NMFS GitHub Enterprise Cloud [user agreement](https://drive.google.com/file/d/1yP0mLpD5d5rsgNv5-_Z6OWpwhLROjxMg/view) and have your supervisor (or NOAA sponsor if a contractor) sign it.
+4. Sign up with the [Google form](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/github-users) on this on-boarding page and upload the form there.
+5. Request access to your offices' GitHub Enterprise Cloud organization.
+6. Watch for an invite to the GitHub organization in your email and on-boarding instructions.
 
 ### Create a GitHub user account
 
@@ -72,19 +75,19 @@ You will not be asked to authenticate with your 2nd factor every time you log in
 
 ### NMFS GitHub Enterprise Cloud user agreement
 
-Download the GitHub Enterprise Cloud [user agreement](https://drive.google.com/file/d/1yP0mLpD5d5rsgNv5-_Z6OWpwhLROjxMg/view?usp=sharing) (NOAA internal) and have your supervisor sign it. You will upload this when you request access to any GitHub Enterprise organizations.
+If you are requesting access to the NOAA Fisheries GitHub Enterprise organizations, download the GitHub Enterprise Cloud [user agreement](https://drive.google.com/file/d/1yP0mLpD5d5rsgNv5-_Z6OWpwhLROjxMg/view?usp=sharing) (NOAA internal) and have your supervisor sign it. You will upload this when you request access to your office's GitHub Enterprise organization.
 
 ### Request access to NMFS GitHub Enterprise Cloud
 
 Request access to the GitHub organization for your the office where you work and any other GitHub organization that you need access to. Use [this Google form](https://docs.google.com/forms/d/e/1FAIpQLScvWB-gTtQKlFPdyt3Y_H_oya9EW6Nj-56jsWJsxVdT8RJwHw/viewform) to request access. You will need to upload your user agreement.
 
-Wait for an email inviting your to become a member of the GitHub organization. Once you accept the invitation, you see that you are listed as a member of the [NMFS GHEC site](https://github.com/enterprises/noaa-nmfs). Note, you will get a 404 error unless you are a NMFS GHEC member.
+Wait for an email inviting your to become a member of the GitHub organization. Once you accept the invitation, you see that you are listed as a member of your office's GitHub organization here: [NMFS GHEC site](https://github.com/enterprises/noaa-nmfs). Note, you will get a 404 error unless you are a NMFS GHEC member.
 
 ### Wait for the organization invite and on-boarding instructions
 
-Each NMFS GitHub Enterprise organization has different on-boarding processes. This [Google spreadsheet](https://docs.google.com/spreadsheets/d/1_I68kfnLhpDdFbL69u69im0e0o4J8eWEQyjqpaec_zU/edit?usp=sharing) (NOAA internal) shows you the admins for the GitHub Enterprise organizations and this [Google drive folder](https://drive.google.com/drive/folders/1u9eNoytmdHq7nCq_btbpSQIYj3gVfZbz?usp=sharing) has the Standard Operating Procedures (SOP) for each organization.
+Each NMFS GitHub Enterprise organization has a different on-boarding process. This [Google spreadsheet](https://docs.google.com/spreadsheets/d/1_I68kfnLhpDdFbL69u69im0e0o4J8eWEQyjqpaec_zU/edit?usp=sharing) (NOAA internal) shows you the admins for the GitHub Enterprise organizations.
 
-Be on the look out for an invite to the GitHub Enterprise organization. Accept the invitation and then you will be able to see the [NMFS GHEC organizations](https://github.com/enterprises/noaa-nmfs). Once you are a member of the organization, review its SOP (in this [Google spreadsheet](https://docs.google.com/spreadsheets/d/1WG4aEFzW2Evjp39Fq12wA4SUW-yDUZs3vYZZ0sTqiAQ/edit?usp=sharing) (NOAA internal)) for how to proceed. Reach out to your local NMFS GHEC organization admins (in the spreadsheet) if you need help.
+Be on the look out for an invite to the GitHub Enterprise organization. Accept the invitation and then you will be able to see the [NMFS GHEC organizations](https://github.com/enterprises/noaa-nmfs). Once you are a member of the organization, review its SOP (in this [Google drive folder](https://drive.google.com/drive/folders/1u9eNoytmdHq7nCq_btbpSQIYj3gVfZbz?usp=sharing) (NOAA internal)). Reach out to your local NMFS GHEC organization admins (in the spreadsheet) if you need help.
 
 ### Authenticating to GitHub
 
