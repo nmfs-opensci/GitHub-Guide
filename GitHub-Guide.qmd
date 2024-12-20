@@ -137,6 +137,21 @@ Generally, content on GitHub is limited to NOAA's scientific products as defined
 
 The open source nature of GitHub allows content to be available for other developers to build upon or contribute to via [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks), [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository), or [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests). Embracing this open source workflow facilitates open review by allowing others to comment and offer solutions for open issues, improving bug reports by allowing users to see source code, and providing the full history of the project changes (i.e., version control, usually Git). Note, ["open source"](https://opensource.org/osd) is not equivalent to making content publicly accessible. The level of visibility of a repository to the general public is a separate decision and is project dependent.
 
+### Sharing data: Alternatives to Git Large File Storage {#sec-data}
+
+Oftentimes, data also needs to be shared with code. Small datasets can be directly committed to a repository in a variety of formats. However, when datasets are large can be more challenging. GitHub [restricts pushing of files large than 100 MiB from the command line](https://docs.github.com/en/enterprise-cloud@latest/repositories/working-with-files/managing-large-files/about-large-files-on-github). There is GitHub [Large File Storage](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage) for files up to 5 GB on GitHub Enterprise Cloud, but in practice, staff have found some difficulties with Large File Storage. Issues include:
+
+1. It is difficult to delete a file once it has been committed, even if the version history is rewritten to remove the file. GitHub suggests [deleting the repository](https://docs.github.com/en/repositories/working-with-files/managing-large-files/removing-files-from-git-large-file-storage#git-lfs-objects-in-your-repository), which may not be possible for established repositories.
+2. There are limits to the the included space for Large File Storage with GitHub accounts.
+
+Because of these issues, other ways of sharing data may be preferable. Some options include:
+- [archiving data at NCEI](https://www.ncei.noaa.gov/archive).
+- storing data in an on-premise database (contact your office's IT department for more information about what is available to you).
+- sharing public data via the [NOAA Open Data Desemination program (NODD)](https://www.noaa.gov/information-technology/open-data-dissemination). For example, some [Alaska Fisheries Science Center data](https://console.cloud.google.com/marketplace/product/noaa-public/afsc-odp) is shared through the NODD, which provides access to cloud storage.
+- for large files as part of a release, the [piggyback R package](https://docs.ropensci.org/piggyback/index.html).
+- storing and sharing datasets via Google Drive.
+
+
 ## Account Guidelines  {#sec-account-guidelines}
 
 ### GitHub Personal Account Settings
