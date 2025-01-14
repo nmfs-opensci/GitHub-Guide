@@ -2,8 +2,8 @@
 title: GitHub and Git
 subtitle: |
   Guidance and Best Practices for NMFS Users \
-  version 3.7
-date: "November 29, 2024"
+  version 3.8
+date: "January 14, 2025"
 author:
   - name: NMFS Open Science GitHub working group
 format: 
@@ -17,7 +17,7 @@ format:
         \usepackage[headsepline,automark]{scrlayer-scrpage}
         \ohead{\pagemark}
         \chead{}
-        \ihead{GitHub and Git SOP from NMFS Open Science (Nov 2024)}
+        \ihead{GitHub and Git SOP from NMFS Open Science (Jan 2025)}
     documentclass: scrartcl
     number-sections: true
     titlepage: "plain"
@@ -301,9 +301,9 @@ Example of back-up scripts to Google Drive:
 
 This file should provide a description of the repository. The contents of the README file will vary greatly depending on the application. Here are some tips: 
 
-* **An official work product released on a NOAA-branded GitHub organization**. This is the most formal instance and the organization leaders should develop template READMEs to provide a consistent format across the products.
-* **A software package (e.g., R package)**. Standard components are: Badges indicating build status and version, how to install, how to use or link to documentation, where to report issues, citation. 
-* **A report or paper.** Author, description and citation.
+* **An official work product released on a NOAA-branded GitHub organization**. This is the most formal case and the organization leaders should develop template READMEs to provide a consistent format across the products.
+* **A software or code package (e.g., R package)**. Standard components are: Badges indicating build status and version, description, how to install, how to use or link to documentation, where to report issues, authors, citation. [Example](https://github.com/nwfsc-cb/rCAX/blob/main/README.md)
+* **A report or paper.** Authors, description and citation.
 * Add the DISCLAIMER (below) for any repository that is a 'work product'.
 
 ### DISCLAIMER.md {#sec-disclaimer}
