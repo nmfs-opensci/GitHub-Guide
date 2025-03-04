@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,12 +37,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d60dc51e4780a8da6e803e03ea2fa71c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e19d0f8100c91b5b96a38b37e81d057c.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2060c1fdc48bdcd166b162226a62f917.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-0045eb1c33f61f19c2496553aa0e9380.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -254,7 +254,13 @@ version 3.8</p><p></p>
 </section>
 <section id="authenticating-to-github" class="level3" data-number="2.6">
 <h3 data-number="2.6" class="anchored" data-anchor-id="authenticating-to-github"><span class="header-section-number">2.6</span> Authenticating to GitHub</h3>
-<p>Please see the NMFS Open Science Resource Book on <a href="https://nmfs-opensci.github.io/ResourceBook/content/github/authenticating.html">installing Git and Authenticating to GitHub</a>.</p>
+<p>To push and pull changes to GitHub from your computer, you will need to authenticate to GitHub.</p>
+<ul>
+<li><p>GitHub Desktop. Sign into GitHub under GitHub Desktop &gt; Settings &gt; Account. For both GitHub Free and GitHub Enterprise Cloud, sign into GitHub.com with your username and password (not token). Ignore the GitHub Enterprise sign in. The latter is for an on-premise installation of Enterprise not for Enterprise in the Cloud (which NMFS has).</p></li>
+<li><p>Using a Personal Access Token. When using other interfaces to GitHub (like RStudio or the terminal), you can use a token. Go to <a href="https://github.com/settings/tokens" class="uri">https://github.com/settings/tokens</a> and create a token, which you will use when asked for a password from GitHub. Typically, the scope only needs repo. If you use GitHub Actions, add workflow scope. Copy the token as you will not see it again after it is created. If you need to use the token for GitHub Enterprise, select the Configure SSO button and select your GitHub Enterprise organization.</p></li>
+<li><p>Using SSH. <a href="https://www.geeksforgeeks.org/using-github-with-ssh-secure-shell/" class="uri">https://www.geeksforgeeks.org/using-github-with-ssh-secure-shell/</a></p></li>
+</ul>
+<p>Please see the NMFS Open Science Resource Book on <a href="https://nmfs-opensci.github.io/ResourceBook/content/github/authenticating.html">installing Git and Authenticating to GitHub</a> for more information on the specifics of set-up for RStudio, VSCode, terminal, etc.</p>
 </section>
 </section>
 <section id="sec-background" class="level2" data-number="3">
