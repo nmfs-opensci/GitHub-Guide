@@ -91,7 +91,15 @@ Be on the look out for an invite to the GitHub Enterprise organization. Accept t
 
 ### Authenticating to GitHub
 
-Please see the NMFS Open Science Resource Book on [installing Git and Authenticating to GitHub](https://nmfs-opensci.github.io/ResourceBook/content/github/authenticating.html).
+To push and pull changes to GitHub from your computer, you will need to authenticate to GitHub.
+
+* GitHub Desktop. Sign into GitHub under GitHub Desktop > Settings > Account. For both GitHub Free and GitHub Enterprise Cloud, sign into GitHub.com with your username and password (not token). Ignore the GitHub Enterprise sign in. The latter is for an on-premise installation of Enterprise not for Enterprise in the Cloud (which NMFS has).
+
+* Using a Personal Access Token. When using other interfaces to GitHub (like RStudio or the terminal), you can use a token. Go to <https://github.com/settings/tokens> and create a token, which you will use when asked for a password from GitHub.  Typically, the scope only needs repo. If you use GitHub Actions, add workflow scope. Copy the token as you will not see it again after it is created. If you need to use the token for GitHub Enterprise, select the Configure SSO button and select your GitHub Enterprise organization.
+
+* Using SSH. <https://www.geeksforgeeks.org/using-github-with-ssh-secure-shell/>
+
+Please see the NMFS Open Science Resource Book on [installing Git and Authenticating to GitHub](https://nmfs-opensci.github.io/ResourceBook/content/github/authenticating.html) for more information on the specifics of set-up for RStudio, VSCode, terminal, etc.
 
 ## Background {#sec-background}
 
