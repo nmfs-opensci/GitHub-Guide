@@ -312,13 +312,17 @@ Follow [GitHub's guidance to remove sensitive data from a repository](https://do
 
 ## Backups  {#sec-backups}
 
-GitHub is not a backup service and if a repository were deleted on GitHub, it is gone. Note if it is not deleted, one can generally recover the state of the repository at a past time (unless something really bad were done to the Git record). At the minimum, this means you should maintain a clone on at least one government furnished laptop or server. Alternatively you can back-up to Google Drive with a script (below). *Managers of NOAA branded GitHub organizations should work with their IT department to ensure automated regular backups of the organization repositories.* In other guidelines, this is often referred to as a “gold standard copy”.
+NOAA work on GitHub must be backed up to within the NOAA security boundary. In other NOAA guidelines, this is often referred to as a “gold standard copy”. GitHub is not a backup service and if a repository were deleted on GitHub, it is gone. Note if it is not deleted, one can generally recover the state of the repository at a past time (unless something really bad were done to the Git record). 
 
-Example of back-up scripts to Google Drive: 
+Most of what we create are records and need to follow [records schedules](https://www.noaa.gov/organization/administration/noaa-records-management), so keep this in mind when deciding how to back up and for how long to store copies of GitHub repositories.
 
-* [ghbackup](https://github.com/nmfs-fish-tools/ghbackup) by NOAA Fisheries Integrated Toolbox
-* [backup-gdrive](https://github.com/k-doering-NOAA/backup-gdrive#backup-gdrive)
+All NOAA-NMFS GitHub Enterprise repositories are [backed up to within the NOAA security boundary](https://docs.google.com/document/d/181CyimvMxk2Aidu5FRw_2PcpNRKRUy4HH616dhNnM6s/edit?tab=t.0), without users needing to do anything.
 
+For work not done on GitHub Enterprise, the user is responsible for backups, which should be done periodically. Options include:
+ - A clone on at least one government furnished laptop or server. This option captures the repository's full version history.
+ - Back-up to Google Drive or network with a script (below), such as [ghbackup](https://github.com/nmfs-fish-tools/ghbackup) or a [script using the gitcellar package](https://github.com/nmfs-ost/k-doering-utilities/blob/main/archive_github_example.R). This option captures the repository's full version history.
+ - Upload a [repository snapshot](https://docs.github.com/en/get-started/start-your-journey/downloading-files-from-github) to Google Drive or network. This option does NOT capture the repository's full version history; instead, it only captures the default branch's state at the time the snapshot was downloaded.
+ - Create a fork of the repository on a [GitHub Enterprise Organization](https://github.com/enterprises/noaa-nmfs/organizations) to take advantage of the backup system already in place for GitHub Enterprise. This option captures the repository's full version history.
 
 ## GitHub Repository Components
 
