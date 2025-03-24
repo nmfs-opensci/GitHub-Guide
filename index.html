@@ -137,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#sec-what-can-be-shared" id="toc-sec-what-can-be-shared" class="nav-link" data-scroll-target="#sec-what-can-be-shared"><span class="header-section-number">4.2</span> What Content Can Be Shared on GitHub?</a></li>
   <li><a href="#sec-data" id="toc-sec-data" class="nav-link" data-scroll-target="#sec-data"><span class="header-section-number">4.3</span> Sharing data: Alternatives to Git Large File Storage</a></li>
   </ul></li>
-  <li><a href="#sec-account-guidelines" id="toc-sec-account-guidelines" class="nav-link" data-scroll-target="#sec-account-guidelines"><span class="header-section-number">5</span> Account Guidelines</a>
+  <li><a href="#sec-account-guidelines" id="toc-sec-account-guidelines" class="nav-link" data-scroll-target="#sec-account-guidelines"><span class="header-section-number">5</span> Repository Guidelines</a>
   <ul class="collapse">
   <li><a href="#github-personal-account-settings" id="toc-github-personal-account-settings" class="nav-link" data-scroll-target="#github-personal-account-settings"><span class="header-section-number">5.1</span> GitHub Personal Account Settings</a></li>
   <li><a href="#github-repository-guidelines" id="toc-github-repository-guidelines" class="nav-link" data-scroll-target="#github-repository-guidelines"><span class="header-section-number">5.2</span> GitHub Repository Guidelines</a></li>
@@ -154,10 +154,10 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#recover-from-damage" id="toc-recover-from-damage" class="nav-link" data-scroll-target="#recover-from-damage"><span class="header-section-number">7</span> Recover from Damage</a></li>
   <li><a href="#sec-backups" id="toc-sec-backups" class="nav-link" data-scroll-target="#sec-backups"><span class="header-section-number">8</span> Backups</a></li>
-  <li><a href="#github-repository-components" id="toc-github-repository-components" class="nav-link" data-scroll-target="#github-repository-components"><span class="header-section-number">9</span> GitHub Repository Components</a>
+  <li><a href="#sec-repo-components" id="toc-sec-repo-components" class="nav-link" data-scroll-target="#sec-repo-components"><span class="header-section-number">9</span> GitHub Repository Components</a>
   <ul class="collapse">
   <li><a href="#sec-readme" id="toc-sec-readme" class="nav-link" data-scroll-target="#sec-readme"><span class="header-section-number">9.1</span> README.md</a></li>
-  <li><a href="#disclaimer.md" id="toc-disclaimer.md" class="nav-link" data-scroll-target="#disclaimer.md"><span class="header-section-number">9.2</span> DISCLAIMER.md</a></li>
+  <li><a href="#sec-disclaimer" id="toc-sec-disclaimer" class="nav-link" data-scroll-target="#sec-disclaimer"><span class="header-section-number">9.2</span> DISCLAIMER.md</a></li>
   <li><a href="#sec-license" id="toc-sec-license" class="nav-link" data-scroll-target="#sec-license"><span class="header-section-number">9.3</span> LICENSE Files</a></li>
   </ul></li>
   <li><a href="#github-governance-team-and-access-to-github-enterprise-cloud" id="toc-github-governance-team-and-access-to-github-enterprise-cloud" class="nav-link" data-scroll-target="#github-governance-team-and-access-to-github-enterprise-cloud"><span class="header-section-number">10</span> GitHub Governance Team and access to GitHub Enterprise Cloud</a></li>
@@ -216,6 +216,8 @@ version 3.8</p><p></p>
 <ol type="1">
 <li>Create a GitHub user account with your NOAA email.</li>
 <li>Turn on 2-Factor Authentication on your account.</li>
+<li>Create a GitHub repository.</li>
+<li>Add LICENSE+INTENT files (or LICENSE+NOTICE files) to the repo and fill out a README. See <a href="#sec-repo-components" class="quarto-xref">Section&nbsp;9</a>.</li>
 </ol>
 <p><em>The next instructions are for access to NOAA Fisheries GitHub Enterprise organizations.</em></p>
 <ol start="3" type="1">
@@ -323,7 +325,7 @@ Note
 </section>
 </section>
 <section id="sec-account-guidelines" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="sec-account-guidelines"><span class="header-section-number">5</span> Account Guidelines</h2>
+<h2 data-number="5" class="anchored" data-anchor-id="sec-account-guidelines"><span class="header-section-number">5</span> Repository Guidelines</h2>
 <section id="github-personal-account-settings" class="level3" data-number="5.1">
 <h3 data-number="5.1" class="anchored" data-anchor-id="github-personal-account-settings"><span class="header-section-number">5.1</span> GitHub Personal Account Settings</h3>
 <p>To collaborate with colleagues and contribute to open science and open government over GitHub, you will need a GitHub account. This will allow you to create GitHub repositories, participate in GitHub organizations, use version control with GitHub, fork or clone repositories, contribute to other GitHub repositories, among other features.</p>
@@ -361,7 +363,7 @@ Note
 </section>
 <section id="disclaimers-and-licenses" class="level3" data-number="5.3">
 <h3 data-number="5.3" class="anchored" data-anchor-id="disclaimers-and-licenses"><span class="header-section-number">5.3</span> Disclaimers and Licenses</h3>
-<p>If your repository represents something you produced in the course of your work at NOAA and could be considered a “work product”, then your repository should include a README (<a href="#sec-readme" class="quarto-xref">Section&nbsp;9.1</a>), the government product DISCLAIMER (<strong>?@sec-disclaimer</strong>), and LICENSE file (<a href="#sec-license" class="quarto-xref">Section&nbsp;9.3</a>). If the work is something that can be cited, then also include citation information and a DOI<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p>If your repository represents something you produced in the course of your work at NOAA and could be considered a “work product”, then your repository should include a README (<a href="#sec-readme" class="quarto-xref">Section&nbsp;9.1</a>) and LICENSE file (<a href="#sec-license" class="quarto-xref">Section&nbsp;9.3</a>). If the work is something that can be cited, then also include citation information and a DOI<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Scientific works that are not official communications should include the DISCLAIMER (<a href="#sec-disclaimer" class="quarto-xref">Section&nbsp;9.2</a>).</p>
 </section>
 <section id="repositories-under-individual-accounts" class="level3" data-number="5.4">
 <h3 data-number="5.4" class="anchored" data-anchor-id="repositories-under-individual-accounts"><span class="header-section-number">5.4</span> Repositories Under Individual Accounts</h3>
@@ -488,22 +490,22 @@ Note
 <li><a href="https://github.com/k-doering-NOAA/backup-gdrive#backup-gdrive">backup-gdrive</a></li>
 </ul>
 </section>
-<section id="github-repository-components" class="level2" data-number="9">
-<h2 data-number="9" class="anchored" data-anchor-id="github-repository-components"><span class="header-section-number">9</span> GitHub Repository Components</h2>
-<p>Your repository should include a README (<a href="#sec-readme" class="quarto-xref">Section&nbsp;9.1</a>), the government product DISCLAIMER (<strong>?@sec-disclaimer</strong>), and LICENSE file (<a href="#sec-license" class="quarto-xref">Section&nbsp;9.3</a>). If the work is something that can be cited, then also include citation information and a DOI.</p>
+<section id="sec-repo-components" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="sec-repo-components"><span class="header-section-number">9</span> GitHub Repository Components</h2>
+<p>Your repository should include a README (<a href="#sec-readme" class="quarto-xref">Section&nbsp;9.1</a>) and LICENSE (+ INTENT or NOTICE) files (<a href="#sec-license" class="quarto-xref">Section&nbsp;9.3</a>). If the work is something that can be cited, then also include citation information and a DOI. Scientific products that are not official communications should include the government product DISCLAIMER (<a href="#sec-disclaimer" class="quarto-xref">Section&nbsp;9.2</a>).</p>
 <section id="sec-readme" class="level3" data-number="9.1">
 <h3 data-number="9.1" class="anchored" data-anchor-id="sec-readme"><span class="header-section-number">9.1</span> README.md</h3>
-<p>This file should provide a description of the repository. The contents of the README file will vary greatly depending on the application, but there are a few common elements for NOAA Fisheries work products: title, description, developer information, disclaimer (<strong>?@sec-disclaimer</strong>), NOAA Fisheries logo, and DOC footer. See examples from repositories linked on the <a href="https://noaa-fisheries-integrated-toolbox.github.io/">Fisheries Integrated Toolbox</a>.</p>
+<p>This file should provide a description of the repository. The contents of the README file will vary greatly depending on the application, but there are a few common elements for NOAA Fisheries work products: title, description, developer information, disclaimer (<a href="#sec-disclaimer" class="quarto-xref">Section&nbsp;9.2</a>), NOAA Fisheries logo, and DOC footer. See examples from repositories linked on the <a href="https://noaa-fisheries-integrated-toolbox.github.io/">Fisheries Integrated Toolbox</a>.</p>
 <p>Specialized repositories will have additional elements in their README:</p>
 <ul>
 <li><strong>A software or code package (e.g., R package)</strong>. Standard components are: Badges indicating build status and version, description, how to install, how to use or link to documentation, where to report issues, authors, citation. <a href="https://github.com/nwfsc-cb/rCAX/blob/main/README.md">Example</a> and tools linked in the Fisheries Integrated Toolbox.</li>
 <li><strong>A report or paper.</strong> Authors, description and citation.</li>
 </ul>
 </section>
-<section id="disclaimer.md" class="level3" data-number="9.2">
-<h3 data-number="9.2" class="anchored" data-anchor-id="disclaimer.md"><span class="header-section-number">9.2</span> DISCLAIMER.md</h3>
-<p>Repositories and web content shared on GitHub should make it clear to the audience that no information should be considered or interpreted as official communication of NOAA. The simplest method for doing this is to include the disclaimer text as a footnote within the repository’s <code>README.md</code> and any web content available from that repository. Be careful not to use NOAA logos and and NOAA Fisheries branding in a way that could imply official communication. NOAA logos should be used to indicate your affiliation and acknowledge support and funding. The repositories within the <a href="https://github.com/nmfs-fish-tools">NOAA Fisheries Integrated Toolbox</a> GitHub organization are examples of how to prepare README files with the Disclaimer and NOAA Fisheries logos.</p>
-<p>The following <code>DISCLAIMER.md</code> file is put in the root of the repository.</p>
+<section id="sec-disclaimer" class="level3" data-number="9.2">
+<h3 data-number="9.2" class="anchored" data-anchor-id="sec-disclaimer"><span class="header-section-number">9.2</span> DISCLAIMER.md</h3>
+<p>Repositories and web content shared on GitHub that are scientific products and not official NOAA communications should make this clear to the audience. The simplest method for doing this is to include the disclaimer text as a footnote within the repository’s <code>README.md</code> and any web content available from that repository. For this type of scientific repository, NOAA logos and and NOAA Fisheries branding should not be used in a way that could imply official communication. NOAA logos should only be used to indicate your affiliation and acknowledge support and funding. The repositories within the <a href="https://github.com/nmfs-fish-tools">NOAA Fisheries Integrated Toolbox</a> GitHub organization are examples of how to prepare README files with the Disclaimer and NOAA Fisheries logos.</p>
+<p>The following <code>DISCLAIMER.md</code> file is put in the root of the repository that are scientific products and not official communications (per 2027 CIO GitHub Memo in references).</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -520,16 +522,20 @@ DISCLAIMER.md
 </section>
 <section id="sec-license" class="level3" data-number="9.3">
 <h3 data-number="9.3" class="anchored" data-anchor-id="sec-license"><span class="header-section-number">9.3</span> LICENSE Files</h3>
-<p>Federally funded work, whether by federal employees or by contractors or grantees, must be publically released as open source (unless there are specific legal prohibitions). However not all code must be publically released. <a href="https://www.noaa.gov/administration/nao-201-118-software-governance-and-public-release-policy">NAO 201-118</a> on Software Governance and Public Release Policy describes code in tiers: Tier 0: Trivial software for individual use. Tier 1: Simple software for one-time publicly visible use (e.g., plotting scripts for a publication). Tier 2: Software for daily or one-off use (e.g., supporting academic papers), Tier 3: Software tools intended for repeated use or public release (e.g., development of simulation models). Tier 4: Similar to tier 3, but mature enough for applied research or broad public distribution. Tier 5: Tier 4 software with active full support. Tier 0, 1, and 2 software do not require public release.</p>
-<p>If there is any chance you might make a GitHub repository public or make the code, data or documentation public, then you should add an open license file to the GitHub repository before work begins. This establishes from the moment work starts that all work is open source (as required for publically released federally funded work). Difficulties arise when work is done with a non-federal contributor (contractor or grantee) with federal funds, but it was not established from the beginning that the work is under an open source license.</p>
+<p>Federally funded work, whether by federal employees or by contractors or grantees, must be publically released as open source (unless there are specific legal prohibitions) with rights sufficient to allow government-wide access; see the <a href="https://www.congress.gov/bill/118th-congress/house-bill/9566">Share It Act</a>. <a href="https://www.noaa.gov/administration/nao-201-118-software-governance-and-public-release-policy">NAO 201-118</a> on Software Governance and Public Release Policy describes code in tiers: Tier 0: Trivial software for individual use. Tier 1: Simple software for one-time publicly visible use (e.g., plotting scripts for a publication). Tier 2: Software for daily or one-off use (e.g., supporting academic papers), Tier 3: Software tools intended for repeated use or public release (e.g., development of simulation models). Tier 4: Similar to tier 3, but mature enough for applied research or broad public distribution. Tier 5: Tier 4 software with active full support. Tier 0, 1, and 2 software do not require public release.</p>
+<p>Federally funded code should have an open license file added to the GitHub repository before work begins. This establishes from the moment work starts that all work is open source (as required for publically released federally funded work). Difficulties can arise when work is done with a non-federal contributor (contractor or grantee) with federal funds, but it was not established from the beginning that the work is under an open source license. The recommended license is Apache 2.0 for code/software and CC0 for data and documentation.</p>
 <p>To add a license to your repository, navigate to the base level of your repository (so not in a subdirectory) and add a file called <code>LICENSE</code>. GitHub will ask if you want to use one of the template licenses, but the guidance from the draft handbook to the NAO 201-118 is to use a custom license format. See below. Note if the instructions below seem complicated, keep in mind that the key is to add an open license from the start. The exact details of which one is less important than actually having one on the repository before contributions are added.</p>
+<p><strong>Copyright and authorship</strong></p>
+<p>You will notice that the license statements have a copyright statement. You are stating who have the right to release the work under the stated license. If the author is a federal employee, then they cannot claim copyright but you can still be listed as the author in the notice, if you wish. Why the “Intent” statements? Works by federal employees are in the public domain so technically you cannot apply a license to something you don’t have ownership of. The intent statement makes it 100% clear that the intent is to release under the stated license.</p>
 <p><strong>Software and code</strong></p>
 <p>Section 7D of <a href="https://www.noaa.gov/administration/nao-201-118-software-governance-and-public-release-policy">NAO 201-118</a> specifies that software developed by NOAA or with NOAA funding specifically for its mission will be developed and publicly released as Open Source unless legally prohibited or superseded by formal, written agreements. For software jointly developed jointly with contractors, grantees, cooperative institutes, private entities, interagency partners, international partners, or Cooperative Research and Development Agreement partners, text should be included in the contract or agreement to ensure that the software and code will be publicly released as open source.</p>
-<p>Per the draft handbook on NAO 201-118, Apache 2.0 is the recommended license for software and code developed with NOAA funding. The recommended way (per NAO 201-118 handbook) is to include this in a GitHub repository in a file called <code>LICENSE</code> with the following text and then add a INTENT file. Note, some software package repositories (like CRAN) will not allow custom license files; see below for recommendations if that is the case.</p>
+<p>Per the draft handbook on NAO 201-118, Apache 2.0 is the recommended license for software and code developed with NOAA funding. The recommended way (per NAO 201-118 handbook) is to include this in a GitHub repository in a file called <code>LICENSE</code> with the following text and then add a INTENT file. However, some software package repositories (like CRAN) will not allow custom license files; in that case use the LICENSE and NOTICE approach below. Both approaches have the same affect.</p>
+<ol type="1">
+<li>LICENSE and INTENT file</li>
+</ol>
 <p>Text for <code>LICENSE</code> file:</p>
 <pre><code>Copyright [year developed] U.S. Federal Government (in countries where recognized)
 Copyright [year developed] name of non-federal employee contributor. Add any needed info on what the contribution was for.
-
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
@@ -540,7 +546,10 @@ Unless required by applicable law or agreed to in writing, software is distribut
 <pre><code>The intent is that this software and documentation ("Project") should be treated as if it is licensed under the license associated with the Project ("License") in the LICENSE file. However, the portions of this Project written by U.S. Federal government employees within the scope of their federal employment are ineligible for copyright protection in the United States. In countries where copyright protection is available, contributions made by U.S. Federal government employees are released under the License. Contributions from non-US federal government employee contributors are released under the License.
 
 Unless required by applicable law or agreed to in writing, software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</code></pre>
-<p>What to do if you cannot use a custom license? In that case, the normal approach for Apache 2.0 is to have the <code>LICENSE</code> file be the unchanged Apache 2.0 text and include a file called <code>NOTICE</code> with the copyright and intent information. For example, your <code>NOTICE</code> file would look like</p>
+<ol start="2" type="1">
+<li>LICENSE and NOTICE file</li>
+</ol>
+<p>What to do if you cannot use a custom license (as required for CRAN or some code repositories)? In that case, the <a href="https://www.apache.org/legal/apply-license.html">normal approach for Apache 2.0</a> is to have the <code>LICENSE</code> file be the unchanged Apache 2.0 text and include a file called <code>NOTICE</code> with the copyright and intent information. For example, your <code>NOTICE</code> file would look like</p>
 <pre><code>Copyright [year developed] U.S. Federal Government (in countries where recognized)
 Copyright [year developed] name of non-federal employee contributor. Add any needed info on what the contribution was for.
 
@@ -548,8 +557,16 @@ The intent is that this software and documentation ("Project") should be treated
 
 Unless required by applicable law or agreed to in writing, software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</code></pre>
 <p>Permissive (as in open) alternatives to Apache 2.0 are the <a href="https://opensource.org/license/mit">MIT license</a> and the <a href="https://opensource.org/license/lgpl-license-html">LGPL licenses</a>. A less permissive alternative, <a href="https://opensource.org/license/gpl-3-0">The GNU General Public License v3.0 (GPL-3)</a> is sometimes used when a copyleft licenses is needed (e.g., copying in code that has a GPL-3 license requires the project using the code to also have a GPL-3 license), however whenever possible the more permissive licenses should be used.</p>
+<p>Optionally, you can add authorship information to the top of the NOTICE. For example:</p>
+<pre><code>Authors:
+- Your Name, NOAA Fisheries (U.S. Federal Government)
+- Their Name, University of Example – Contributed data analysis and visualization modules</code></pre>
 <p><strong>Data and documentation</strong></p>
-<p>Per the <a href="https://nosc.noaa.gov/EDMC/documents/NAO_212-15B-Data_Mgt_Handbook-2024-Oct-1_remediated.pdf">NAO 212-15B</a> on Management of NOAA Data and Information, the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">Creative Commons Zero v1.0 Universal (CC0 1.0 Universal)</a> license is used for data and content products. Your <code>LICENSE</code> file would be similar to the Apache 2.0 example:</p>
+<p>Per the <a href="https://nosc.noaa.gov/EDMC/documents/NAO_212-15B-Data_Mgt_Handbook-2024-Oct-1_remediated.pdf">NAO 212-15B</a> on Management of NOAA Data and Information, the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">Creative Commons Zero v1.0 Universal (CC0 1.0 Universal)</a> license is used for data and content products. Your <code>LICENSE</code> file would be similar to the Apache 2.0 example.</p>
+<ol type="1">
+<li>LICENSE and INTENT files</li>
+</ol>
+<p>Text for <code>LICENSE</code> file:</p>
 <pre><code>Copyright [year developed] U.S. Federal Government (in countries where recognized)
 Copyright [year developed] name of non-federal employee contributor. Add any needed info on what the contribution was for.
 
@@ -558,6 +575,24 @@ Licensed under the Creative Commons Zero v1.0 Universal (CC0 1.0 Universal) (the
 https://creativecommons.org/publicdomain/zero/1.0/deed.en
 
 Unless required by applicable law or agreed to in writing, data and content is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</code></pre>
+<p>Text for <code>INTENT</code> file:</p>
+<pre><code>The intent is that this software and documentation ("Project") should be treated as if it is licensed under the license associated with the Project ("License") in the LICENSE file. However, the portions of this Project written by U.S. Federal government employees within the scope of their federal employment are ineligible for copyright protection in the United States. In countries where copyright protection is available, contributions made by U.S. Federal government employees are released under the License. Contributions from non-US federal government employee contributors are released under the License.
+
+Unless required by applicable law or agreed to in writing, software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</code></pre>
+<ol start="2" type="1">
+<li>LICENSE and NOTICE files</li>
+</ol>
+<p>What to do if you cannot use a custom license (as required by some data archives)? In that case, the <code>LICENSE</code> file be the unchanged CC0 text and include a file called <code>NOTICE</code> with the copyright and intent information. For example, your <code>NOTICE</code> file would look like</p>
+<pre><code>Copyright [year developed] U.S. Federal Government (in countries where recognized)
+Copyright [year developed] name of non-federal employee contributor. Add any needed info on what the contribution was for.
+
+The intent is that this data and documentation ("Project") should be treated as if it is licensed under the license associated with the Project ("License") in the LICENSE file. However, the portions of this Project written by U.S. Federal government employees within the scope of their federal employment are ineligible for copyright protection in the United States. In countries where copyright protection is available, contributions made by U.S. Federal government employees are released under the License. Contributions from non-US federal government employee contributors are released under the License.
+
+Unless required by applicable law or agreed to in writing, this product is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</code></pre>
+<p>Optionally, you can add authorship information to the top of the NOTICE. For example:</p>
+<pre><code>Authors:
+- Your Name, NOAA Fisheries (U.S. Federal Government)
+- Their Name, University of Example – Contributed data analysis and visualization modules</code></pre>
 </section>
 </section>
 <section id="github-governance-team-and-access-to-github-enterprise-cloud" class="level2" data-number="10">
