@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,8 +37,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4379b0ccadffce622b03caf4c46266b3.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-2060c1fdc48bdcd166b162226a62f917.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -264,6 +264,41 @@ version 3.8</p><p></p>
 <li><p>Using SSH. <a href="https://www.geeksforgeeks.org/using-github-with-ssh-secure-shell/" class="uri">https://www.geeksforgeeks.org/using-github-with-ssh-secure-shell/</a></p></li>
 </ul>
 <p>Please see the NMFS Open Science Resource Book on <a href="https://nmfs-opensci.github.io/ResourceBook/content/github/authenticating.html">installing Git and Authenticating to GitHub</a> for details on the specifics of set-up for RStudio, VSCode, terminal, etc.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="RStudio Users">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+RStudio Users
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a callout with a title.</p>
+<section id="step-1" class="level3" data-number="2.7">
+<h3 data-number="2.7" class="anchored" data-anchor-id="step-1"><span class="header-section-number">2.7</span> Step 1</h3>
+<p>Go to Tools &gt; Global Options &gt; Git/SVN. Make sure the path to the git executible is there. Not there? Open a terminal and type <code>where git</code> (Windows) or <code>which git</code> (Mac). Copy the path shown into the git executible box. Still can’t find the location of your git executible and you know it is installed (because you have, say, GitHub Desktop installed)?</p>
+<ul>
+<li>On a Mac? It is at /usr/bin/git Just paste that in.</li>
+<li>On a PC? Look (by opening a finder window) in the following places. Try the GitHubDesktop one first.
+<ul>
+<li>C:/Program Files/Git/bin/git.exe</li>
+<li>C:/Users/your.username/AppData/Local/Programs/Git/bin/git.exe</li>
+<li>C:/Users/your.username/AppData/Local/GitHubDesktop/app-2.8.3/resources/app/git/cmd/git.exe</li>
+</ul></li>
+</ul>
+</section>
+<section id="step-2" class="level3" data-number="2.8">
+<h3 data-number="2.8" class="anchored" data-anchor-id="step-2"><span class="header-section-number">2.8</span> Step 2</h3>
+<p>Open up RStudio and run this from the console:</p>
+<pre><code>install.packages("usethis")
+usethis::use_git_config(user.name = "YourName", user.email = "your@mail.com")
+# this will open a browser to create a token
+usethis::create_github_token() #Accept defaults scope. Copy the token. Copy that into YourPAT in code below.
+credentials::set_github_pat("YourPAT")</code></pre>
+</section>
+</div>
+</div>
 </section>
 </section>
 <section id="sec-background" class="level2" data-number="3">
