@@ -105,10 +105,9 @@ To push and pull changes to GitHub from your computer, you will need to authenti
 
 Please see the NMFS Open Science Resource Book on [installing Git and Authenticating to GitHub](https://nmfs-opensci.github.io/ResourceBook/content/github/authenticating.html) for details on the specifics of set-up for RStudio, VSCode, terminal, etc.
 
-::: {.callout-tip title="RStudio Users"}
-This is a callout with a title.
+::: {.callout-tip title="Git Authentication for RStudio Users" collapse="true"}
 
-### Step 1
+**Step 1**
 
 Go to Tools > Global Options > Git/SVN. Make sure the path to the git executible is there. Not there? Open a terminal and type `where git` (Windows) or `which git` (Mac). Copy the path shown into the git executible box.  Still can't find the location of your git executible and you know it is installed (because you have, say, GitHub Desktop installed)?
 
@@ -118,7 +117,7 @@ Go to Tools > Global Options > Git/SVN. Make sure the path to the git executible
     - C:/Users/your.username/AppData/Local/Programs/Git/bin/git.exe
     - C:/Users/your.username/AppData/Local/GitHubDesktop/app-2.8.3/resources/app/git/cmd/git.exe
 
-### Step 2
+**Step 2**
 
 Open up RStudio and run this from the console:
 ```
