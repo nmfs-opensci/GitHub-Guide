@@ -105,6 +105,32 @@ To push and pull changes to GitHub from your computer, you will need to authenti
 
 Please see the NMFS Open Science Resource Book on [installing Git and Authenticating to GitHub](https://nmfs-opensci.github.io/ResourceBook/content/github/authenticating.html) for details on the specifics of set-up for RStudio, VSCode, terminal, etc.
 
+::: {.callout-tip title="RStudio Users"}
+This is a callout with a title.
+
+### Step 1
+
+Go to Tools > Global Options > Git/SVN. Make sure the path to the git executible is there. Not there? Open a terminal and type `where git` (Windows) or `which git` (Mac). Copy the path shown into the git executible box.  Still can't find the location of your git executible and you know it is installed (because you have, say, GitHub Desktop installed)?
+
+* On a Mac? It is at /usr/bin/git Just paste that in.
+* On a PC? Look (by opening a finder window) in the following places. Try the GitHubDesktop one first.
+    - C:/Program Files/Git/bin/git.exe
+    - C:/Users/your.username/AppData/Local/Programs/Git/bin/git.exe
+    - C:/Users/your.username/AppData/Local/GitHubDesktop/app-2.8.3/resources/app/git/cmd/git.exe
+
+### Step 2
+
+Open up RStudio and run this from the console:
+```
+install.packages("usethis")
+usethis::use_git_config(user.name = "YourName", user.email = "your@mail.com")
+# this will open a browser to create a token
+usethis::create_github_token() #Accept defaults scope. Copy the token. Copy that into YourPAT in code below.
+credentials::set_github_pat("YourPAT")
+```
+:::
+
+
 ## Background {#sec-background}
 
 In 2017, GitHub use was authorized for scientific products: [CIO memo](images/CIO-Memo-Use-of-GitHub-at-NOAA.pdf) authorizing GitHub use at NOAA. Subsequently, in 2017, NOAA released official GitHub guidelines [here](images/NOAA-GitHub-Usage-Guidelines.pdf). Some individual centers and offices prepared local GitHub guidelines and SOPs to help their staff interested in using GitHub. See references (@sec-references). Since 2017, GitHub use has expanded greatly across NMFS and all the federal agencies ([link](https://nmfs-opensci.github.io/ResourceBook/content/github_in_gov.html#github-in-other-agencies)), and GitHub has become integrated into modern scientific workflow. When the 2017 memo was written, GitHub was not Fedramp authorized. GitHub Enterprise became [Fedramp authorized](https://government.github.com/fedramp-faq) in 2018 and GitHub use expanded rapidly in other agencies (e.g. NIH, Census, GSA and VA) using Enterprise. In 2023, NOAA Fisheries secured an Authorization to Use (ATU) for GitHub Enterprise Cloud for Low FISMA scientific products; [Memo](https://drive.google.com/file/d/1e0RbnRPNbMP-VM-8pCeQtGVtWgHrs7TC/view) (NOAA internal).
