@@ -264,19 +264,19 @@ version 3.8</p><p></p>
 <li><p>Using SSH. <a href="https://www.geeksforgeeks.org/using-github-with-ssh-secure-shell/" class="uri">https://www.geeksforgeeks.org/using-github-with-ssh-secure-shell/</a></p></li>
 </ul>
 <p>Please see the NMFS Open Science Resource Book on <a href="https://nmfs-opensci.github.io/ResourceBook/content/github/authenticating.html">installing Git and Authenticating to GitHub</a> for details on the specifics of set-up for RStudio, VSCode, terminal, etc.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="RStudio Users">
-<div class="callout-header d-flex align-content-center">
+<div class="callout callout-style-default callout-tip callout-titled" title="Git Authentication for RStudio Users">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-RStudio Users
+Git Authentication for RStudio Users
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>This is a callout with a title.</p>
-<section id="step-1" class="level3" data-number="2.7">
-<h3 data-number="2.7" class="anchored" data-anchor-id="step-1"><span class="header-section-number">2.7</span> Step 1</h3>
+<p><strong>Step 1</strong></p>
 <p>Go to Tools &gt; Global Options &gt; Git/SVN. Make sure the path to the git executible is there. Not there? Open a terminal and type <code>where git</code> (Windows) or <code>which git</code> (Mac). Copy the path shown into the git executible box. Still can’t find the location of your git executible and you know it is installed (because you have, say, GitHub Desktop installed)?</p>
 <ul>
 <li>On a Mac? It is at /usr/bin/git Just paste that in.</li>
@@ -287,16 +287,14 @@ RStudio Users
 <li>C:/Users/your.username/AppData/Local/GitHubDesktop/app-2.8.3/resources/app/git/cmd/git.exe</li>
 </ul></li>
 </ul>
-</section>
-<section id="step-2" class="level3" data-number="2.8">
-<h3 data-number="2.8" class="anchored" data-anchor-id="step-2"><span class="header-section-number">2.8</span> Step 2</h3>
+<p><strong>Step 2</strong></p>
 <p>Open up RStudio and run this from the console:</p>
 <pre><code>install.packages("usethis")
 usethis::use_git_config(user.name = "YourName", user.email = "your@mail.com")
 # this will open a browser to create a token
 usethis::create_github_token() #Accept defaults scope. Copy the token. Copy that into YourPAT in code below.
 credentials::set_github_pat("YourPAT")</code></pre>
-</section>
+</div>
 </div>
 </div>
 </section>
