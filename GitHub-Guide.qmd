@@ -49,9 +49,9 @@ This "best practices" guide was developed by and is maintained by the NMFS Open 
 
 NOAA Fisheries staff have three choices for using GitHub:
 
-1.  **GitHub Enterprise Cloud (GHEC):** GHEC is a service provided by NOAA Fisheries to host GitHub repositories used for conducting NOAA Fisheries work. The repositories are stored on a GitHub-hosted cloud which means that only information that can be stored in a FISMA-low environment should be included in GHEC. The repositories can be public or private. If you only are interested in using GitHub for projects that contain sensitive information, mark "No" below and continue to the next questions on the form.
-2.  **GitHub Local:** GitHub Local is designed for users who work with confidential or other sensitive information. This version of GitHub is located inside the NOAA Fisheries firewalls and therefore provides an added layer of IT security and complies with information handling rules.
-3.  **GitHub Public:** GitHub public is appropriate if you are collaborating on a project that is being led by someone outside of NOAA Fisheries or if non-NOAA collaborators are equal partners on the project. GitHub Public refers to any non-NOAA Fisheries GHEC repository hosted on GitHub.com. The repositories can be public or private.
+1.  **GitHub Enterprise Cloud (GHEC):** GHEC is a service provided by NOAA Fisheries to host GitHub repositories used for conducting NOAA Fisheries work. Pushing to GHEC repositories ensures that the information is backed up and can be recovered by NOAA administrators. The repositories are stored on a GitHub-hosted cloud which means that only information that can be stored in a FISMA-low environment should be included in GHEC. The repositories can be public or private.
+2.  **GitHub Local:** GitHub Local is designed for users who work with confidential or other sensitive information. This version of GitHub is located inside the NOAA Fisheries firewalls and therefore provides an added layer of IT security and complies with information handling rules. Repositories can only be accessed from computers within the NOAA Fisheries network.
+3.  **GitHub Free:** Hosting repositories on GitHub Free is appropriate if you are collaborating on a project that is being led by someone outside of NOAA Fisheries or if non-NOAA collaborators are equal partners on the project. GitHub Free refers to any repository hosted on GitHub.com outside of a NOAA Fisheries organization. The repositories can be public or private.
 
 ```{mermaid}
 
@@ -60,8 +60,8 @@ graph LR
     conf{Does the project\n contain confidential or \nother sensitive information?}
     outside{Do you have outside collaborators\nthat are equal contributors\nto the project?}
     ghes((GitHub Local \nGitHub Enterprise Server\ngithub.nmfs.local))
-    github((GitHub Public\nNOAA Repos on\ngithub.com))
-    ghec((GHEC\nEnterprise Cloud\ngithub.com))
+    github((GitHub Free \ngithub.com))
+    ghec((GHEC\nGitHub Enterprise Cloud\ngithub.com))
 
     %% Connections
     conf -- "Yes" --> ghes
@@ -88,11 +88,11 @@ graph LR
 
 ### GitHub Local
 
-If you are interested in using github local, contact erin.steiner\@noaa.gov
+If you are interested in using github local, contact [erin.steiner\@noaa.gov](erin.steiner@noaa.gov).
 
-### GHEC or GitHub Public
+### GHEC or GitHub Free
 
-Here are the steps for getting started with [www.github.com](www.github.com)  at NOAA Fisheries with detailed instructions in the subsections. See the GitHub Governance [Users Page](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/github-users) for more information on on-boarding.
+Here are the steps for getting started with [GitHub.com](www.github.com) at NOAA Fisheries with detailed instructions in the subsections. See the GitHub Governance [Users Page](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/github-users) for more information on on-boarding.
 
 1.  Create a GitHub user account with your NOAA email \[Q from Erin - can they add their NOAA email to an existing account\].
 2.  Turn on 2-Factor Authentication on your account.
@@ -106,11 +106,11 @@ Here are the steps for getting started with [www.github.com](www.github.com)  at
 3.  Request access to your offices' GitHub Enterprise Cloud organization.
 4.  Watch for an invite to the GitHub organization in your email and on-boarding instructions.
 
-#### Create a [www.github.com](www.github.com)  user account
+#### Create a [GitHub.com](www.github.com) user account
 
 You will need a GitHub user account that is specific to your NOAA work and that uses your NOAA email for notifications. If you have an existing GitHub account that you only use for NOAA work, you can simply add your NOAA email as the primary contact for notifications. If you have an existing GitHub account that you use for non-NOAA work, e.g. another job, university work, or personal work, then you will need to create a new GitHub account for your NOAA work.
 
-1.  Go to [www.github.com](https://github.com/).
+1.  Go to [GitHub.com](https://github.com/).
 2.  Create an account with your NOAA email. Your username should include your name, e.g. FirstLast or initialslastname. Some users add "-NOAA" to the end of their username. This is not required but helpful if you have another non-NOAA account.
 3.  Edit your profile and add your NOAA affiliation and your real name.
 
@@ -136,7 +136,7 @@ Each NMFS GitHub Enterprise organization has a different on-boarding process. Th
 
 Be on the look out for an invite to the GitHub Enterprise organization. Accept the invitation and then you will be able to see the [NMFS GHEC organizations](https://github.com/enterprises/noaa-nmfs). Once you are a member of the organization, review its SOP (in this [Google drive folder](https://drive.google.com/drive/folders/1u9eNoytmdHq7nCq_btbpSQIYj3gVfZbz?usp=sharing) (NOAA internal)). Reach out to your local NMFS GHEC organization admins (in the spreadsheet) if you need help.
 
-#### Authenticating to [www.github.com](www.github.com) 
+#### Authenticating to [GitHub.com](www.github.com)
 
 To push and pull changes to GitHub from your computer, you will need to authenticate to GitHub.
 
@@ -202,7 +202,7 @@ These guidelines are intended for scientific products that are low FISMA. Scient
 
 ## Guidelines for Use of GitHub at NOAA Fisheries {#sec-guidelines}
 
-There are different guidelines for using [www.github.com](www.github.com)  (GHEC and public) and [github.nmfs.local](github.nmfs.local). The information here is intended to provide employees and affiliates of NOAA Fisheries (NMFS) with practical guidance and "best practices" for how to use [www.github.com](www.github.com) . There are fewer restrictions associated with use of [github.nmfs.local](github.nmfs.local). NOAA allows use of [www.github.com](www.github.com)  to share code and content in the spirit of collaboration and open government (2017 GitHub memo) and to support NOAA's obligation to share code developed with federal funds (NAO 201-118). NOAA has a strong history of scientific collaboration, coordination, and close engagement with other government partners, non-government organizations, academic institutions, international colleagues, and other members of the scientific research community.
+There are different guidelines for using [GitHub.com](www.github.com) (GHEC and Free) and [github.nmfs.local](github.nmfs.local). The information here is intended to provide employees and affiliates of NOAA Fisheries (NMFS) with practical guidance and "best practices" for how to use [GitHub.com](www.github.com). There are fewer restrictions associated with use of [github.nmfs.local](github.nmfs.local). NOAA allows use of [GitHub.com](www.github.com) to share code and content in the spirit of collaboration and open government (2017 GitHub memo) and to support NOAA's obligation to share code developed with federal funds (NAO 201-118). NOAA has a strong history of scientific collaboration, coordination, and close engagement with other government partners, non-government organizations, academic institutions, international colleagues, and other members of the scientific research community.
 
 ### Glossary {#sec-glossary}
 
@@ -214,13 +214,13 @@ There are different guidelines for using [www.github.com](www.github.com)  (GHEC
 
 ### What Content Can Be Shared on [github.nmfs.local](github.nmfs.local)? {#sec-what-can-be-sharedGHES}
 
-Information sharing in [github.nmfs.local](github.nmfs.local) follows the same guidelines as information shared in google drive and google cloud platform. Exerpt from https://sites.google.com/a/noaa.gov/noaa-ums/policies/sensitive-information:
+Information sharing in [github.nmfs.local](github.nmfs.local) follows the same guidelines as information shared in google drive and google cloud platform. Excerpt from https://sites.google.com/a/noaa.gov/noaa-ums/policies/sensitive-information:
 
-4.  It is the sender’s responsibility to ensure that all recipients of Sensitive PII or BII, whether by email or Google Drive link, are authorized to have access to the data and have a need-to-know.
+-   It is the sender’s responsibility to ensure that all recipients of Sensitive PII or BII, whether by email or Google Drive link, are authorized to have access to the data and have a need-to-know.
 
-5.  Users should still abide by Privacy best practices, including limiting Sensitive PII or BII storage overall where possible, avoiding accessing Sensitive PII from personal devices (such as sending, retrieving, or storing copies of an SF-50s from a personal device), and avoid the use, collection, transmission, or storage of Social Security numbers if the Commerce Department’s Senior Agency Official for Privacy has not concurred with the applicable Privacy Impact Assessment.
+-   Users should still abide by Privacy best practices, including limiting Sensitive PII or BII storage overall where possible, avoiding accessing Sensitive PII from personal devices (such as sending, retrieving, or storing copies of an SF-50s from a personal device), and avoid the use, collection, transmission, or storage of Social Security numbers if the Commerce Department’s Senior Agency Official for Privacy has not concurred with the applicable Privacy Impact Assessment.
 
-6.  Users who store sensitive or non-public data--for example, PII or BII--within Drive are required to indicate the nature of the data within the title of the Drive folder so that users can properly handle and limit the distribution of that data.
+-   Users who store sensitive or non-public data--for example, PII or BII--within Drive are required to indicate the nature of the data within the title of the Drive folder so that users can properly handle and limit the distribution of that data.
 
 ### What Content Can Be Shared on github.com? {#sec-what-can-be-shared}
 
@@ -239,7 +239,7 @@ Because of these issues, other ways of sharing data may be preferable. Some opti
 
 ## Repository Guidelines {#sec-account-guidelines}
 
-### [www.github.com](www.github.com)  Personal Account Settings
+### [GitHub.com](www.github.com) Personal Account Settings
 
 To collaborate with colleagues and contribute to open science and open government over GitHub, you will need a GitHub account. This will allow you to create GitHub repositories, participate in GitHub organizations, use version control with GitHub, fork or clone repositories, contribute to other GitHub repositories, among other features.
 
@@ -254,7 +254,7 @@ To collaborate with colleagues and contribute to open science and open governmen
 Your NOAA supervisor should be aware of your use of GitHub and have a clear understanding of what content is being shared on GitHub. Your supervisor can 'follow' repositories on GitHub if they need to be aware as changes are pushed to GitHub repos.
 :::
 
-### [www.github.com](www.github.com)  Repository Guidelines
+### [GitHub.com](www.github.com) Repository Guidelines
 
 GitHub provides a platform to host official work products, however GitHub repositories are used for a variety of purposes and not all repositories are “products”. Repositories are also used for project management, development, training, and testing out ideas.
 
@@ -263,7 +263,7 @@ All repositories, regardless of purpose, must follow these general guidelines:
 -   PII and BII should never be shared (on purpose or inadvertently) on GitHub regardless of whether the repository is in a private or public repository. Best practices and safeguards must be followed to prevent this.
 -   No sensitive information should be shared in repositories. Sensitive information includes, but is not limited to, usernames, passwords, login information, port numbers, IP addresses, server names, Application Programming Interface (API) keys, Personally Identifiable Information (PII), Business Identifiable Information (BII), or confidential data.
 -   GitHub is not a back-up service nor is it a data repository with archiving. Other tools are designed for this purpose. See Backups (@sec-backups).
--   Only scientific content (@sec-what-can-be-shared) that can be reasonably classified as FISMA Low (@sec-security-fisma-low) should be shared on [www.github.com](www.github.com) .
+-   Only scientific content (@sec-what-can-be-shared) that can be reasonably classified as FISMA Low (@sec-security-fisma-low) should be shared on [GitHub.com](www.github.com) .
 -   Repositories that have code that interacts with APIs using IP addresses, usernames, passwords, secrets, or credentials must take steps to prevent committing of “secrets” to GitHub. (See @sec-security-sensitive).
 
 ### Disclaimers and Licenses
@@ -325,13 +325,13 @@ From the 2017 guidelines: “NOAA has a strong history of scientific collaborati
 
 As described in @sec-what-can-be-sharedGHES, the information security requirements are the same for [github.nmfs.local](github.nmfs.local) as google drive because [github.nmfs.local](github.nmfs.local) is hosted on the NOAA Fisheries google cloud platform (GCP) which is classified as FISMA Moderate, as outlined by the Federal Information Security Management Act of 2002. FISMA Moderate classification includes MSA Confidential information and data ([50 CFR 600.405](https://www.ecfr.gov/current/title-50/section-600.405)).
 
-### [www.github.com](www.github.com) 
+### [GitHub.com](www.github.com)
 
 #### FISMA Low {#sec-security-fisma-low}
 
-The scientific product on [www.github.com](www.github.com)  must be reasonably classifiable as FISMA Low, as outlined by the Federal Information Security Management Act of 2002. FISMA Low classification includes only information for which the unauthorized disclosure, unauthorized modification, unauthorized destruction, or disruption of access can be expected to have a limited adverse effect on organizational operations, organizational assets, or individuals. If the effect of such events would be serious, severe, or catastrophic, the information cannot be released under this authority.
+The scientific product on [GitHub.com](www.github.com) must be reasonably classifiable as FISMA Low, as outlined by the Federal Information Security Management Act of 2002. FISMA Low classification includes only information for which the unauthorized disclosure, unauthorized modification, unauthorized destruction, or disruption of access can be expected to have a limited adverse effect on organizational operations, organizational assets, or individuals. If the effect of such events would be serious, severe, or catastrophic, the information cannot be released under this authority.
 
-#### Sensitive information cannot be shared on [www.github.com](www.github.com) {#sec-security-sensitive}
+#### Sensitive information cannot be shared on [GitHub.com](www.github.com) {#sec-security-sensitive}
 
 No usernames, passwords, login information, port numbers, IP addresses, server names, Application Programming Interface (API) keys, Personally Identifiable Information (PII), Business Identifiable Information (BII), or confidential data may be stored in any file hosted on GitHub. Read Section 3.3 on how to properly store and use credentials. If you have GitHub Actions or Pages that use credentials, then Encrypted Secrets inside of GitHub is also acceptable for API (Application Programming Interface) keys and similarly credentialed interfaces.
 
@@ -540,6 +540,7 @@ Lead editors:
 -   Josh London, Alaska Fisheries Science Center, GGT rep
 -   Emily Markowitz, Alaska Fisheries Science Center
 -   Kathryn Doering, Office of Science and Technology, GGT rep
+-   Erin Steiner, Northwest Fisheries Science Center, github.nmfs.local admin
 
 The editors assembled the material into a cohesive format, but significant sections were developed by other individuals in other contexts. See also the references (@sec-references).
 
