@@ -53,36 +53,6 @@ NOAA Fisheries staff have three choices for using GitHub:
 2.  **GitHub Local:** GitHub Local is designed for users who work with confidential or other sensitive information. This version of GitHub is located inside the NOAA Fisheries firewalls and therefore provides an added layer of IT security and complies with information handling rules. Repositories can only be accessed from computers within the NOAA Fisheries network.
 3.  **GitHub Free:** Hosting repositories on GitHub Free is appropriate if you are collaborating on a project that is being led by someone outside of NOAA Fisheries or if non-NOAA collaborators are equal partners on the project. GitHub Free refers to any repository hosted on GitHub.com outside of a NOAA Fisheries organization. The repositories can be public or private.
 
-```{mermaid}
-
-graph LR
-    %% Node Definitions
-    conf{Does the project\n contain confidential or \nother sensitive information?}
-    outside{Do you have outside collaborators\nthat are equal contributors\nto the project?}
-    ghes((GitHub Local \nGitHub Enterprise Server\ngithub.nmfs.local))
-    github((GitHub Free \ngithub.com))
-    ghec((GHEC\nGitHub Enterprise Cloud\ngithub.com))
-
-    %% Connections
-    conf -- "Yes" --> ghes
-    conf -- "No" --> outside
-    outside -- "Yes" --> github
-    outside -- "No"  --> ghec
-
-    %% Styling using NOAA Fisheries Hex Codes
-    %% Decision Nodes: NOAA Sea (Fill) + NOAA Sky (Border)
-    classDef decision fill:#001743,stroke:#003087,stroke-width:2px,color:#FFFFFF; 
-    
-    %% Finish Nodes: Seagrass (Fill) + Dark Seagrass (Border)
-    classDef finish fill:#00797F,stroke:#365E17,stroke-width:2px,color:#FFFFFF;
-
-    class conf decision;
-    class outside decision;
-    class ghes finish;
-    class github finish;
-    class ghec finish;
-
-```
 
 ## Quick Start {#sec-quickstart}
 
