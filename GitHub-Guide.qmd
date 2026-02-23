@@ -64,17 +64,16 @@ If you are interested in using github local, contact [erin.steiner\@noaa.gov](er
 
 Here are the steps for getting started with [GitHub.com](www.github.com) at NOAA Fisheries with detailed instructions in the subsections. See the GitHub Governance [Users Page](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/github-users) for more information on on-boarding.
 
-1.  Create a GitHub user account with your NOAA email \[Q from Erin - can they add their NOAA email to an existing account\].
-2.  Turn on 2-Factor Authentication on your account.
-3.  Create a GitHub repository.
-4.  Add LICENSE+INTENT files (or LICENSE+NOTICE files) to the repo and fill out a README. See @sec-repo-components.
+1. Create a GitHub user account with your NOAA email.
+2. Turn on 2-Factor Authentication on your account.
 
 *The next instructions are for access to NOAA Fisheries GitHub Enterprise organizations.*
 
-1.  Download the NMFS GitHub Enterprise Cloud [user agreement](https://drive.google.com/file/d/1yP0mLpD5d5rsgNv5-_Z6OWpwhLROjxMg/view) and have your supervisor (or NOAA sponsor if a contractor) sign it.
-2.  Sign up with the [Google form](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/github-users) on this on-boarding page and upload the form there.
-3.  Request access to your offices' GitHub Enterprise Cloud organization.
-4.  Watch for an invite to the GitHub organization in your email and on-boarding instructions.
+1. Download the NMFS GitHub Enterprise Cloud [user agreement](https://drive.google.com/file/d/1yP0mLpD5d5rsgNv5-_Z6OWpwhLROjxMg/view) and have your supervisor (or NOAA sponsor if a contractor) sign it.
+2. Fill out the[Google form](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/github-users).
+3. Read the [Standard Operating Procedures (SOP)](https://drive.google.com/drive/folders/1u9eNoytmdHq7nCq_btbpSQIYj3gVfZbz (NOAA internal link)) for the GitHub organizations that you will contribute to. 
+
+Need help? Contact the [NOAA Fisheries GitHub Governance Team](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/contact).
 
 #### Create a [GitHub.com](www.github.com) user account
 
@@ -98,15 +97,37 @@ If you are requesting access to the NOAA Fisheries GitHub Enterprise organizatio
 
 Request access to the GitHub organization for your the office where you work and any other GitHub organization that you need access to. Use [this Google form](https://docs.google.com/forms/d/e/1FAIpQLScvWB-gTtQKlFPdyt3Y_H_oya9EW6Nj-56jsWJsxVdT8RJwHw/viewform) to request access. You will need to upload your user agreement.
 
-Wait for an email inviting your to become a member of the GitHub organization. Once you accept the invitation, you see that you are listed as a member of your office's GitHub organization here: [NMFS GHEC site](https://github.com/enterprises/noaa-nmfs). Note, you will get a 404 error unless you are a NMFS GHEC member.
+Wait for an email inviting you to become a member of the GitHub organization. Once you accept the invitation, you see that you are listed as a member of your office's GitHub organization here: [NMFS GHEC site](https://github.com/enterprises/noaa-nmfs). Note, you will get a 404 error unless you are a NMFS GHEC member.
 
-#### Wait for the organization invite and on-boarding instructions
+## Background {#sec-background}
 
-Each NMFS GitHub Enterprise organization has a different on-boarding process. This [Google spreadsheet](https://docs.google.com/spreadsheets/d/1_I68kfnLhpDdFbL69u69im0e0o4J8eWEQyjqpaec_zU/edit?usp=sharing) (NOAA internal) shows you the admins for the GitHub Enterprise organizations.
+In 2017, GitHub use was authorized for scientific products: [CIO memo](images/CIO-Memo-Use-of-GitHub-at-NOAA.pdf) authorizing GitHub use at NOAA. Subsequently, in 2017, NOAA released official GitHub guidelines [here](images/NOAA-GitHub-Usage-Guidelines.pdf). Some individual centers and offices prepared local GitHub guidelines and SOPs to help their staff interested in using GitHub. See references (@sec-references). Since 2017, GitHub use has expanded greatly across NMFS and all the federal agencies ([link](https://nmfs-opensci.github.io/ResourceBook/content/github_in_gov.html#github-in-other-agencies)), and GitHub has become integrated into modern scientific workflow. When the 2017 memo was written, GitHub was not Fedramp authorized. GitHub Enterprise became [Fedramp authorized](https://government.github.com/fedramp-faq) in 2018 and GitHub use expanded rapidly in other agencies (e.g. NIH, Census, GSA and VA) using Enterprise. In 2023, NOAA Fisheries secured an Authorization to Use (ATU) for GitHub Enterprise Cloud for Low FISMA scientific products; [Memo](https://drive.google.com/file/d/1e0RbnRPNbMP-VM-8pCeQtGVtWgHrs7TC/view) (NOAA internal).
 
-Be on the look out for an invite to the GitHub Enterprise organization. Accept the invitation and then you will be able to see the [NMFS GHEC organizations](https://github.com/enterprises/noaa-nmfs). Once you are a member of the organization, review its SOP (in this [Google drive folder](https://drive.google.com/drive/folders/1u9eNoytmdHq7nCq_btbpSQIYj3gVfZbz?usp=sharing) (NOAA internal)). Reach out to your local NMFS GHEC organization admins (in the spreadsheet) if you need help.
+The 2017 memo tells us what can be shared on GitHub (scientific products) but there is a need for guidelines that cover and recognize the wide variety of scientific work (and learning) that is done on GitHub and much has changed in the tools provided by GitHub since 2017. Local GitHub SOPs have been developed by individual centers (see references @sec-references) to help their staff. These are very helpful, but even with these, staff are often confused by how to follow the guidelines in practice. For example, if I fork a repo in statistics workshop I am in, am I supposed to have a gold standard backup for that? What does it mean to keep NOAA work separate? I work with confidential fisheries data; what are my options? I am collaborating with someone at a university on a Python package; what are my options? I am collaborating with a regional office on an assessment that will be released as an official report from my center; what are my options?
 
-#### Authenticating to [GitHub.com](www.github.com)
+::: callout-note
+GitHub Enterprise Cloud (GHEC) versus GitHub Cloud free. GHEC does not require a different username or account. You simply need to be invited into one (or more) of the NMFS GHEC organizations. Any repositories, projects, or other resources you contribute to within the GHEC organization will be under your GHEC license. For resources under your individual account or non-GHEC organizations, you'll be collaborating under your GitHub Cloud free license.
+
+The NNMFS GHEC organizations have more security controls in place and will require additional authenticaion with your CAC card OR NOAA Google account (just like other single sign-on (SSO) websites for NOAA resources). You do not need to be on VPN to access a NMFS GHEC organization. You will not need to authenticate with SSO every time you visit resources on GitHub.com and, if you access GitHub resources via your development environment software (e.g. VS Code, RStudio) you will need to set up or re-generate a Personal Access Token.
+:::
+
+### Scientific products
+
+These guidelines are intended for scientific products that are low FISMA. Scientific products are not generally considered official communication or business, and a disclaimer is added to GitHub repositories to state this. However, those who are handling higher FISMA data, relying on GitHub as the main data repository for official data, or working on products that will be official communications will need to seek further guidance for using GitHub.
+
+### NOAA and Open Source Software
+
+[NAO 201-118: Software Governance and Public Release Policy](https://www.noaa.gov/administration/nao-201-118-software-governance-and-public-release-policy) describes our obligations regarding the code we write for NOAA mission work, in particular code that underlies analyses, models or packages that are core to our products and advice. Key points of this policy:
+
+-   To the extent possible, i.e. no confidentiality contraints, code should be released openly and with an open source licence. NOAA Fisheries supports GitHub Enterprise organizations at each science center and office to support code sharing and collaboration.
+-   You should follow basic good practices regarding code development to improve code robustness and useability. A core good practice is version-control (Git) within a user interface that encourages bug tracking and testing (GitHub).
+-   You should follow good practices for ensuring the security of your code. Use of GitHub Enterprise will take care of this by ensuring back-ups and providing access control (SAML sign-on for your NOAA collaborators) and logging of activity.
+-   You should apply an open license to your repositories and ensure that code developed under contracts or grants is under an open license and we have the source code (at least a copy). See @sec-license for recommended licenses.
+-   Software that is used for products or advice needs a formal review and testing process. Note, in scientific contexts such reviews are typically conducted by statistical review teams. For R software, submission to CRAN (or bioconductor) ensures that the packages follows standards agreed upon by the R community. A higher level of review is the [rOpenSci peer review](https://ropensci.org/software-review/) but even if you do not submit a package to rOpenSci, their [development guide](https://devguide.ropensci.org/) provides best practices for R scientific packages in addition to the [Wickham and Bryan guide](https://r-pkgs.org/).
+
+## Working on [GitHub.com](www.github.com) {#sec-work-on-github}
+
+### Authenticating to [GitHub.com](www.github.com)
 
 To push and pull changes to GitHub from your computer, you will need to authenticate to GitHub.
 
@@ -144,31 +165,6 @@ credentials::set_github_pat("YourPAT")
 ```
 :::
 
-## Background {#sec-background}
-
-In 2017, GitHub use was authorized for scientific products: [CIO memo](images/CIO-Memo-Use-of-GitHub-at-NOAA.pdf) authorizing GitHub use at NOAA. Subsequently, in 2017, NOAA released official GitHub guidelines [here](images/NOAA-GitHub-Usage-Guidelines.pdf). Some individual centers and offices prepared local GitHub guidelines and SOPs to help their staff interested in using GitHub. See references (@sec-references). Since 2017, GitHub use has expanded greatly across NMFS and all the federal agencies ([link](https://nmfs-opensci.github.io/ResourceBook/content/github_in_gov.html#github-in-other-agencies)), and GitHub has become integrated into modern scientific workflow. When the 2017 memo was written, GitHub was not Fedramp authorized. GitHub Enterprise became [Fedramp authorized](https://government.github.com/fedramp-faq) in 2018 and GitHub use expanded rapidly in other agencies (e.g. NIH, Census, GSA and VA) using Enterprise. In 2023, NOAA Fisheries secured an Authorization to Use (ATU) for GitHub Enterprise Cloud for Low FISMA scientific products; [Memo](https://drive.google.com/file/d/1e0RbnRPNbMP-VM-8pCeQtGVtWgHrs7TC/view) (NOAA internal).
-
-The 2017 memo tells us what can be shared on GitHub (scientific products) but there is a need for guidelines that cover and recognize the wide variety of scientific work (and learning) that is done on GitHub and much has changed in the tools provided by GitHub since 2017. Local GitHub SOPs have been developed by individual centers (see references @sec-references) to help their staff. These are very helpful, but even with these, staff are often confused by how to follow the guidelines in practice. For example, if I fork a repo in statistics workshop I am in, am I supposed to have a gold standard backup for that? What does it mean to keep NOAA work separate? I work with confidential fisheries data; what are my options? I am collaborating with someone at a university on a Python package; what are my options? I am collaborating with a regional office on an assessment that will be released as an official report from my center; what are my options?
-
-::: callout-note
-GitHub Enterprise Cloud (GHEC) versus GitHub Cloud free. GHEC does not require a different username or account. You simply need to be invited into one (or more) of the NMFS GHEC organizations. Any repositories, projects, or other resources you contribute to within the GHEC organization will be under your GHEC license. For resources under your individual account or non-GHEC organizations, you'll be collaborating under your GitHub Cloud free license.
-
-The NNMFS GHEC organizations have more security controls in place and will require additional authenticaion with your CAC card OR NOAA Google account (just like other single sign-on (SSO) websites for NOAA resources). You do not need to be on VPN to access a NMFS GHEC organization. You will not need to authenticate with SSO every time you visit resources on GitHub.com and, if you access GitHub resources via your development environment software (e.g. VS Code, RStudio) you will need to set up or re-generate a Personal Access Token.
-:::
-
-### Scientific products
-
-These guidelines are intended for scientific products that are low FISMA. Scientific products are not generally considered official communication or business, and a disclaimer is added to GitHub repositories to state this. However, those who are handling higher FISMA data, relying on GitHub as the main data repository for official data, or working on products that will be official communications will need to seek further guidance for using GitHub.
-
-### NOAA and Open Source Software
-
-[NAO 201-118: Software Governance and Public Release Policy](https://www.noaa.gov/administration/nao-201-118-software-governance-and-public-release-policy) describes our obligations regarding the code we write for NOAA mission work, in particular code that underlies analyses, models or packages that are core to our products and advice. Key points of this policy:
-
--   To the extent possible, i.e. no confidentiality contraints, code should be released openly and with an open source licence. NOAA Fisheries supports GitHub Enterprise organizations at each science center and office to support code sharing and collaboration.
--   You should follow basic good practices regarding code development to improve code robustness and useability. A core good practice is version-control (Git) within a user interface that encourages bug tracking and testing (GitHub).
--   You should follow good practices for ensuring the security of your code. Use of GitHub Enterprise will take care of this by ensuring back-ups and providing access control (SAML sign-on for your NOAA collaborators) and logging of activity.
--   You should apply an open license to your repositories and ensure that code developed under contracts or grants is under an open license and we have the source code (at least a copy). See @sec-license for recommended licenses.
--   Software that is used for products or advice needs a formal review and testing process. Note, in scientific contexts such reviews are typically conducted by statistical review teams. For R software, submission to CRAN (or bioconductor) ensures that the packages follows standards agreed upon by the R community. A higher level of review is the [rOpenSci peer review](https://ropensci.org/software-review/) but even if you do not submit a package to rOpenSci, their [development guide](https://devguide.ropensci.org/) provides best practices for R scientific packages in addition to the [Wickham and Bryan guide](https://r-pkgs.org/).
 
 ## Guidelines for Use of GitHub at NOAA Fisheries {#sec-guidelines}
 
