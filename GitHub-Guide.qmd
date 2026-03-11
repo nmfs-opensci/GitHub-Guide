@@ -3,7 +3,7 @@ title: GitHub and Git
 subtitle: |
   Guidance and Best Practices for NMFS Users \
   version 3.8
-date: "January 14, 2025"
+date: last-modified
 author:
   - name: NMFS Open Science GitHub working group
 format: 
