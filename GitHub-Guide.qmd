@@ -58,7 +58,12 @@ NOAA Fisheries staff have three choices for using GitHub:
 
 ### GitHub Local
 
-If you are interested in using github local, contact [erin.steiner\@noaa.gov](erin.steiner@noaa.gov).
+If you are already part of NOAA infrastructure (have a `noaa.gov` email, etc.), accounts on GitHub Local are provisioned automatically upon your first visit.
+Navigate to [https://github.nmfs.local](https://github.nmfs.local) in your browser. You must be on a NOAA campus network or connected via the NOAA VPN.
+
+::: {.callout-note}
+If you run into any issues creating or accessing your account, contact Erin Steiner at `erin.steiner@noaa.gov`.
+:::
 
 ### GHEC or GitHub Free
 
